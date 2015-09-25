@@ -5,3 +5,8 @@ title = "post"
 
 +++
 
+``
+function(){
+    return;
+}
+``
