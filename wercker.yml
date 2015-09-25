@@ -1,0 +1,12 @@
+box: wercker/default
+build:
+  steps:
+    - arjen/hugo-build:
+        version: "0.14"
+        theme: herring-cove
+        flags: --disableSitemap=true
+deploy:
+  steps:
+    - uetchy/gh-pages:
+        token: $GITHUB_TOKEN
+        path: public
