@@ -1,4 +1,4 @@
-box: wercker/default
+box: switchback/git-debian
 build:
   steps:
     - arjen/hugo-build:
@@ -7,7 +7,8 @@ build:
         flags: --disableSitemap=true
 deploy:
   steps:
-    - lukevivier/gh-pages@0.2.1:
-        token: $GITHUB_TOKEN
-        domain: hugo-wercker.ig.nore.me
+    - leipert/git-push:
+        gh_oauth: $GITHUB_TOKEN
         basedir: public
+        clean_removed_files: true
+        branch: gh-pages
