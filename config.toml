@@ -1,3 +1,13 @@
 baseurl = "http://xiaoxiyao.github.io"
 languageCode = "zh-cn"
 title = "my blog"
+theme = "material-lite"
+
+[params]
+  TwitterUser = "SamuelDebruyn"
+  FacebookUser = "facebook"
+  GooglePlusUser = "LarryPage"
+  copyright = "&copy; Samuel Debruyn 2015"
+  author = "Sam"
+  description = "A demo site for the material-lite theme"
+  background = "http://www.getmdl.io/templates/blog/images/bg.jpg"

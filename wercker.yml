@@ -3,7 +3,7 @@ build:
   steps:
     - arjen/hugo-build:
         version: "0.14"
-        theme: hugo-material-lite
+        theme: material-lite
         flags: --disableSitemap=true
 deploy:
   steps:
