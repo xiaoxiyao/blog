@@ -1,4 +1,4 @@
-box: switchback/git-debian
+box: git-debian
 build:
   steps:
     - arjen/hugo-build:
