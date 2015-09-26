@@ -1,4 +1,4 @@
-box: git-debian
+box: debian
 build:
   steps:
     - arjen/hugo-build:
@@ -12,3 +12,4 @@ deploy:
         basedir: public
         clean_removed_files: true
         branch: gh-pages
+        gh_pages: true
