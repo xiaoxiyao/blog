@@ -7,6 +7,7 @@ build:
         flags: --disableSitemap=true
 deploy:
   steps:
-    - uetchy/gh-pages:
+    - lukevivier/gh-pages@0.2.1:
         token: $GITHUB_TOKEN
-        path: public
+        domain: hugo-wercker.ig.nore.me
+        basedir: public
