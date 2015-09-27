@@ -9,6 +9,9 @@
             {{with .Site.Params.GooglePlusUser}}
               <a class="mdl-mini-footer--social-btn mdl-button mdl-js-button social-btn social-btn__gplus" href="https://google.com/+{{.}}" target="_blank" rel="me"></a>
             {{end}}
+            {{with .Site.Params.GitHubUser}}
+              <a class="mdl-mini-footer--social-btn mdl-button mdl-js-button social-btn social-btn__github" href="https://github.com/+{{.}}" target="_blank" rel="me"></a>
+            {{end}}
           </div>
           <div class="mdl-mini-footer--right-section">
             {{with .Site.Params.copyright}}
@@ -25,6 +28,11 @@
     <script src="{{.Site.BaseUrl}}/js/share.min.js"></script>
   </body>
   <script>
+  $(window).load(function() {
+    setTimeout(function() {
+      $('body').addClass('loaded');
+    }, 200);
+  });
     Array.prototype.forEach.call(document.querySelectorAll('.mdl-card__media'), function(el) {
       var link = el.querySelector('a');
       if(!link) {

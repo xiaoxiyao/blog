@@ -1,6 +1,6 @@
 baseurl = "http://xiaoxiyao.github.io/blog"
 languageCode = "zh-cn"
-title = "my blog"
+title = "Blog 测试中"
 theme = "material-lite"
 
 [params]
