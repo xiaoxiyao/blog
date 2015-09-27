@@ -5,7 +5,7 @@ body {
 }
 
 body .main-container {
-  font-family: "Helvetica Neue",Helvetica,Tahoma,Arial,STXihei,"Microsoft YaHei","微软雅黑",sans-serif;
+  font-family: "Helvetica Neue",Helvetica,Tahoma,Arial,STXihei,"Microsoft YaHei","微软雅黑",sans-serif !important;
 }
 
 .main-container .blog__posts {
