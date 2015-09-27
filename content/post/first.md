@@ -5,7 +5,7 @@ title = "myfirst post"
 
 +++
 
-```
+```php
 function(){
     return;
 }
