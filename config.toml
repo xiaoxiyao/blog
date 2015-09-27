@@ -1,4 +1,4 @@
-baseurl = "http://xiaoxiyao.github.io"
+baseurl = "http://xiaoxiyao.github.io/blog"
 languageCode = "zh-cn"
 title = "my blog"
 theme = "material-lite"
