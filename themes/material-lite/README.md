@@ -1,3 +1,9 @@
+#### 一些更改
+
+* 将一些静态资源的引用从google服务器改为[bootcdn](http://www.bootcdn.cn/)
+* 移除roboto字体引用，改为``font-family: "Helvetica Neue",Helvetica,Tahoma,Arial,STXihei,"Microsoft YaHei","微软雅黑",sans-serif !important;``
+* 移除google material design icons引用，改为[materialdesignicons](https://github.com/Templarian/MaterialDesign)
+
 # Material Design Lite inspired theme for hugo
 
 This is a theme for [hugo](http://gohugo.io), a static site generator. It is based on the [blog template](http://www.getmdl.io/templates/) of Google's [Material Design Lite](http://www.getmdl.io).
