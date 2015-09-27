@@ -524,6 +524,7 @@ body .main-container {
   width: 24px;
   height: 24px;
   cursor: pointer;
+  background: transparent;
 }
 .social-btn__share {
   color: rgba(0, 0, 0, 0.54);

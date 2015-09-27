@@ -4,9 +4,10 @@ title = "Blog 测试中"
 theme = "material-lite"
 
 [params]
-  TwitterUser = "SamuelDebruyn"
-  FacebookUser = "facebook"
-  GooglePlusUser = "LarryPage"
+#  TwitterUser = "SamuelDebruyn"
+#  FacebookUser = "facebook"
+  GooglePlusUser = "XiaoLuo"
+  GitHubUser = "xiaoxiyao"
   copyright = "&copy; Xiao XiYao 2015"
   author = "XiYao"
   description = "a blog build by hugo and material-design-lite on github pages"
