@@ -3,7 +3,7 @@
               {{ if isset .Site.Params "logo" }}
                 <img src="{{ .Site.Params.logo }}" alt="logo">
               {{ else }}
-                <img src="images/logo.png" alt="logo">
+                <img src="{{.Site.BaseUrl}}images/logo.png" alt="logo">
               {{ end }}
         </div>
         <div class="mdl-card__supporting-text meta meta--fill mdl-color-text--grey-600">
