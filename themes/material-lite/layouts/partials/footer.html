@@ -1,16 +1,24 @@
         <footer class="mdl-mini-footer">
           <div class="mdl-mini-footer--left-section">
             {{with .Site.Params.TwitterUser}}
-              <a class="mdl-mini-footer--social-btn mdl-button mdl-js-button social-btn social-btn__twitter" href="https://twitter.com/{{.}}" target="_blank" rel="me"></a>
+              <a class="mdl-mini-footer--social-btn mdl-button mdl-js-button social-btn social-btn__twitter" href="https://twitter.com/{{.}}" target="_blank" rel="me">
+                  <i class='mdi mdi-twitter-box'></i>
+              </a>
             {{end}}
             {{with .Site.Params.FacebookUser}}
-              <a class="mdl-mini-footer--social-btn mdl-button mdl-js-button social-btn social-btn__fb"  href="https://facebook.com/{{.}}" target="_blank" rel="me"></a>
+              <a class="mdl-mini-footer--social-btn mdl-button mdl-js-button social-btn social-btn__fb"  href="https://facebook.com/{{.}}" target="_blank" rel="me">
+                  <i class='mdi mdi-facebook-box'></i>
+              </a>
             {{end}}
             {{with .Site.Params.GooglePlusUser}}
-              <a class="mdl-mini-footer--social-btn mdl-button mdl-js-button social-btn social-btn__gplus" href="https://google.com/+{{.}}" target="_blank" rel="me"></a>
+              <a class="mdl-mini-footer--social-btn mdl-button mdl-js-button social-btn social-btn__gplus" href="https://google.com/+{{.}}" target="_blank" rel="me">
+                  <i class='mdi mdi-google-plus-box'></i>
+              </a>
             {{end}}
             {{with .Site.Params.GitHubUser}}
-              <a class="mdl-mini-footer--social-btn mdl-button mdl-js-button social-btn social-btn__github" href="https://github.com/+{{.}}" target="_blank" rel="me"></a>
+              <a class="mdl-mini-footer--social-btn mdl-button mdl-js-button social-btn social-btn__github" href="https://github.com/+{{.}}" target="_blank" rel="me">
+                  <i class='mdi mdi-github-circle'></i>
+              </a>
             {{end}}
           </div>
           <div class="mdl-mini-footer--right-section">
