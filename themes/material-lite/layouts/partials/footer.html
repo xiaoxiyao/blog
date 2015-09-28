@@ -16,7 +16,7 @@
               </a>
             {{end}}
             {{with .Site.Params.GitHubUser}}
-              <a class="mdl-mini-footer--social-btn mdl-button mdl-js-button social-btn social-btn__github" href="https://github.com/+{{.}}" target="_blank" rel="me">
+              <a class="mdl-mini-footer--social-btn mdl-button mdl-js-button social-btn social-btn__github" href="https://github.com/{{.}}" target="_blank" rel="me">
                   <i class='mdi mdi-github-circle'></i>
               </a>
             {{end}}
@@ -30,7 +30,7 @@
       </main>
       <div class="mdl-layout__obfuscator"></div>
     </div>
-    <script src="{{.Site.BaseUrl}}/js/material.min.js"></script>
+    <script src="//cdn.bootcss.com/material-design-lite/1.0.4/material.min.js"></script>
     <script src="//cdn.bootcss.com/highlight.js/8.8.0/highlight.min.js"></script>
     <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
     <script src="{{.Site.BaseUrl}}/js/share.min.js"></script>
