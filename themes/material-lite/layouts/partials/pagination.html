@@ -2,17 +2,17 @@
 	{{if .HasPrev}}
 	<a href="{{ .Prev.URL }}" class="nav__button">
 		<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-			<i class="material-icons">arrow_back</i>
+			<i class="mdi mdi-arrow-left"></i>
 		</button>
-		Previous		
+		上一篇
 	</a>
 	{{end}}
 	<div class="section-spacer"></div>
 	{{if .HasNext}}
 	<a href="{{ .Next.URL }}" class="nav__button">
-		Next
+		下一篇
 		<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-			<i class="material-icons">arrow_forward</i>
+			<i class="mdi mdi-arrow-right"></i>
 		</button>
 	</a>
 	{{end}}

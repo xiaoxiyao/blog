@@ -531,17 +531,11 @@ body .main-container {
 }
 
 .social-btn {
-  width: 24px;
-  height: 24px;
   cursor: pointer;
   background: transparent;
 }
 .social-btn i.mdi{
     font-size: 24px;
-}
-.social-btn__share {
-  color: rgba(0, 0, 0, 0.54);
-  background: transparent;
 }
 
 .main-container .mdl-mini-footer {
