@@ -7,7 +7,19 @@ body {
 body .main-container {
   font-family: "Helvetica Neue",Helvetica,Tahoma,Arial,STXihei,"Microsoft YaHei","微软雅黑",sans-serif !important;
 }
-
+.mdl-button .mdi {
+    vertical-align: middle;
+}
+.mdl-button--icon .mdi {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-12px,-12px);
+    -ms-transform: translate(-12px,-12px);
+    transform: translate(-12px,-12px);
+    line-height: 24px;
+    width: 24px;
+}
 /*----------------------------------------
     Pre Loader
 ------------------------------------------*/
@@ -534,7 +546,6 @@ body .main-container {
 
 .main-container .mdl-mini-footer {
   margin-top: 80px;
-  height: 120px;
   padding: 20px 40px;
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -546,10 +557,6 @@ body .main-container {
 
 div.content strong{
   font-weight: 900 !important;
-}
-
-div.content code{
-  max-width: 512px;
 }
 
 label.entypo-export:before{

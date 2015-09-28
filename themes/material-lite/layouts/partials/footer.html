@@ -23,7 +23,7 @@
           </div>
           <div class="mdl-mini-footer--right-section">
             {{with .Site.Params.copyright}}
-              <p>{{ . | safeHTML }}</p>
+              {{ . | safeHTML }}
             {{end}}
           </div>
         </footer>
