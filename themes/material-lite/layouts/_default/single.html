@@ -1,10 +1,5 @@
 {{ partial "header.html" . }}
       <div class="blog--blogpost">
-        <div class="back">
-          <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="{{ .Site.BaseURL }}">
-            <i class="mdi mdi-arrow-left"></i>
-          </a>
-        </div>
         <div class="blog__posts mdl-grid">
           <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
             <div class="mdl-card__media mdl-color-text--grey-50" {{if .Params.image}}style="background-image: url('{{.Params.image}}');"{{end}}>

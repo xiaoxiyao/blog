@@ -211,7 +211,7 @@ body .main-container {
 }
 
 .main-container.mdl-layout .mdl-layout__content {
-  padding-top: 230px;
+  padding-top: 10rem;
   position: relative;
   -webkit-overflow-scrolling: touch;
 }
