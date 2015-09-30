@@ -28,5 +28,25 @@
           <div class="loader-section section-left"></div>
           <div class="loader-section section-right"></div>
       </div>
-    <div class="main-container mdl-layout mdl-js-layout has-drawer is-upgraded">
+    <div class="main-container mdl-layout mdl-js-layout mdl-layout--fixed-header has-drawer is-upgraded">
+        <header class="mdl-layout__header mdl-layout__header--transparent mdl-layout__header--waterfall">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">XiaoXiyao</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="">Link</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">XiaoXiyao</span>
+    <nav class="mdl-navigation">
+        {{range $i, $current := (where .Site.Pages "Type" "page")}}
+                <a href="{{$current.Permalink}}" class="mdl-navigation__link mdl-menu__item mdl-js-ripple-effect">{{ $current.Title | title }}</a>
+        {{end}}
+    </nav>
+  </div>
       <main class="mdl-layout__content">
