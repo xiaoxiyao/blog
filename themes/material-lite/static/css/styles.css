@@ -369,18 +369,36 @@ body .main-container {
 }
 .main-container .mdl-layout__header-row .mdl-textfield {
     color: rgb(224,64,251);
+    margin: auto 1rem;
 }
-.main-container .mdl-layout__header-row .mdl-navigation__link{
-    color: #212121;
+.main-container .mdl-layout__header-row .mdl-textfield .mdl-textfield__input{
+    border-bottom: 2px solid rgba(224,64,251,.12);
+}
+.main-container .mdl-layout__header-row .mdl-navigation{
+    margin-right:1rem;
+}
+.main-container .mdl-layout__header-row .mdl-navigation .mdl-navigation__link{
     border-bottom: 4px solid transparent;
+    color: #757575;
+    font-weight: 700;
+    font-size: 14px
 }
 @media (max-width: 900px){
     .main-container .mdl-layout__header-row .mdl-navigation {
         display: none;
     }
 }
-.main-container .mdl-layout__header-row .mdl-navigation__link:hover {
+.main-container .mdl-layout__header-row .mdl-navigation .mdl-navigation__link:hover {
     border-bottom: 4px solid rgb(224,64,251);
+}
+.main-container .mdl-layout__drawer{
+
+}
+.main-container .mdl-layout__drawer .mdl-layout-title{
+    background-color:rgb(224,64,251);
+    color:#FFFFFF;
+    text-align:center;
+    padding: 2rem;
 }
 .main-container .blog__posts > .nav {
   margin: 12px 15px;
