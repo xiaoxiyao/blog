@@ -364,16 +364,23 @@ body .main-container {
       -ms-flex-order: -1;
           order: -1;
 }
-.main-container .mdl-layout__header
-{
+.main-container .mdl-layout__header{
     overflow:visible;
 }
-.main-container .mdl-layout__header-row .mdl-text-field {
+.main-container .mdl-layout__header-row .mdl-textfield {
     color: rgb(224,64,251);
+}
+.main-container .mdl-layout__header-row .mdl-navigation__link{
+    color: #212121;
+    border-bottom: 4px solid transparent;
+}
+@media (max-width: 900px){
+    .main-container .mdl-layout__header-row .mdl-navigation {
+        display: none;
+    }
 }
 .main-container .mdl-layout__header-row .mdl-navigation__link:hover {
     border-bottom: 4px solid rgb(224,64,251);
-    color: rgb(224,64,251);
 }
 .main-container .blog__posts > .nav {
   margin: 12px 15px;
