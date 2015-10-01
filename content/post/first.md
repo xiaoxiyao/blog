@@ -12,7 +12,7 @@ description = "这是复制github中一个项目的readme文件里的"
 *该项目还在完善中，可能有较多问题*
 ***
 
-###使用方法
+### 使用方法
 1. 将下载的materialize文件夹放在你项目的extensions目录里
 2. 配置文件如下：
 ```php
