@@ -49,7 +49,10 @@
         </header>
         <div class="mdl-layout__drawer">
             <span class="mdl-layout-title">
-                <img src="{{.Site.Params.logo}}" style="width:100%"> XiaoXiyao
+                <div class="logo">
+                    <img src="{{.Site.Params.logo}}" style="width:100%">
+                </div>
+                 XiaoXiyao
             </span>
             <nav class="mdl-navigation">
                 <a href="/" class="mdl-navigation__link mdl-js-ripple-effect">首页</a> {{range $i, $current := (where .Site.Pages "Type" "page")}}

@@ -1,26 +1,35 @@
 {{ partial "header.html" . }}
-      <div class="blog--blogpost">
-        <div class="blog__posts mdl-grid">
-          <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
-            <div class="mdl-card__media mdl-color-text--grey-50" {{if .Params.image}}style="background-image: url('{{.Params.image}}');"{{end}}>
-              <h3>{{ .Title }}</h3>
+<div class="blog--blogpost">
+    <div class="blog__posts mdl-grid">
+        <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+            <div class="mdl-card__media mdl-color-text--grey-50" {{if .Params.image}}style="background-image: url('{{.Params.image}}');" {{end}}>
+                <h3>{{ .Title }}</h3>
             </div>
             <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
-              <div class="minilogo"></div>
-              <div>
-                {{with .Site.Params.author}}<strong>{{.}}</strong>{{end}}
-                <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
-                    {{ .Date.Format "2006-01-02" }}
-                </time>
-              </div>
-              <div class="section-spacer"></div>
-              <div class="share"></div>
+                <div class="minilogo"></div>
+                <div>
+                    {{with .Site.Params.author}}
+                    <strong>{{.}}</strong>{{end}}
+                    <time datetime="{{ .Date.Format " 2006-01-02T15:04:05Z07:00 " | safeHTML }}">
+                        {{ .Date.Format "2006-01-02" }}
+                    </time>
+                </div>
+                <div class="section-spacer"></div>
+                <button id="share-btn" class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored">
+                    <i class="material-icons">share</i>
+                </button>
+                <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="share-btn">
+                    <li class="mdl-menu__item">google+</li>
+                    <li class="mdl-menu__item">微博</li>
+                    <li class="mdl-menu__item">微信</li>
+                    <li class="mdl-menu__item">QQ空间</li>
+                </ul>
             </div>
             <div class="mdl-color-text--grey-700 mdl-card__supporting-text content">
-              {{ .Content }}
+                {{ .Content }}
             </div>
-          </div>
         </div>
-      </div>
+    </div>
+</div>
 
 {{ partial "footer.html" . }}
