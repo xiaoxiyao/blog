@@ -1,7 +1,7 @@
-<!doctype html>
-{{ partial "notice.html" . }}
+<!doctype html> {{ partial "notice.html" . }}
 <html lang="{{.Site.LanguageCode}}">
-  <head>
+
+<head>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,55 +13,47 @@
     <meta name="MobileOptimized" content="320">
 
     <link href="{{.Site.BaseUrl}}/favicon.ico" rel="icon" type="image/x-icon" />
-    <link href="{{.Site.BaseUrl}}/post/index.xml" rel="alternate" type="application/rss+xml" title="RSS - {{ .Site.Title }}" />
+    <link href="{{.Site.BaseUrl}}/post/index.xml" rel="alternate" type="application/rss+xml" title="RSS - {{ .Site.Title }}" /> {{ partial "meta.html" . }} {{ partial "header-extra.html" . }} {{ partial "design.html" . }}
 
-    {{ partial "meta.html" . }}
+</head>
 
-    {{ partial "header-extra.html" . }}
-
-    {{ partial "design.html" . }}
-
-  </head>
-  <body>
-      <div id="loader-wrapper">
-          <div id="loader"></div>
-          <div class="loader-section section-left"></div>
-          <div class="loader-section section-right"></div>
-      </div>
+<body>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
     <div class="main-container mdl-layout mdl-js-layout mdl-layout--fixed-header has-drawer is-upgraded">
         <header class="mdl-layout__header mdl-layout__header--transparent mdl-layout__header--waterfall">
-    <div class="mdl-layout__header-row">
-      <!-- Title -->
-      <!--span class="mdl-layout-title">XiaoXiyao</span-->
-      <!-- Add spacer, to align navigation to the right -->
-      <div class="mdl-layout-spacer"></div>
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
-            <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
-              <i class="material-icons">search</i>
-            </label>
-            <div class="mdl-textfield__expandable-holder">
-              <input class="mdl-textfield__input" type="text" id="search-field" />
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <!--span class="mdl-layout-title">XiaoXiyao</span-->
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation -->
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="">分类1</a>
+                    <a class="mdl-navigation__link" href="">分类2</a>
+                    <a class="mdl-navigation__link" href="">分类3</a>
+                    <a class="mdl-navigation__link" href="">分类4</a>
+                </nav>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+                    <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+                        <i class="material-icons">search</i>
+                    </label>
+                    <div class="mdl-textfield__expandable-holder">
+                        <input class="mdl-textfield__input" type="text" id="search-field" />
+                    </div>
+                </div>
             </div>
-          </div>
-      <!-- Navigation -->
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="">分类1</a>
-        <a class="mdl-navigation__link" href="">分类2</a>
-        <a class="mdl-navigation__link" href="">分类3</a>
-        <a class="mdl-navigation__link" href="">分类4</a>
-      </nav>
-    </div>
-  </header>
-  <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title" style="background-color:rgb(224,64,251);color:#FFFFFF;text-align:center;">
-        <img src="{{.Site.Params.logo}}" style="width:100%">
-        XiaoXiyao
-    </span>
-    <nav class="mdl-navigation">
-        <a href="/" class="mdl-navigation__link mdl-js-ripple-effect">首页</a>
-        {{range $i, $current := (where .Site.Pages "Type" "page")}}
-                <a href="{{$current.Permalink}}" class="mdl-navigation__link mdl-js-ripple-effect">{{ $current.Title | title }}</a>
-        {{end}}
-    </nav>
-  </div>
-      <main class="mdl-layout__content">
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title" style="background-color:rgb(224,64,251);color:#FFFFFF;text-align:center;">
+                <img src="{{.Site.Params.logo}}" style="width:100%"> XiaoXiyao
+            </span>
+            <nav class="mdl-navigation">
+                <a href="/" class="mdl-navigation__link mdl-js-ripple-effect">首页</a> {{range $i, $current := (where .Site.Pages "Type" "page")}}
+                <a href="{{$current.Permalink}}" class="mdl-navigation__link mdl-js-ripple-effect">{{ $current.Title | title }}</a> {{end}}
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
