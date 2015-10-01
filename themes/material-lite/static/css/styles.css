@@ -273,10 +273,10 @@ body .main-container {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  box-sizing: border-box;
+}
+.main-container .mdl-card__supporting-text.content{
+
 }
 .main-container .mdl-card__supporting-text strong {
   font-weight: 400;

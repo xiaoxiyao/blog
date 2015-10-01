@@ -1,4 +1,4 @@
-<!doctype html> {{ partial "notice.html" . }}
+<!doctype html>
 <html lang="{{.Site.LanguageCode}}">
 
 <head>
@@ -55,7 +55,7 @@
                  XiaoXiyao
             </span>
             <nav class="mdl-navigation">
-                <a href="/" class="mdl-navigation__link mdl-js-ripple-effect">首页</a> {{range $i, $current := (where .Site.Pages "Type" "page")}}
+                <a href="/" class="mdl-navigation__link mdl-js-ripple-effect"><i class="material-icons">home</i> 首页</a> {{range $i, $current := (where .Site.Pages "Type" "page")}}
                 <a href="{{$current.Permalink}}" class="mdl-navigation__link mdl-js-ripple-effect">{{ $current.Title | title }}</a> {{end}}
             </nav>
         </div>
