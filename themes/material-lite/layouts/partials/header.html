@@ -57,7 +57,7 @@
             <nav class="mdl-navigation">
                 <a href="/" class="mdl-navigation__link"><i class="material-icons">home</i> 首页</a>
                 {{range $i, $current := (where .Site.Pages "Type" "page")}}
-                    <a href="{{$current.Permalink}}" class="mdl-navigation__link">{{ $current.Title | title }}</a> 
+                    <a href="{{$current.Permalink}}" class="mdl-navigation__link">{{$current.icon}}{{ $current.Title | title }}</a> 
                 {{end}}
             </nav>
         </div>

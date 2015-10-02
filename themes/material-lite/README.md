@@ -5,6 +5,7 @@
 * 添加[materialdesignicons](https://github.com/Templarian/MaterialDesign)
 * 添加loadding，更换背景，更改logo（部分资源来源于网络）
 * 更改一些布局与样式，添加导航栏
+* 修改分享功能
 
 # Material Design Lite inspired theme for hugo
 

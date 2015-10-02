@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
 
         <div class="blog__posts mdl-grid">
-          {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+          {{ $paginator := .Paginate (where .Data.Pages "Type" "!=" "page") }}
 
           {{ range $index, $page := $paginator.Pages }}
                 <div class="mdl-card mdl-cell mdl-cell--12-col">

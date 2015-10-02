@@ -4,8 +4,11 @@ body {
   margin: 0;
 }
 
-body .main-container {
+body {
   font-family: "Helvetica Neue",Helvetica,Tahoma,Arial,STXihei,"Microsoft YaHei","微软雅黑",sans-serif !important;
+}
+h1,h2,h3,h4,h5{
+    font-family: inherit;
 }
 .mdl-button .mdi {
     vertical-align: middle;
