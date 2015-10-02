@@ -55,8 +55,10 @@
                  XiaoXiyao
             </span>
             <nav class="mdl-navigation">
-                <a href="/" class="mdl-navigation__link mdl-js-ripple-effect"><i class="material-icons">home</i> 首页</a> {{range $i, $current := (where .Site.Pages "Type" "page")}}
-                <a href="{{$current.Permalink}}" class="mdl-navigation__link mdl-js-ripple-effect">{{ $current.Title | title }}</a> {{end}}
+                <a href="/" class="mdl-navigation__link"><i class="material-icons">home</i> 首页</a>
+                {{range $i, $current := (where .Site.Pages "Type" "page")}}
+                    <a href="{{$current.Permalink}}" class="mdl-navigation__link">{{ $current.Title | title }}</a> 
+                {{end}}
             </nav>
         </div>
         <main class="mdl-layout__content">

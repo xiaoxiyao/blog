@@ -403,6 +403,9 @@ body .main-container {
 .main-container .mdl-layout__drawer .mdl-layout-title > .logo{
     padding: 0 2rem;
 }
+.main-container .mdl-layout__drawer .mdl-navigation__link i.material-icons{
+    vertical-align: bottom;
+}
 .main-container .blog__posts > .nav {
   margin: 12px 15px;
   display: -webkit-box;
