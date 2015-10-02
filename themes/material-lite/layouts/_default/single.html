@@ -24,30 +24,12 @@
                     <li class="mdl-menu__item">微信</li>
                     <li class="mdl-menu__item">QQ空间</li>
                 </ul>
-                <div class="mdl-tooltip" for="share-btn">分享</div>
             </div>
             <div class="mdl-color-text--grey-700 mdl-card__supporting-text content">
                 {{ .Content }}
             </div>
             <div class="mdl-color-text--primary-contrast mdl-card__supporting-text comments">
-                <!-- 多说评论框 start -->
-                <div class="ds-thread" data-thread-key="{{.Date}}" data-title="{{.Title}}" data-url="{{.Permalink}}"></div>
-                <!-- 多说评论框 end -->
-                <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-                <script type="text/javascript">
-                    var duoshuoQuery = {
-                        short_name: "xiaoxiyao"
-                    };
-                    (function() {
-                        var ds = document.createElement('script');
-                        ds.type = 'text/javascript';
-                        ds.async = true;
-                        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-                        ds.charset = 'UTF-8';
-                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
-                    })();
-                </script>
-                <!-- 多说公共JS代码 end -->
+                {{ partial "duoshuo.html" . }}
             </div>
         </div>
     </div>
