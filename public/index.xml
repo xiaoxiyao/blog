@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog 测试中</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Blog 测试中</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 25 Sep 2015 23:48:05 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>测试博客</title>
+      <link>http://localhost:1313/post/first/</link>
+      <pubDate>Fri, 25 Sep 2015 23:48:05 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/first/</guid>
+      <description>
+
+&lt;h3 id=&#34;博客测试:e8fb9c67eba912c72729806db31eaa1b&#34;&gt;博客测试&lt;/h3&gt;
+
+&lt;h1 id=&#34;materialize-for-yii:e8fb9c67eba912c72729806db31eaa1b&#34;&gt;Materialize-for-Yii&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://materializecss.com/&#34;&gt;Materialize&lt;/a&gt;是一个Material Design风格的web前端框架，将其做成&lt;a href=&#34;http://www.yiiframework.com/&#34;&gt;Yii Framework&lt;/a&gt;的一个主题扩展，想必是极好的^_^&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;该项目还在完善中，可能有较多问题&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;使用方法:e8fb9c67eba912c72729806db31eaa1b&#34;&gt;使用方法&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;将下载的materialize文件夹放在你项目的extensions目录里&lt;/li&gt;
+&lt;li&gt;配置文件如下：&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;Yii::setPathOfAlias(&#39;md&#39;, realpath(dirname(__FILE__) . &#39;/../extensions/materialize&#39;));
+return array(
+    //......
+    &#39;preload&#39; =&amp;gt; array(&#39;log&#39;,&#39;md&#39;),
+    &#39;import&#39; =&amp;gt; array(
+        //......
+        &#39;md.components.*&#39;,
+    ),
+    &#39;components&#39; =&amp;gt; array(
+        &#39;md&#39;=&amp;gt;array(
+            &#39;class&#39;=&amp;gt;&#39;md.components.Materialize&#39;,
+            &#39;minify&#39; =&amp;gt; true,               //是否使用压缩的css js 文件
+            &#39;forceCopyAssets&#39; =&amp;gt; false,     //是否强制复制Assets
+        ),
+    ),
+    //......
+)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;目前可用的widgets有MdButon、MdSwitch、MdToast、MdActiveForm&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>关于</title>
+      <link>http://localhost:1313/page/about/</link>
+      <pubDate>Fri, 25 Sep 2015 22:21:51 +0800</pubDate>
+      
+      <guid>http://localhost:1313/page/about/</guid>
+      <description>&lt;p&gt;这是一个发布在github pages上的博客程序，在&lt;a href=&#34;https://app.wercker.com&#34;&gt;wercker&lt;/a&gt;上使用&lt;a href=&#34;https://github.com/spf13/hugo&#34;&gt;hugo&lt;/a&gt; 动态编译并自动部署到github pages，使用的主题是&lt;a href=&#34;https://github.com/SamuelDebruyn/hugo-material-lite&#34;&gt;material-design-lite&lt;/a&gt;（做了一些修改）&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

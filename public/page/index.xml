@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on Blog 测试中</title>
+    <link>http://localhost:1313/page/</link>
+    <description>Recent content in Pages on Blog 测试中</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 25 Sep 2015 22:21:51 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/page/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>关于</title>
+      <link>http://localhost:1313/page/about/</link>
+      <pubDate>Fri, 25 Sep 2015 22:21:51 +0800</pubDate>
+      
+      <guid>http://localhost:1313/page/about/</guid>
+      <description>&lt;p&gt;这是一个发布在github pages上的博客程序，在&lt;a href=&#34;https://app.wercker.com&#34;&gt;wercker&lt;/a&gt;上使用&lt;a href=&#34;https://github.com/spf13/hugo&#34;&gt;hugo&lt;/a&gt; 动态编译并自动部署到github pages，使用的主题是&lt;a href=&#34;https://github.com/SamuelDebruyn/hugo-material-lite&#34;&gt;material-design-lite&lt;/a&gt;（做了一些修改）&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
