@@ -7,10 +7,10 @@
 <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
 	<div class="minilogo"></div>
 	<div>
-		{{with .Site.Params.author}}<strong>{{.}}</strong>{{end}}
 		<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
             {{ .Date.Format "2006-01-02" }}
         </time>
+		{{with .Site.Params.author}}<strong>{{.}}</strong>{{end}}
 	</div>
 	<div class="section-spacer"></div>
 	<div class="label mdl-color--teal">{{.Type}}</div>
