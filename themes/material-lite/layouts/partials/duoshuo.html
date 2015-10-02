@@ -3,6 +3,43 @@
         width: 100%;
     }
 
+    #ds-thread > #ds-reset > .ds-replybox > form textarea {
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, .12);
+        display: block;
+        font-size: 16px;
+        margin: 0;
+        padding: 4px 0;
+        width: 100%;
+        background: 0 0;
+        text-align: left;
+        color: inherit;
+        resize: vertical;
+    }
+
+    #ds-thread > #ds-reset > .ds-replybox > form > .ds-post-toolbar > button {
+        background: rgb(0, 150, 136);
+        color: #fff;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+        border: none;
+        border-radius: 2px;
+        position: relative;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 500;
+        overflow: hidden;
+        will-change: box-shadow, transform;
+        -webkit-transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+        transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+        outline: none;
+        cursor: pointer;
+        text-decoration: none;
+        text-align: center;
+        vertical-align: middle;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    }
+
     #ds-thread > #ds-reset > p.ds-powered-by {
         display: none;
     }
@@ -13,7 +50,6 @@
         display: inline-block;
         box-sizing: border-box;
         width: 100%;
-        max-width: 100%;
         margin: 0;
         padding: 1rem 0;
     }
@@ -29,13 +65,10 @@
         background: 0 0;
         text-align: left;
         color: inherit;
+        box-shadow: none;
     }
 
     #ds-wrapper > #ds-reset form > .ds-control-group label {
-        -webkit-transition-duration: .2s;
-        transition-duration: .2s;
-        -webkit-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
-        transition-timing-function: cubic-bezier(.4, 0, .2, 1);
         bottom: 0;
         color: rgba(0, 0, 0, .26);
         font-size: 16px;
@@ -52,7 +85,7 @@
     }
 
     #ds-wrapper > #ds-reset form > .ds-control-group label:after {
-        background-color: rgb(0,150,136);
+        background-color: rgb(0, 150, 136);
         bottom: 20px;
         content: '';
         height: 2px;
