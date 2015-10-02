@@ -10,6 +10,13 @@ body {
 h1,h2,h3,h4,h5{
     font-family: inherit;
 }
+.label{
+    display: inline-block;
+    padding:0.2rem 0.4rem;
+    font-size: 0.8rem;
+    color: #fff;
+    border-radius: 2px;
+}
 .mdl-button .mdi {
     vertical-align: middle;
 }
