@@ -6,6 +6,7 @@
 * 添加loadding，更换背景，更改logo（部分资源来源于网络）
 * 更改一些布局与样式，添加导航栏
 * 修改分享功能
+* 添加多说评论系统，并修改一些样式
 
 # Material Design Lite inspired theme for hugo
 
