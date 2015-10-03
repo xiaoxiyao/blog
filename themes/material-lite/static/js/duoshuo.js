@@ -59,7 +59,7 @@ var duoshuoQuery = {
         }, o.getCookie = function(e) {
             for (var a, i, r, n = " " + e + "=", o = t.cookie.split(";"), d = 0; d < o.length; d++)
                 if (a = " " + o[d], i = a.indexOf(n), i >= 0 && i + n.length == (r = a.indexOf("=") + 1)) return decodeURIComponent(a.substring(r, a.length).replace(/\+/g, ""));
-                console.dir(o);
+                //console.dir(o);
             return s
         }, o.param = function(e) {
             var t = [];
@@ -381,6 +381,7 @@ var duoshuoQuery = {
                     return this.ajax("GET", e, t, s, a)
                 },
                 post: function(e, t, s, a) {
+                    console.dir(e);console.dir(t);console.dir(s);
                     return this.ajax("POST", e, t, s, a)
                 }
             },
