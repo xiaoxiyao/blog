@@ -29,13 +29,7 @@
                 {{ .Content }}
             </div>
             <div class="mdl-color-text--primary-contrast mdl-card__supporting-text comments">
-                <div class="ds-thread" data-thread-key="{{.Date}}" data-title="{{.Title}}" data-url="{{.Permalink}}"></div>
-                <script type="text/javascript">
-                    var duoshuoQuery = {
-                        short_name: "xiaoxiyao"
-                    };
-                </script>
-                <script type="text/javascript" async="" src="{{.Site.BaseURL}}/js/duoshuo.js" charset="UTF-8"></script>
+                {{ partial "duoshuo.html" . }}
             </div>
         </div>
     </div>
