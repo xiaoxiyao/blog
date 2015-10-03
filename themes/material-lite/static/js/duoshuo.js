@@ -57,7 +57,7 @@ var duoshuoQuery = {
             var s = t.createElement("style");
             return s.type = "text/css", d.appendChild(s), e = e.replace(/\}/g, "}\n"), s.styleSheet ? s.styleSheet.cssText = e : s.appendChild(t.createTextNode(e)), s
         }, o.getCookie = function(e) {
-            console.dir(e);
+            console.dir(s);
             for (var a, i, r, n = " " + e + "=", o = t.cookie.split(";"), d = 0; d < o.length; d++)
                 if (a = " " + o[d], i = a.indexOf(n), i >= 0 && i + n.length == (r = a.indexOf("=") + 1)) return decodeURIComponent(a.substring(r, a.length).replace(/\+/g, ""));
             return s
@@ -115,7 +115,7 @@ var duoshuoQuery = {
             },
             T = function() {
                 var e = o.getCookie("duoshuo_token");
-                console.dir(e);
+                //console.dir(e);
                 return e ? {
                     jwt: e
                 } : c.remote_auth ? {
@@ -334,7 +334,7 @@ var duoshuoQuery = {
                             o ? r && r(a): "parseerror" === l ? C.error("解析错误: " + s) : (C.error("出错啦(" + a.code + "): " + a.errorMessage), n && n(a), a.errorTrace && C.error(a.errorTrace)), d(m)
                     }
                     var u = o.getCookie("duoshuo_token");
-                    console.dir(u);
+                    //console.dir(u);
                     i = i || {}, i.v = S.version, u ? i.jwt = u : c.remote_auth && (i.remote_auth = c.remote_auth);
                     var h = f && p && p.parse;
                     if (h) {
