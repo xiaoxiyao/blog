@@ -1,3 +1,6 @@
+var duoshuoQuery = {
+    short_name: "xiaoxiyao"
+};
 ! function(e, t, s) {
     function a() {
         return c.short_name ? g + "//" + c.short_name + "." + S.DOMAIN : S.REMOTE
