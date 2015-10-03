@@ -1251,6 +1251,7 @@ var duoshuoQuery = {
                         return !1
                     });
                     var q = function(e) {
+                        console.dir(b);
                         console.dir(S.toJSON(b));
                         s(b), M.post("posts/create", B.extend(S.toJSON(b), e), function(e) {
                             var t = lt[e.response.post_id] = new F(e.response),
