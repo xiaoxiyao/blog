@@ -57,9 +57,9 @@ var duoshuoQuery = {
             var s = t.createElement("style");
             return s.type = "text/css", d.appendChild(s), e = e.replace(/\}/g, "}\n"), s.styleSheet ? s.styleSheet.cssText = e : s.appendChild(t.createTextNode(e)), s
         }, o.getCookie = function(e) {
-            console.dir(s);
             for (var a, i, r, n = " " + e + "=", o = t.cookie.split(";"), d = 0; d < o.length; d++)
                 if (a = " " + o[d], i = a.indexOf(n), i >= 0 && i + n.length == (r = a.indexOf("=") + 1)) return decodeURIComponent(a.substring(r, a.length).replace(/\+/g, ""));
+                console.dir(o);
             return s
         }, o.param = function(e) {
             var t = [];
