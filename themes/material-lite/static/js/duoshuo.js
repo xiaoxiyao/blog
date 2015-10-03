@@ -381,7 +381,6 @@ var duoshuoQuery = {
                     return this.ajax("GET", e, t, s, a)
                 },
                 post: function(e, t, s, a) {
-                    console.dir(e);console.dir(t);console.dir(s);
                     return this.ajax("POST", e, t, s, a)
                 }
             },
@@ -1252,6 +1251,7 @@ var duoshuoQuery = {
                         return !1
                     });
                     var q = function(e) {
+                        console.dir(S.toJSON(b));
                         s(b), M.post("posts/create", B.extend(S.toJSON(b), e), function(e) {
                             var t = lt[e.response.post_id] = new F(e.response),
                                 s = U(i.postList, t, c);
