@@ -26,20 +26,9 @@
     text-indent: 0;
     clear: none
 }
-#ds-reset span, #ds-reset strong, #ds-reset label, #ds-reset input {
-    display: inline;
-    margin: 0
-}
-#ds-reset textarea:focus, #ds-reset input:focus {
-    outline: none
-}
 #ds-reset ul, #ds-reset ol, #ds-reset ul li, #ds-reset ol li {
     list-style: none;
     display: block
-}
-#ds-reset input, #ds-reset button {
-    -webkit-border-radius: 3px;
-    border-radius: 3px
 }
 #ds-indicator {
     display: none;
@@ -676,10 +665,6 @@
     position: relative;
     width: 100%;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6)
-}
-#ds-thread #ds-reset .ds-post-toolbar span, #ds-thread #ds-reset .ds-post-toolbar input, #ds-thread #ds-reset .ds-post-toolbar label, #ds-thread #ds-reset .ds-post-toolbar a {
-    vertical-align: middle;
-    width: auto
 }
 #ds-thread #ds-reset .ds-post-options {
     position: relative;
