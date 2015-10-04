@@ -38,6 +38,7 @@
     setTimeout(function() {
       $('body').addClass('loaded');
     }, 200);
+    componentHandler.upgradeElement(document.getElementsById('ds-thread'));
   });
     Array.prototype.forEach.call(document.querySelectorAll('.mdl-card__media'), function(el) {
       var link = el.querySelector('a');
