@@ -471,7 +471,7 @@ var duoshuoQuery = {
             W = S.loadRequire = function(t) {
                 if (t.visitor && (!nt.data && t.visitor.user_id && e.Notification && !e.Notification.requestPermission() && A.send({
                         logged_user_id: t.visitor.user_id
-                    }), nt.reset(t.visitor)), t.site && (rt.reset(t.site), D.save("ds_site_" + c.short_name, t.site)), !S.theme && rt.data.theme && n(rt.data.theme), t.lang && (o.extend(z, t.lang), D.save("ds_lang_" + c.short_name, t.lang)), t.stylesheets)
+                    }), nt.reset(t.visitor)), t.site && (rt.reset(t.site), D.save("ds_site_" + c.short_name, t.site)), !S.theme && rt.data.theme, t.lang && (o.extend(z, t.lang), D.save("ds_lang_" + c.short_name, t.lang)), t.stylesheets)
                     for (var s = 0; s < t.stylesheets.length; s++) o.injectStylesheet(t.stylesheets[s]);
                 if (t.nonce && (S.nonce = t.nonce), t.style && o.injectStyle((t.style || "") + S.compileStyle(c.component_style)), t.unread && ot.reset(t.unread), t.warnings)
                     for (var s = 0; s < t.warnings.length; s++) C.warn(t.warnings[s])
