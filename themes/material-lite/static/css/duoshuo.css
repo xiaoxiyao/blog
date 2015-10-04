@@ -19,19 +19,6 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box
 }
-#ds-reset div, #ds-reset ul, #ds-reset ol, #ds-reset li, #ds-reset ul li, #ds-reset ol li, #ds-reset iframe, #ds-reset h1, #ds-reset h2, #ds-reset h3, #ds-reset h4, #ds-reset h5, #ds-reset h6, #ds-reset p, #ds-reset img, #ds-reset blockquote, #ds-reset a, #ds-reset span, #ds-reset pre, #ds-reset code, #ds-reset strong, #ds-reset sub, #ds-reset sup, #ds-reset fieldset, #ds-reset form, #ds-reset label, #ds-reset input, #ds-reset textarea, #ds-reset select {
-    border: 0;
-    padding: 0;
-    margin: 0;
-    vertical-align: baseline;
-    font: inherit;
-    line-height: inherit;
-    background: none;
-    width: auto;
-    float: none;
-    overflow: visible;
-    transition: none
-}
 #ds-reset strong {
     font-weight: bold
 }
@@ -1314,31 +1301,8 @@
     max-height: 300px;
     overflow-y: auto
 }
-/*#ds-wrapper #ds-reset .ds-control-group {
-    margin: 18px 0;
-    position: relative;
-    padding-right: 80px;
-    max-width: 166px
+#ds-wrapper #ds-reset .ds-control-group {
 }
-#ds-wrapper #ds-reset .ds-control-group input {
-    color: #777;
-    width: 100%;
-    font-size: 13px;
-    border: 1px solid #ccc;
-    padding: 4px 80px 6px 6px;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1)
-}
-#ds-wrapper #ds-reset .ds-control-group input:focus {
-    border-color: #08b5fb
-}
-#ds-wrapper #ds-reset .ds-control-group label {
-    font-size: 13px;
-    color: #ccc;
-    letter-spacing: 1px;
-    position: absolute;
-    right: 0;
-    top: 8px
-}*/
 #ds-wrapper #ds-reset tr {
     height: 45px
 }
