@@ -425,7 +425,7 @@ var duoshuoQuery = {
                 smilies: "921e8eda"
             },
             z = {
-                post: "发布",
+                post: "<i class="material-icons" role="presentation">check</i>",
                 posting: "正在发布",
                 settings: "设置",
                 reply: "回复",
@@ -747,7 +747,7 @@ var duoshuoQuery = {
                 t += '<input id="ds-sync-checkbox', e.inline && (t += "-inline"), t += '" type="checkbox" name="repost" ', e.checked && (t += 'checked="checked" '), t += 'value="' + e.repostArray.join(",") + '"> <label for="ds-sync-checkbox', e.inline && (t += "-inline"), t += '">' + z.share_to + "</label>";
                 for (var s in nt.data.repostOptions) t += et.serviceIcon(s, !nt.data.repostOptions[s])
             }
-            return t += "</span>", t += "</div>", t += '<button class="ds-post-button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" type="submit">' + u(z.post) + '</button><div class="ds-toolbar-buttons">', e.options.use_smilies && (t += '<a class="ds-toolbar-button ds-add-emote" title="插入表情"></a>'), e.options.use_images && e.options.parse_html_enabled && (t += '<a class="ds-toolbar-button ds-add-image" title="插入图片"></a>'), t += "</div></div>", t += "</form></div>"
+            return t += "</span>", t += "</div>", t += '<button class="ds-post-button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored mdl-button--icon" type="submit">' + u(z.post) + '</button><div class="ds-toolbar-buttons">', e.options.use_smilies && (t += '<a class="ds-toolbar-button ds-add-emote" title="插入表情"></a>'), e.options.use_images && e.options.parse_html_enabled && (t += '<a class="ds-toolbar-button ds-add-image" title="插入图片"></a>'), t += "</div></div>", t += "</form></div>"
         }, et.serviceBindList = function(e) {
             var t = "",
                 s = e;
@@ -1299,7 +1299,7 @@ var duoshuoQuery = {
                     var a = this;
                     //console.dir(a.el[0]);
                     //console.dir(a.el);
-                    componentHandler.upgradeElement(a.el[0]);
+                    componentHandler.upgradeElement(a.el[0].getElementsByTagName('button')[0]);
                     return a.el.hide().appendTo(t.body).fadeIn(200), P.ie6 && a.el.css("top", V.scrollTop() + 100), a.el.show().find(".ds-dialog").delegate("a.ds-dialog-close", "click", function() {
                         return a.close(), !1
                     }).click(i), Y.keydown(e), B(t.body).click(s), a.close = function() {

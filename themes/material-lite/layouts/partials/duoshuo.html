@@ -1,8 +1,27 @@
 <link rel="stylesheet" href="{{.Site.BaseURL}}/css/duoshuo.css">
+<script type="text/javascript">
+    function upgradeMdl(node) {
+        var classList = node.classList;
+        var i = classList.length;
+        while (i--) {
+            var cls = classList[i];
+            if(cls == 'mdl-js-button' || cls == 'mdl-js-textfield' || cls == 'mdl-js-ripple-effect')
+            {
+                componentHandler.upgradeElement(node);
+            }
+        }
+        if (node.hasChildNodes) {
+            cNodes = node.childNodes;
+            for (var i = 0; i < cNodes.length; i++) {
+                var cNode = cNodes[i];
+                if (cNode.nodeType == 1) {
+                    upgradeMdl(cNode);
+                }
+            }
+        }
+    }
+</script>
 
 <div class="ds-thread" data-thread-key="{{.Date}}" data-title="{{.Title}}" data-url="{{.Permalink}}"></div>
 
 <script type="text/javascript" async="" src="{{.Site.BaseURL}}/js/duoshuo.js" charset="UTF-8"></script>
-<script type="text/javascript">
-    componentHandler.upgradeElement(document.getElementById('ds-thread'));
-</script>
