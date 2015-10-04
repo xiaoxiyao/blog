@@ -357,7 +357,8 @@
     clear: both;
     position: relative;
     overflow: visible;
-    _zoom: 1
+    _zoom: 1;
+    width: 100%;
 }
 #ds-thread #ds-reset a {
     cursor: pointer;
