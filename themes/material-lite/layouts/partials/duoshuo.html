@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="{{.Site.BaseURL}}/css/duoshuo.css">
 <script type="text/javascript">
     function upgradeMdl(node) {
-        console.log(node.nodeName);
+        //console.log(node.nodeName);
         var classList = node.classList;
         var i = classList.length;
         while (i--) {
@@ -9,13 +9,13 @@
             if(cls == 'mdl-js-button' || cls == 'mdl-js-textfield' || cls == 'mdl-js-ripple-effect')
             {
                 componentHandler.upgradeElement(node);
-                console.dir(node);
+                break;
             }
         }
         if (node.hasChildNodes) {
             var cNodes = node.childNodes;
             var i = cNodes.length;
-            console.log(i);
+            //console.log(i);
             while(i--){
                 var cNode = cNodes[i];
                 if (cNode.nodeType == 1) {
