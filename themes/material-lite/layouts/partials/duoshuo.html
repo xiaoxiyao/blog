@@ -13,8 +13,10 @@
             }
         }
         if (node.hasChildNodes) {
-            cNodes = node.childNodes;
-            for (var i = 0; i < cNodes.length; i++) {
+            var cNodes = node.childNodes;
+            var i = cNodes.length;
+            console.log(i);
+            while(i--){
                 var cNode = cNodes[i];
                 if (cNode.nodeType == 1) {
                     upgradeMdl(cNode);
