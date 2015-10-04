@@ -83,9 +83,6 @@
 #ds-reset .ds-avatar {
     box-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
     position: relative;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    background-color: #fff;
     float: left
 }
 #ds-reset .ds-avatar img {
@@ -94,8 +91,8 @@
     height: 50px;
     max-width: none;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.22);
-    -webkit-border-radius: 3px;
-    border-radius: 3px
+    -webkit-border-radius: 50%;
+    border-radius: 50%
 }
 #ds-reset .ds-avatar .ds-service-icon {
     display: block;
@@ -1057,9 +1054,7 @@
     border: 1px solid #ccc
 }
 #ds-thread #ds-reset .ds-powered-by {
-    font-size: 12px;
-    text-align: right;
-    padding: 10px 0
+    display: none;
 }
 #ds-thread #ds-reset .ds-powered-by a {
     color: #999;

@@ -441,7 +441,7 @@ var duoshuoQuery = {
                 earliest: "最早",
                 hottest: "最热",
                 share_to: "分享到:",
-                leave_a_message: "说点什么吧…",
+                leave_a_message: "我有话说",
                 no_comments_yet: "还没有评论，沙发等你来抢",
                 repost_reason: "请输入转发理由",
                 hot_posts_title: "被顶起来的评论",
@@ -669,7 +669,7 @@ var duoshuoQuery = {
                 "service[]": e.service
             }) : (t += '<label><input type="checkbox" name="service[]" value="weibo"', nt.data.social_uid.weibo && (t += ' checked="checked"'), t += ' /><span class="ds-service-icon ds-weibo"></span>新浪微博</label><label><input type="checkbox" name="service[]" value="qqt"', nt.data.social_uid.qq && (t += ' checked="checked"'), t += ' /><span class="ds-service-icon ds-qqt"></span>腾讯微博</label>'), t += '<button type="submit">' + z.repost + "</button></div></form>"
         }, et.dialog = function(e) {
-            var t = '<div class="ds-dialog"><div class="ds-dialog-inner ds-rounded"><div class="ds-dialog-body">' + e + '</div><div class="ds-dialog-footer"><a href="http://duoshuo.com/" target="_blank" class="ds-logo"></a><span>社会化评论框</span></div><a class="ds-dialog-close" href="javascript:void(0)" title="关闭"></a></div></div>';
+            var t = '<div class="ds-dialog"><div class="ds-dialog-inner ds-rounded"><div class="ds-dialog-header"><a class="ds-dialog-close" href="javascript:void(0)" title="关闭"></a></div><div class="ds-dialog-body">' + e + '</div></div></div>';
             return t
         }, et.hotPosts = function(e) {
             var t = '<div class="ds-header ds-gradient-bg">' + u(z.hot_posts_title) + "</div><ul>",
