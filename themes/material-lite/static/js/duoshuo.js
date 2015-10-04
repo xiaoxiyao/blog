@@ -1597,6 +1597,7 @@ var duoshuoQuery = {
                     })), S.thread = a, ot.data !== s && ot.trigger("reset"), r() || A.send({
                         visit_thread_id: a.threadId
                     })
+                    console.dir(d);console.dir(d[0]);
                 },
                 onMessage: function(e) {
                     U(this.postList.el, new F(e), this.options)
