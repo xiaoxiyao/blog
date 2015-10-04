@@ -35,9 +35,9 @@ var duoshuoQuery = {
         return 0 == nt.data.user_id
     }
 
-    function n(e) {
-        S.theme = e, "none" != e && o.injectStylesheet(S.STATIC_URL + "/styles/embed" + (e ? "." + e + ".css?" + U[e] : "." + short_name) + ".css")
-    }
+    // function n(e) {
+    //     S.theme = e, "none" != e && o.injectStylesheet(S.STATIC_URL + "/styles/embed" + (e ? "." + e + ".css?" + U[e] : "." + short_name) + ".css")
+    // }
     var o = {},
         d = t.getElementsByTagName("head")[0] || t.getElementsByTagName("body")[0];
     if (o.extend = function(e, t) {
