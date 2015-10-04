@@ -1297,9 +1297,9 @@ var duoshuoQuery = {
                         return a.close(), !1
                     }
                     var a = this;
-                    console.dir(a.el[0]);
+                    //console.dir(a.el[0]);
                     //console.dir(a.el);
-                    //componentHandler.upgradeElement(a.el);
+                    componentHandler.upgradeElement(a.el[0]);
                     return a.el.hide().appendTo(t.body).fadeIn(200), P.ie6 && a.el.css("top", V.scrollTop() + 100), a.el.show().find(".ds-dialog").delegate("a.ds-dialog-close", "click", function() {
                         return a.close(), !1
                     }).click(i), Y.keydown(e), B(t.body).click(s), a.close = function() {
