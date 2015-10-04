@@ -746,40 +746,7 @@
     margin: 7px 2px 7px 3px
 }
 #ds-thread #ds-reset .ds-post-button {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 32px;
-    width: 100px;
-    text-align: center;
-    text-shadow: 0 1px 0 #fff;
-    color: #555;
-    font-size: 14px;
-    font-weight: bold;
-    border: 1px solid #ccc;
-    border-bottom-color: #aaa;
-    border-bottom-right-radius: 3px;
-    -webkit-border-bottom-right-radius: 3px;
-    background-color: #e6e6e6;
-    background-repeat: no-repeat;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fcfcfc), color-stop(25%, #fcfcfc), to(#e6e6e6));
-    background-image: -webkit-linear-gradient(#fcfcfc, #fcfcfc 25%, #e6e6e6);
-    background-image: -moz-linear-gradient(top, #fcfcfc, #fcfcfc 25%, #e6e6e6);
-    background-image: -ms-linear-gradient(#fcfcfc, #fcfcfc 25%, #e6e6e6);
-    background-image: linear-gradient(#fcfcfc, #fcfcfc 25%, #e6e6e6);
-    -webkit-transition: all .15s linear;
-    -moz-transition: all .15s linear;
-    transition: all .15s linear;
-    box-shadow: inset 0 0 1px #fff
-}
-#ds-thread #ds-reset .ds-post-button:hover {
-    background-position: 0 -15px;
-    color: #333
-}
-#ds-thread #ds-reset .ds-post-button:active {
-    -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05)
+
 }
 #ds-thread #ds-reset .ds-comments-info {
     width: 100%;

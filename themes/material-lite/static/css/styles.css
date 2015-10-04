@@ -7,7 +7,7 @@ body {
 body {
   font-family: "Helvetica Neue",Helvetica,Tahoma,Arial,STXihei,"Microsoft YaHei","微软雅黑",sans-serif !important;
 }
-h1,h2,h3,h4,h5{
+h1,h2,h3,h4,h5,.mdl-button{
     font-family: inherit;
 }
 .label{
