@@ -67,9 +67,6 @@
     -webkit-border-bottom-left-radius: 3px;
     -webkit-border-bottom-right-radius: 3px
 }
-#ds-reset .ds-gradient-bg {
-    background: url("//static.duoshuo.com/images/bg_sprites.png") 0 -60px repeat-x
-}
 #ds-reset .ds-avatar {
     position: relative;
     float: left
@@ -606,7 +603,6 @@
 }
 #ds-thread #ds-reset .ds-textarea-wrapper {
     position: relative;
-    padding-right: 20px;
     overflow: hidden
 }
 #ds-thread #ds-reset .ds-textarea-wrapper textarea {
@@ -624,10 +620,8 @@
 }
 #ds-thread #ds-reset .ds-textarea-wrapper textarea, #ds-thread #ds-reset .ds-textarea-wrapper .ds-hidden-text {
     display: block;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 13px;
     line-height: 20px;
-    border: none
 }
 #ds-thread #ds-reset .ds-post-toolbar {
     position: relative;
@@ -635,14 +629,6 @@
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6)
 }
 #ds-thread #ds-reset .ds-post-options {
-    position: relative;
-    margin-right: 100px;
-    height: 30px;
-    border: 1px solid #ccc;
-    border-right: none;
-    border-bottom-color: #aaa;
-    border-bottom-left-radius: 3px;
-    -webkit-border-bottom-left-radius: 3px
 }
 #ds-thread #ds-reset .ds-toolbar-buttons {
 }
@@ -805,9 +791,6 @@
     border: 1px solid #ddd;
     color: #666
 }
-#ds-thread #ds-reset .ds-comment-body a {
-    color: #777
-}
 #ds-thread #ds-reset .ds-comment-body a:hover {
     color: #555
 }
@@ -893,6 +876,7 @@
     line-height: 1.5em
 }
 #ds-thread #ds-reset .ds-comment-footer a {
+    color: #777;
 }
 #ds-thread #ds-reset .ds-comment-footer > span{
     margin-right: 1rem;
