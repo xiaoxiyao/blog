@@ -669,7 +669,7 @@ var duoshuoQuery = {
                 "service[]": e.service
             }) : (t += '<label><input type="checkbox" name="service[]" value="weibo"', nt.data.social_uid.weibo && (t += ' checked="checked"'), t += ' /><span class="ds-service-icon ds-weibo"></span>新浪微博</label><label><input type="checkbox" name="service[]" value="qqt"', nt.data.social_uid.qq && (t += ' checked="checked"'), t += ' /><span class="ds-service-icon ds-qqt"></span>腾讯微博</label>'), t += '<button type="submit">' + z.repost + "</button></div></form>"
         }, et.dialog = function(e) {
-            var t = '<div class="ds-dialog"><div class="ds-dialog-inner ds-rounded"><div class="ds-dialog-header"><a class="ds-dialog-close" href="javascript:void(0)" title="关闭"></a></div><div class="ds-dialog-body">' + e + '</div></div></div>';
+            var t = '<div class="ds-dialog"><div class="ds-dialog-inner ds-rounded"><div class="ds-dialog-header"><a class="ds-dialog-close mdl-button mdl-js-button mdl-button--icon mdl-button--colored" href="javascript:void(0)" title="关闭"><i class="material-icons">close</i></a></div><div class="ds-dialog-body">' + e + '</div></div></div>';
             return t
         }, et.hotPosts = function(e) {
             var t = '<div class="ds-header ds-gradient-bg">' + u(z.hot_posts_title) + "</div><ul>",
