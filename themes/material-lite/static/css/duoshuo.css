@@ -391,17 +391,10 @@
     text-align: right
 }
 #ds-thread #ds-reset a.ds-like-thread-button {
-    color: #555;
-    padding: 4px 8px;
-    border: 1px solid #ccc;
-    border-bottom-color: #aaa;
-    box-shadow: inset 0 0 1px #fff;
-    margin-right: 15px;
+    text-decoration: none;
 }
-#ds-thread #ds-reset a.ds-like-thread-button .ds-icon-heart {
-    position: relative;
-    top: -2px;
-    opacity: 1
+#ds-thread #ds-reset a.ds-like-thread-button i.material-icons {
+    vertical-align: middle;
 }
 #ds-thread #ds-reset a.ds-like-thread-button.ds-thread-liked i.material-icons{
     color:#e91e63;
@@ -411,9 +404,6 @@
 }
 #ds-thread #ds-reset .ds-thread-cancel-like {
     display: none
-}
-#ds-thread #ds-reset a.ds-thread-liked {
-    background: #e9e9e9
 }
 #ds-thread #ds-reset a.ds-thread-liked:hover .ds-thread-cancel-like {
     display: inline
@@ -624,6 +614,7 @@
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6)
 }
 #ds-thread #ds-reset .ds-post-options {
+    display: none;
 }
 #ds-thread #ds-reset .ds-toolbar-buttons {
 }

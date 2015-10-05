@@ -600,7 +600,7 @@ var duoshuoQuery = {
                 }
             },
             X = ["weibo", "qq", "renren", "douban"],
-            K = ["kaixin", "netease", "sohu", "baidu", "google"],
+            K = ["kaixin", "netease", "baidu", "google"],
             et = S.templates = {
                 userAnchor: function(e) {
                     return e.url ? '<a rel="nofollow author" target="_blank" href="' + _(e.url) + '">' + _(e.name) + "</a>" : _(e.name)
@@ -701,7 +701,7 @@ var duoshuoQuery = {
             return t += "</div>"
         }, et.meta = function(e) {
             var t = '<div class="ds-meta"><a href="javascript:void(0)" class="ds-like-thread-button';
-            return e.user_vote > 0 && (t += " ds-thread-liked"), t += '"><i class="material-icons">favorite</i> <span class="ds-thread-like-text">', t += e.user_vote > 0 ? "已喜欢" : "喜欢", t += '</span><span class="ds-thread-cancel-like">取消喜欢</span></a><span class="ds-like-panel"></span></div>'
+            return e.user_vote > 0 && (t += " ds-thread-liked"), t += '"><i class="material-icons">thumb_up</i> <span class="ds-thread-like-text">', t += e.user_vote > 0 ? "已赞" : "赞", t += '</span><span class="ds-thread-cancel-like">取消赞</span></a><span class="ds-like-panel"></span></div>'
         }, et.notify = function(e) {
             var t = '<div id="ds-reset"><a class="ds-logo" href="http://duoshuo.com/" target="_blank" title="多说"></a><ul class="ds-notify-unread"><li';
             return e.comments || (t += ' style="display:none;"'), t += '><a data-type="unread-comments" href="javascript:void(0);">你有' + e.comments + "条新回复</a></li><li", e.notifications || (t += ' style="display:none;"'), t += '><a data-type="unread-notifications" href="javascript:void(0);">你有' + e.notifications + "条系统消息</a></li></ul></div>"
@@ -1309,7 +1309,7 @@ var duoshuoQuery = {
                     }, a
                 }
             }), et.likePanel = function(e) {
-                return e.likes ? '<span class="ds-highlight">' + e.likes + "</span> 人喜欢" : ""
+                return e.likes ? '<span class="ds-highlight">' + e.likes + "</span> 人赞" : ""
             }, st.Meta = function(e) {
                 this.embedThread = e
             }, st.Meta.prototype = {
@@ -1337,7 +1337,7 @@ var duoshuoQuery = {
                         if (M.post("threads/vote", {
                                 thread_id: n.embedThread.threadId,
                                 vote: p ? 0 : 1
-                            }, r), l.toggleClass("ds-thread-liked"), l.find(".ds-thread-like-text").text(p ? "喜欢" : "已喜欢"), p) return n.tooltip && c(a), !1;
+                            }, r), l.toggleClass("ds-thread-liked"), l.find(".ds-thread-like-text").text(p ? "赞" : "已赞"), p) return n.tooltip && c(a), !1;
                         if (n.tooltip === s) {
                             var h = et.likeTooltip({
                                 services: {
