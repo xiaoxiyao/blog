@@ -911,9 +911,10 @@
     line-height: 1.5em
 }
 #ds-thread #ds-reset .ds-comment-footer a {
-    margin-right: 1rem;
 }
-#ds-thread #ds-reset .ds-comment-actions a {
+#ds-thread #ds-reset .ds-comment-footer > span{
+    margin-right: 1rem;
+    color: #999;
 }
 #ds-thread #ds-reset .ds-comment-actions a .ds-icon {
     position: relative;
@@ -981,7 +982,6 @@
 #ds-thread #ds-reset .ds-time {
     font-size: 12px;
     *font-size: 12px;
-    margin-right: 8px;
     color: #999;
     _zoom: 1
 }
