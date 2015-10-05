@@ -881,6 +881,7 @@
 #ds-thread #ds-reset .ds-comment-footer > span{
     margin-right: 1rem;
     color: #999;
+    font-size: 13px;
 }
 #ds-thread #ds-reset .ds-comment-actions a .ds-icon {
     position: relative;
