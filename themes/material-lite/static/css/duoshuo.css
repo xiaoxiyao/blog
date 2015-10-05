@@ -717,7 +717,8 @@
 #ds-thread #ds-reset .ds-sort a {
     color: #999;
     padding: 0 4px;
-    margin: 0 2px
+    margin: 0 2px;
+    cursor: pointer;
 }
 #ds-thread #ds-reset .ds-sort a:hover {
     color: #333
