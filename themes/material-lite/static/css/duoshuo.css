@@ -538,7 +538,7 @@
     margin: 0 0 0 6px
 }
 #ds-thread #ds-reset .ds-login-buttons .ds-more-services {
-    color: #d32 !important;
+    color: rgb(0,150,136) !important;
     line-height: 16px;
     display: block
 }
@@ -663,23 +663,8 @@
     -webkit-border-bottom-left-radius: 3px
 }
 #ds-thread #ds-reset .ds-toolbar-buttons {
-    position: absolute;
-    top: 5px;
-    left: 6px
 }
 #ds-thread #ds-reset .ds-toolbar-button {
-    display: block;
-    width: 19px !important;
-    height: 19px;
-    float: left;
-    margin-right: 4px;
-    background: transparent url("//static.duoshuo.com/images/sprites.png") no-repeat;
-    _background-image: url("//static.duoshuo.com/images/sprites.gif");
-    vertical-align: middle;
-    opacity: .6;
-    -webkit-transition: opacity .15s linear;
-    -moz-transition: opacity .15s linear;
-    transition: opacity .15s linear
 }
 #ds-thread #ds-reset .ds-toolbar-button:hover {
     opacity: 1
@@ -689,9 +674,6 @@
 }
 #ds-thread #ds-reset .ds-add-image:hover {
     background-position: 0 -66px
-}
-#ds-thread #ds-reset .ds-add-emote {
-    background-position: 0 -12px
 }
 #ds-thread #ds-reset .ds-add-emote:hover {
     background-position: 0 -30px
@@ -741,7 +723,7 @@
     color: #333
 }
 #ds-thread #ds-reset .ds-sort a.ds-current, #ds-thread #ds-reset .ds-sort a:active {
-    color: #d32
+    color: rgb(0,150,136)
 }
 #ds-thread #ds-reset ul.ds-comments-tabs .ds-highlight {
     margin: 0 2px 0 0
@@ -1239,6 +1221,7 @@
     height: 45px
 }
 #ds-wrapper #ds-reset button {
+    float: right;
 }
 #ds-wrapper #ds-reset h2 {
     display: block;
@@ -1246,9 +1229,6 @@
     font-size: 16px;
     margin: 0 0 15px 0;
     color: #555
-}
-#ds-wrapper #ds-reset .ds-dialog-header{
-    float: right;
 }
 #ds-wrapper #ds-reset .ds-dialog-body {
     padding: 0 30px 25px;
