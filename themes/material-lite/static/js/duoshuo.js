@@ -681,7 +681,6 @@ var duoshuoQuery = {
                 });
             return t += "</ul>"
         }, et.likePost = function(e) {
-            console.dir(e);
             var t = '<a class="ds-post-likes mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="javascript:void(0);"><i class="material-icons">favorite</i></a><span>' + z.like;
             return e.likes > 0 && (t += "(" + e.likes + ")"),t += "</span>"
         }, et.likeTooltip = function(e) {
@@ -744,7 +743,7 @@ var duoshuoQuery = {
             return t
         }, et.replybox = function(e) {
             var t = '<div class="ds-replybox"><a class="ds-avatar"';
-            if (t += r() ? ' href="javascript:void(0);" onclick="return false"' : ' href="' + S.REMOTE + "/settings/avatar/" + x(T()) + '" target="_blank" title="设置头像"', t += ">" + et.avatarImg(nt.data) + '</a><form method="post">' + tt(e.params) + '<div class="ds-textarea-wrapper ds-rounded-top"><textarea name="message" title="Ctrl+Enter快捷提交" placeholder="' + u(z.leave_a_message) + '"></textarea><pre class="ds-hidden-text"></pre>', t += "</div>", t += '<div class="ds-post-toolbar"><div class="ds-post-options ds-gradient-bg"><span class="ds-sync">', !r() && nt.data.repostOptions) {
+            if (t += r() ? ' href="javascript:void(0);" onclick="return false"' : ' href="' + S.REMOTE + "/settings/avatar/" + x(T()) + '" target="_blank" title="设置头像"', t += ">" + et.avatarImg(nt.data) + '</a><form method="post">' + tt(e.params) + '<div class="ds-textarea-wrapper mdl-textfield mdl-js-textfield mdl-textfield--floating-label"><textarea class="mdl-textfield__input" name="message" title="Ctrl+Enter快捷提交" placeholder=""></textarea><label class="mdl-textfield__label" for="">' + u(z.leave_a_message) + '</label>', t += "</div>", t += '<div class="ds-post-toolbar"><div class="ds-post-options ds-gradient-bg"><span class="ds-sync">', !r() && nt.data.repostOptions) {
                 t += '<input id="ds-sync-checkbox', e.inline && (t += "-inline"), t += '" type="checkbox" name="repost" ', e.checked && (t += 'checked="checked" '), t += 'value="' + e.repostArray.join(",") + '"> <label for="ds-sync-checkbox', e.inline && (t += "-inline"), t += '">' + z.share_to + "</label>";
                 for (var s in nt.data.repostOptions) t += et.serviceIcon(s, !nt.data.repostOptions[s])
             }

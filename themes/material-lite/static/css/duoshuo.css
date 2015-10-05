@@ -61,12 +61,6 @@
 #ds-reset .ds-highlight {
     color: #d32 !important
 }
-#ds-reset .ds-rounded-top {
-    -webkit-border-top-right-radius: 3px;
-    -webkit-border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    border-top-left-radius: 3px
-}
 #ds-reset .ds-rounded-bottom {
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
@@ -612,22 +606,10 @@
 }
 #ds-thread #ds-reset .ds-textarea-wrapper {
     position: relative;
-    border: 1px solid #ccc;
-    border-bottom: none;
     padding-right: 20px;
-    background: #fff url("//static.duoshuo.com/images/bg_sprites.png") 0 -90px repeat-x;
     overflow: hidden
 }
 #ds-thread #ds-reset .ds-textarea-wrapper textarea {
-    box-shadow: none;
-    -webkit-appearance: none;
-    overflow: auto;
-    padding: 10px;
-    height: 54px;
-    margin: 0;
-    resize: none;
-    color: #999;
-    width: 100%
 }
 #ds-thread #ds-reset .ds-textarea-wrapper textarea:focus {
     color: #333
@@ -921,8 +903,9 @@
     top: -1px
 }
 #ds-thread #ds-reset .ds-user-name {
-    color: #777;
+    color: #616161;
     font-size: 13px;
+    font-weight: 400;
     margin-right: 8px
 }
 #ds-thread #ds-reset .ds-post-liked .ds-icon-like {
@@ -935,7 +918,7 @@
     display: block
 }
 #ds-thread #ds-reset .ds-reply-active .ds-post-reply {
-    color: #333
+    color: rgb(0,150,136)
 }
 #ds-thread #ds-reset .ds-reply-active .ds-post-reply .ds-icon {
     opacity: 1
