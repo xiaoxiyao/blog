@@ -681,8 +681,9 @@ var duoshuoQuery = {
                 });
             return t += "</ul>"
         }, et.likePost = function(e) {
-            var t = '<a class="ds-post-likes mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="javascript:void(0);"><i class="material-icons">favorite</i>' + z.like;
-            return e.likes > 0 && (t += "(" + e.likes + ")"), t += "</a>"
+            console.dir(e);
+            var t = '<a id="likes-'+e.post_id+'" class="ds-post-likes mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="javascript:void(0);"><i class="material-icons">favorite</i></a><span class="mdl-tooltip" for="likes-'+e.post_id+'">' + z.like;
+            return e.likes > 0 && (t += "(" + e.likes + ")"), t += "</span>"
         }, et.likeTooltip = function(e) {
             var t = '<div class="ds-like-tooltip ds-rounded"><p>很高兴你能喜欢，分享一下吧：</p><ul>';
             for (var s in e.services) t += '<li><a class="ds-share-to-' + s + " ds-service-link ds-" + s + '" href="' + a() + "/share-proxy/?" + o.param({
