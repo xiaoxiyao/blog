@@ -683,7 +683,7 @@ var duoshuoQuery = {
         }, et.likePost = function(e) {
             console.dir(e);
             var t = '<a class="ds-post-likes mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="javascript:void(0);"><i class="material-icons">favorite</i></a>' + z.like;
-            return e.likes > 0 && (t += "(" + e.likes + ")")
+            return e.likes > 0 && (t += "(" + e.likes + ")"),t
         }, et.likeTooltip = function(e) {
             var t = '<div class="ds-like-tooltip ds-rounded"><p>很高兴你能喜欢，分享一下吧：</p><ul>';
             for (var s in e.services) t += '<li><a class="ds-share-to-' + s + " ds-service-link ds-" + s + '" href="' + a() + "/share-proxy/?" + o.param({
