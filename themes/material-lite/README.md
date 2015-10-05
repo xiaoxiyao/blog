@@ -2,11 +2,11 @@
 
 * 将一些静态资源的引用从google服务器改为[bootcdn](http://www.bootcdn.cn/)
 * 移除roboto字体引用，改为``font-family: "Helvetica Neue",Helvetica,Tahoma,Arial,STXihei,"Microsoft YaHei","微软雅黑",sans-serif !important;``
-* 添加[materialdesignicons](https://github.com/Templarian/MaterialDesign)
 * 添加loadding，更换背景，更改logo（部分资源来源于网络）
 * 更改一些布局与样式，添加导航栏
 * 修改分享功能
 * 添加多说评论系统，并修改一些样式
+* 添加了自定义图标集[阿里妈妈](http://www.iconfont.cn/)
 
 # Material Design Lite inspired theme for hugo
 
