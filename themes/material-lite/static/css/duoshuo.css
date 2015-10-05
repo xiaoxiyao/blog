@@ -328,7 +328,7 @@
     _zoom: 1;
     width: 100%;
 }
-#ds-thread #ds-reset a {
+#ds-thread #ds-reset .ds-social-links a {
     cursor: pointer;
     text-decoration: none;
     color: #777;
@@ -910,12 +910,9 @@
     line-height: 1.5em
 }
 #ds-thread #ds-reset .ds-comment-footer a {
-    margin: 0 6px 0 0;
-    padding: 0 6px 0 0
+    margin-right: 1rem;
 }
 #ds-thread #ds-reset .ds-comment-actions a {
-    font-size: 12px;
-    color: #999
 }
 #ds-thread #ds-reset .ds-comment-actions a .ds-icon {
     position: relative;
