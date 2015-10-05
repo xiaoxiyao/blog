@@ -700,8 +700,8 @@ var duoshuoQuery = {
                 for (var a, i = -1, r = s.length - 1; r > i;) a = s[i += 1], t += '<a class="ds-' + a + '" href="' + Z.loginUrl(a) + '">' + S.sourceName[a] + "</a>";
             return t += "</div>"
         }, et.meta = function(e) {
-            var t = '<div class="ds-meta"><a href="javascript:void(0)" class="ds-like-thread-button ds-rounded';
-            return e.user_vote > 0 && (t += " ds-thread-liked"), t += '"><span class="ds-icon ds-icon-heart"></span> <span class="ds-thread-like-text">', t += e.user_vote > 0 ? "已喜欢" : "喜欢", t += '</span><span class="ds-thread-cancel-like">取消喜欢</span></a><span class="ds-like-panel"></span></div>'
+            var t = '<div class="ds-meta"><a href="javascript:void(0)" class="ds-like-thread-button';
+            return e.user_vote > 0 && (t += " ds-thread-liked"), t += '"><i class="material-icons">favorite</i> <span class="ds-thread-like-text">', t += e.user_vote > 0 ? "已喜欢" : "喜欢", t += '</span><span class="ds-thread-cancel-like">取消喜欢</span></a><span class="ds-like-panel"></span></div>'
         }, et.notify = function(e) {
             var t = '<div id="ds-reset"><a class="ds-logo" href="http://duoshuo.com/" target="_blank" title="多说"></a><ul class="ds-notify-unread"><li';
             return e.comments || (t += ' style="display:none;"'), t += '><a data-type="unread-comments" href="javascript:void(0);">你有' + e.comments + "条新回复</a></li><li", e.notifications || (t += ' style="display:none;"'), t += '><a data-type="unread-notifications" href="javascript:void(0);">你有' + e.notifications + "条系统消息</a></li></ul></div>"
