@@ -356,14 +356,6 @@
     position: absolute;
     z-index: 9999;
     background-color: #fcfcfc;
-    background-repeat: repeat-x;
-    background-image: -khtml-gradient(linear, left top, left bottom, from(#fcfcfc), to(#f9f9f9));
-    background: -moz-linear-gradient(top, #fcfcfc 0, #f9f9f9 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fcfcfc), color-stop(100%, #f9f9f9));
-    background: -webkit-linear-gradient(top, #fcfcfc 0, #f9f9f9 100%);
-    background: -ms-linear-gradient(top, #fcfcfc 0, #f9f9f9 100%);
-    background: linear-gradient(top, #fcfcfc 0, #f9f9f9 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f9f9f9', GradientType=0);
     border: 1px solid #aaa;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
     text-shadow: 0 1px 0 #fff;
@@ -385,13 +377,20 @@
 #ds-thread #ds-reset .ds-like-tooltip .ds-like-tooltip-footer {
     text-align: right
 }
+#ds-thread #ds-reset .ds-like-thread {
+    display: inline-block;
+    margin-right: 2rem;
+}
+#ds-thread #ds-reset .ds-like-thread span{
+    line-height: 32px;
+}
 #ds-thread #ds-reset .ds-thread-cancel-like {
     display: none
 }
-#ds-thread #ds-reset a.ds-thread-liked:hover .ds-thread-cancel-like {
+#ds-thread #ds-reset .ds-thread-liked:hover .ds-thread-cancel-like {
     display: inline
 }
-#ds-thread #ds-reset a.ds-thread-liked:hover .ds-thread-like-text {
+#ds-thread #ds-reset .ds-thread-liked:hover .ds-thread-like-text {
     display: none
 }
 #ds-thread #ds-reset #ds-hot-posts {
