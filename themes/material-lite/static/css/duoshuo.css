@@ -383,6 +383,7 @@
 }
 #ds-thread #ds-reset .ds-like-thread span{
     line-height: 32px;
+    vertical-align: middle;
 }
 #ds-thread #ds-reset .ds-thread-cancel-like {
     display: none
@@ -565,18 +566,15 @@
 }
 #ds-thread #ds-reset .ds-post-toolbar {
     position: relative;
-    width: 100%;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6)
+    display: inline-block;
 }
 #ds-thread #ds-reset .ds-post-options {
     display: none;
 }
 #ds-thread #ds-reset .ds-toolbar-buttons {
+    display: inline-block;
 }
 #ds-thread #ds-reset .ds-toolbar-button {
-}
-#ds-thread #ds-reset .ds-toolbar-button:hover {
-    opacity: 1
 }
 #ds-thread #ds-reset .ds-add-image {
     background-position: 0 -48px
@@ -608,7 +606,7 @@
     margin: 7px 2px 7px 3px
 }
 #ds-thread #ds-reset .ds-post-button {
-
+    display: inline-block;
 }
 #ds-thread #ds-reset .ds-comments-info {
     width: 100%;
