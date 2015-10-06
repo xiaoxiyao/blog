@@ -700,7 +700,7 @@ var duoshuoQuery = {
                 for (var a, i = -1, r = s.length - 1; r > i;) a = s[i += 1], t += '<a class="ds-' + a + '" href="' + Z.loginUrl(a) + '">' + S.sourceName[a] + "</a>";
             return t += "</div>"
         }, et.meta = function(e) {
-            var t = '<div class="ds-meta"><a href="javascript:void(0)" class="ds-like-thread-button';
+            var t = '<div class="ds-meta"><a href="javascript:void(0)" class="ds-like-thread';
             return e.user_vote > 0 && (t += " ds-thread-liked"), t += '"><i class="material-icons">thumb_up</i> <span class="ds-thread-like-text">', t += e.user_vote > 0 ? "已赞" : "赞", t += '</span><span class="ds-thread-cancel-like">取消赞</span></a><span class="ds-like-panel"></span></div>'
         }, et.notify = function(e) {
             var t = '<div id="ds-reset"><a class="ds-logo" href="http://duoshuo.com/" target="_blank" title="多说"></a><ul class="ds-notify-unread"><li';
@@ -1361,7 +1361,7 @@ var duoshuoQuery = {
                     var n = this,
                         o = n.embedThread.model,
                         d = n.el = B(et.meta(o.toJSON())),
-                        l = d.find(".ds-like-thread-button");
+                        l = d.find(".ds-like-thread");
                     return l.click(a), n.resetLikePanel(), r() && d.hide(), n
                 },
                 resetLikePanel: function() {
