@@ -439,9 +439,7 @@
 #ds-thread #ds-reset .ds-account-control ul li a {
     text-decoration: none;
     color: rgba(0,0,0,.87);
-}
-#ds-thread #ds-reset .ds-account-control ul li a:hover {
-    color: #555
+    display: block;
 }
 #ds-thread #ds-reset .ds-alert {
     margin: .5em 0;

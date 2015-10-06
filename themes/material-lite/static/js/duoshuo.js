@@ -684,14 +684,14 @@ var duoshuoQuery = {
             var t = '<a class="ds-post-likes mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="javascript:void(0);"><i class="material-icons">favorite</i></a><span>' + z.like;
             return e.likes > 0 && (t += "(" + e.likes + ")"),t += "</span>"
         }, et.likeTooltip = function(e) {
-            var t = '<div class="ds-like-tooltip ds-rounded"><p>很高兴你能喜欢，分享一下吧：</p><ul>';
+            var t = '<div class="ds-like-tooltip mdl-card mdl-shadow--2dp"><div class="mdl-card__title">很高兴你能喜欢，分享一下吧：</div><div class="mdl-card__supporting-text"><ul>';
             for (var s in e.services) t += '<li><a class="ds-share-to-' + s + " ds-service-link ds-" + s + '" href="' + a() + "/share-proxy/?" + o.param({
                 service: s,
                 thread_id: e.thread_id
             }) + '">' + e.services[s] + "</a></li>";
-            return t += '</ul><p class="ds-like-tooltip-footer"><a class="ds-like-tooltip-close">算了</a></p></div>'
+            return t += '</ul></div><div class="ds-like-tooltip-footer mdl-card__actions"><a class="ds-like-tooltip-close">算了</a></div></div>'
         }, et.loginButtons = function() {
-            var e = '<div class="ds-login-buttons"><p>社交帐号登录:</p><div class="ds-social-links"><ul class="ds-service-list">' + et.serviceList(X) + '<li><a class="ds-more-services" href="javascript:void(0)">更多»</a></li></ul><ul class="ds-service-list ds-additional-services">' + et.serviceList(K) + "</ul></div></div>";
+            var e = '<div class="ds-login-buttons"><p>社交帐号登录:</p><div class="ds-social-links"><ul class="ds-service-list clearfix">' + et.serviceList(X) + '<li><a class="ds-more-services" href="javascript:void(0)">更多»</a></li></ul><ul class="ds-service-list ds-additional-services">' + et.serviceList(K) + "</ul></div></div>";
             return e
         }, et.loginWidget = function(e) {
             var t = '<div class="ds-icons-32">',
