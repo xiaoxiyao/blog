@@ -397,7 +397,7 @@
     vertical-align: middle;
 }
 #ds-thread #ds-reset a.ds-like-thread-button.ds-thread-liked i.material-icons{
-    color:#e91e63;
+    color:rgb(0,150,136);
 }
 #ds-thread #ds-reset a.ds-like-thread-button span {
     color: #555
@@ -460,17 +460,6 @@
     float: left;
     color: #999
 }
-#ds-thread #ds-reset .ds-account-control ul {
-    display: none;
-    position: absolute;
-    top: 19px;
-    left: 0;
-    border: 1px solid #aaa;
-    background: #f8f8f8;
-    box-shadow: inset 0 1px 1px #fff, 0 1px 1px rgba(0, 0, 0, 0.3);
-    border-radius: 3px;
-    text-align: center
-}
 #ds-thread #ds-reset .ds-account-control ul li a {
     border-top: 1px solid #fff;
     border-bottom: 1px solid #ddd;
@@ -483,9 +472,6 @@
 }
 #ds-thread #ds-reset .ds-account-control.ds-active span {
     color: #555
-}
-#ds-thread #ds-reset .ds-account-control.ds-active ul {
-    display: block
 }
 #ds-thread #ds-reset .ds-alert {
     margin: .5em 0;

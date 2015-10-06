@@ -771,7 +771,7 @@ var duoshuoQuery = {
             for (var s in e) t += "<li><a>" + s + "</a></li>";
             return t += '</ul><div class="ds-smilies-container"></div></div>'
         }, et.toolbar = function() {
-            var e = '<div class="ds-toolbar"><div class="ds-account-control"><span class="ds-icon ds-icon-settings"></span> <span>帐号管理</span><ul><li><a class="ds-bind-more" href="javascript:void(0);" style="border-top: none">绑定更多</a></li><li><a target="_blank" href="' + S.REMOTE + "/settings/" + x(T()) + '">' + u(z.settings) + '</a></li><li><a rel="nofollow" href="' + Z.logoutUrl() + '" style="border-bottom: none">登出</a></li></ul></div><div class="ds-visitor">';
+            var e = '<div class="ds-toolbar"><div class="ds-account-control"><button id="account-setting-btn" class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons">settings</i></button><ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="account-setting-btn"><li class="mdl-menu__item"><a class="ds-bind-more" href="javascript:void(0);" style="border-top: none">绑定更多</a></li><li class="mdl-menu__item"><a target="_blank" href="' + S.REMOTE + "/settings/" + x(T()) + '">' + u(z.settings) + '</a></li><li class="mdl-menu__item"><a rel="nofollow" href="' + Z.logoutUrl() + '" style="border-bottom: none">登出</a></li></ul></div><div class="ds-visitor">';
             return e += nt.data.url ? '<a class="ds-visitor-name" href="' + u(nt.data.url) + '" target="_blank">' + u(nt.data.name) + "</a>" : '<span class="ds-visitor-name">' + u(nt.data.name) + "</span>", e += '<a class="ds-unread-comments-count" href="javascript:void(0);" title="新回复"></a></div></div>'
         }, et.topThreads = function(e) {
             var t = "",
@@ -1573,11 +1573,7 @@ var duoshuoQuery = {
                     var c = a.replybox = new st.Replybox(a);
                     c.postList = a.postList.el, r() ? a.loginButtons = B(et.loginButtons()).delegate("a.ds-more-services", "click", function() {
                         return a.loginButtons.find(".ds-additional-services").toggle(), !1
-                    }).delegate("a.ds-service-link", "click", l) : a.toolbar = B(et.toolbar()).delegate(".ds-account-control", "mouseenter", function() {
-                        B(this).addClass("ds-active")
-                    }).delegate(".ds-account-control", "mouseleave", function() {
-                        B(this).removeClass("ds-active")
-                    }).delegate("a.ds-bind-more", "click", function() {
+                    }).delegate("a.ds-service-link", "click", l) : a.toolbar = B(et.toolbar()).delegate("a.ds-bind-more", "click", function() {
                         var e = E(et["dialog-bind-more"]()).el.find(".ds-dialog").addClass("ds-dialog-bind-more").css("width", "300px");
                         return e.find("a.ds-service-link").click(l), !1
                     }).delegate("a.ds-unread-comments-count", "click", function() {
