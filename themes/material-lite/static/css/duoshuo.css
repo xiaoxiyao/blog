@@ -331,11 +331,6 @@
 #ds-thread #ds-reset a:hover {
     color: #333
 }
-#ds-thread #ds-reset ul, #ds-thread #ds-reset ul li {
-    background: none;
-    margin: 0;
-    padding: 0
-}
 #ds-thread #ds-reset .ds-arrow {
     position: absolute;
     width: 0;
@@ -442,7 +437,7 @@
 }
 #ds-thread #ds-reset .ds-visitor {
     float: right;
-    line-height: 1.5em;
+    line-height: 32px;
     margin-right: 6px
 }
 #ds-thread #ds-reset .ds-account-control {
@@ -452,25 +447,11 @@
     cursor: pointer;
     text-align: right;
     line-height: 18px;
-    padding-bottom: 3px;
-    width: 75px
-}
-#ds-thread #ds-reset .ds-account-control span {
-    display: block;
-    float: left;
-    color: #999
 }
 #ds-thread #ds-reset .ds-account-control ul li a {
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #ddd;
-    display: block;
-    padding: 3px 10px;
-    text-shadow: 0 1px 0 #fff
+    text-decoration: none;
 }
 #ds-thread #ds-reset .ds-account-control ul li a:hover {
-    color: #555
-}
-#ds-thread #ds-reset .ds-account-control.ds-active span {
     color: #555
 }
 #ds-thread #ds-reset .ds-alert {
