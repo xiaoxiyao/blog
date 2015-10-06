@@ -689,7 +689,7 @@ var duoshuoQuery = {
                 service: s,
                 thread_id: e.thread_id
             }) + '">' + e.services[s] + "</a></li>";
-            return t += '</ul></div><div class="ds-like-tooltip-footer mdl-card__actions"><a class="ds-like-tooltip-close"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary">算了</button></a></div></div>'
+            return t += '</ul></div><div class="ds-like-tooltip-footer mdl-card__actions"><a class="ds-like-tooltip-close"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">算了</button></a></div></div>'
         }, et.loginButtons = function() {
             var e = '<div class="ds-login-buttons"><p>社交帐号登录:</p><div class="ds-social-links"><ul class="ds-service-list clearfix">' + et.serviceList(X) + '<li><a class="ds-more-services" href="javascript:void(0)">更多»</a></li></ul><ul class="ds-service-list clearfix ds-additional-services">' + et.serviceList(K) + "</ul></div></div>";
             return e
