@@ -355,16 +355,9 @@
 #ds-thread #ds-reset .ds-like-tooltip {
     position: absolute;
     z-index: 9999;
-    background-color: #fcfcfc;
-    border: 1px solid #aaa;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
-    text-shadow: 0 1px 0 #fff;
     font-size: 12px;
-    padding: 8px 14px
 }
 #ds-thread #ds-reset .ds-like-tooltip ul {
-    width: 84px;
-    float: left
 }
 #ds-thread #ds-reset .ds-like-tooltip li {
     line-height: 16px;
