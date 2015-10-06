@@ -385,18 +385,6 @@
 #ds-thread #ds-reset .ds-like-tooltip .ds-like-tooltip-footer {
     text-align: right
 }
-#ds-thread #ds-reset a.ds-like-thread-button {
-    text-decoration: none;
-}
-#ds-thread #ds-reset a.ds-like-thread-button i.material-icons {
-    vertical-align: middle;
-}
-#ds-thread #ds-reset a.ds-like-thread-button.ds-thread-liked i.material-icons{
-    color:rgb(0,150,136);
-}
-#ds-thread #ds-reset a.ds-like-thread-button span {
-    color: #555
-}
 #ds-thread #ds-reset .ds-thread-cancel-like {
     display: none
 }
@@ -958,9 +946,6 @@
 }
 #ds-thread #ds-reset.ds-no-transition .ds-post-button:hover, #ds-thread #ds-reset.ds-no-transition .ds-more a:hover {
     background-position: 0 -30px !important
-}
-#ds-thread #ds-reset.ds-no-transition .ds-like-thread-button {
-    background: url("//static.duoshuo.com/images/bg_sprites.png") repeat-x
 }
 #ds-thread #ds-reset.ds-no-opacity li.ds-post {
     border-top: 1px solid #ddd
