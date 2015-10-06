@@ -482,6 +482,10 @@
     float: left;
     width: 306px
 }
+#ds-thread #ds-reset .ds-login-buttons .ds-social-links ul{
+    padding: 0;
+    margin: 0;
+}
 #ds-thread #ds-reset .ds-login-buttons:after {
     content: ".";
     display: block;
