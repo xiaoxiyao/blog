@@ -291,6 +291,7 @@ h1,h2,h3,h4,h5,.mdl-button{
 .main-container .mdl-card__supporting-text.comments{
     padding: 2rem;
     background-color:#EEE;
+    overflow: visible;
 }
 .main-container .mdl-card__supporting-text strong {
   font-weight: 400;

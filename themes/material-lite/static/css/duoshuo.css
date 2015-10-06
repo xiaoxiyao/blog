@@ -9,11 +9,6 @@
     line-height: 1;
     text-align: left
 }
-#ds-reset * {
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box
-}
 #ds-reset input[type=button], #ds-reset input[type=submit], #ds-reset input[type=reset], #ds-reset button {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -358,6 +353,8 @@
     font-size: 12px;
 }
 #ds-thread #ds-reset .ds-like-tooltip ul {
+    margin: 0;
+    padding: 0;
 }
 #ds-thread #ds-reset .ds-like-tooltip li {
     line-height: 16px;
