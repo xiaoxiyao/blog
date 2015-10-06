@@ -241,6 +241,9 @@ h1,h2,h3,h4,h5,.mdl-button{
           align-items: stretch;
   min-height: 360px;
 }
+.main-container .blog__posts .mdl-card{
+    overflow: visible;
+}
 .main-container .mdl-card__title {
   padding: 16px;
   -webkit-box-flex: 1;

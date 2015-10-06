@@ -351,6 +351,8 @@
     position: absolute;
     z-index: 9999;
     font-size: 12px;
+    min-height: 0;
+    max-width: 300px;
 }
 #ds-thread #ds-reset .ds-like-tooltip ul {
     margin: 0;
@@ -645,9 +647,10 @@
 }
 #ds-thread #ds-reset li.ds-tab a:hover {
 }
-#ds-thread #ds-reset .ds-comments {
+#ds-thread #ds-reset ul.ds-comments {
     width: 100%;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.13)
+    border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+    padding: 0;
 }
 #ds-thread #ds-reset .ds-comments:after {
     content: ".";
@@ -666,6 +669,7 @@
     list-style: none
 }
 #ds-thread #ds-reset li.ds-post-placeholder {
+    display: none;
     text-align: center;
     color: #999;
     padding: 1em 0
