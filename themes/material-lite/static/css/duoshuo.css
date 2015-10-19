@@ -538,9 +538,8 @@
 }
 #ds-thread #ds-reset .ds-textarea-wrapper {
     position: relative;
-    overflow: hidden
-}
-#ds-thread #ds-reset .ds-textarea-wrapper textarea {
+    overflow: hidden;
+    width: 100%;
 }
 #ds-thread #ds-reset .ds-textarea-wrapper textarea:focus {
     color: #333
@@ -560,7 +559,6 @@
 }
 #ds-thread #ds-reset .ds-post-toolbar {
     position: relative;
-    display: inline-block;
 }
 #ds-thread #ds-reset .ds-post-options {
     display: none;
@@ -601,6 +599,7 @@
 }
 #ds-thread #ds-reset .ds-post-button {
     display: inline-block;
+    float: right;
 }
 #ds-thread #ds-reset .ds-comments-info {
     width: 100%;
