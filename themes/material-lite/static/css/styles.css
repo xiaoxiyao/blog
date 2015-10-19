@@ -17,10 +17,10 @@ h1,h2,h3,h4,h5,.mdl-button{
     color: #fff;
     border-radius: 2px;
 }
-.mdl-button .mdi {
+.mdl-button {
     vertical-align: middle;
 }
-.mdl-button--icon .mdi {
+.mdl-button--icon i.iconfont {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -219,7 +219,9 @@ h1,h2,h3,h4,h5,.mdl-button{
       -ms-flex-negative: 0;
           flex-shrink: 0;
 }
-
+.main-container .blog__posts .mdl-card{
+  margin: 1rem inherit;
+}
 .main-container.mdl-layout .mdl-layout__content {
   padding-top: 10rem;
   position: relative;
