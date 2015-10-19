@@ -220,7 +220,7 @@ h1,h2,h3,h4,h5,.mdl-button{
           flex-shrink: 0;
 }
 .main-container .blog__posts .mdl-card{
-  margin: 1rem inherit;
+  margin: 2rem inherit;
 }
 .main-container.mdl-layout .mdl-layout__content {
   padding-top: 10rem;
@@ -241,7 +241,6 @@ h1,h2,h3,h4,h5,.mdl-button{
   -webkit-align-items: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  min-height: 360px;
 }
 .main-container .blog__posts .mdl-card{
     overflow: visible;
