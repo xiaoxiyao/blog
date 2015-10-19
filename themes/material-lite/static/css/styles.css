@@ -486,9 +486,6 @@ h1,h2,h3,h4,h5,.mdl-button{
 .blog--blogpost .custom-header {
   background-color: transparent;
 }
-.blog--blogpost .blog__posts > .mdl-card .mdl-card__media {
-  height: 280px;
-}
 .blog--blogpost .meta > * {
   -webkit-box-align: center;
   -webkit-align-items: center;
