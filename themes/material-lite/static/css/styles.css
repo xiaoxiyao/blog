@@ -220,7 +220,7 @@ h1,h2,h3,h4,h5,.mdl-button{
           flex-shrink: 0;
 }
 .main-container .blog__posts .mdl-card{
-  margin: 2rem inherit;
+  margin: 2rem auto;
 }
 .main-container.mdl-layout .mdl-layout__content {
   padding-top: 10rem;
@@ -296,9 +296,6 @@ h1,h2,h3,h4,h5,.mdl-button{
     padding: 2rem;
     background-color:#EEE;
     overflow: visible;
-}
-.main-container .mdl-card__supporting-text strong {
-  font-weight: 400;
 }
 .main-container .mdl-card__media ~ .mdl-card__supporting-text {
   min-height: 64px;
