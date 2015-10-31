@@ -664,7 +664,7 @@ var duoshuoQuery = {
         }, et["dialog-reposts"] = function(e) {
             var t = '<h2>转发到微博</h2><div class="ds-quote"><strong>@' + u(e.post.theAuthor.name) + "</strong>: " + e.post.message + "</div><form>" + tt({
                 post_id: e.post.post_id
-            }) + '<div class="ds-textarea-wrapper"><textarea name="message" title="Ctrl+Enter快捷提交" placeholder="' + u(z.repost_reason) + '">' + u(e.repostMessage) + '</textarea><pre class="ds-hidden-text"></pre>';
+            }) + '<div class="ds-textarea-wrapper mdl-textfield mdl-js-textfield mdl-textfield--floating-label"><textarea class="mdl-textfield__input" name="message" title="Ctrl+Enter快捷提交" placeholder="">' + u(e.repostMessage) + '</textarea><label class="mdl-textfield__label">' + u(z.repost_reason) + '</label><!--pre class="ds-hidden-text"></pre-->';
             return t += '</div><div class="ds-actions">', e.service ? t += tt({
                 "service[]": e.service
             }) : (t += '<label><input type="checkbox" name="service[]" value="weibo"', nt.data.social_uid.weibo && (t += ' checked="checked"'), t += ' /><span class="ds-service-icon ds-weibo"></span>新浪微博</label><label><input type="checkbox" name="service[]" value="qqt"', nt.data.social_uid.qq && (t += ' checked="checked"'), t += ' /><span class="ds-service-icon ds-qqt"></span>腾讯微博</label>'), t += '<button type="submit">' + z.repost + "</button></div></form>"
