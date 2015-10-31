@@ -1005,6 +1005,7 @@ var duoshuoQuery = {
                 }
 
                 function o() {
+                    console.dir(h.el);
                     var s = B(this),
                         a = s.closest(".ds-comment-actions");
                     if (a.hasClass("ds-reply-active")) h.el.fadeOut(200, function() {
