@@ -1171,6 +1171,16 @@
     position: relative;
     height: 30px
 }
+#ds-wrapper #ds-reset .ds-actions label.mdl-checkbox {
+    width: auto;
+    padding-right: 1rem;
+}
+#ds-wrapper #ds-reset .ds-actions label.mdl-checkbox span.mdl-checkbox__label {
+    font-size: 0.8rem;
+}
+#ds-wrapper #ds-reset .ds-actions label.mdl-checkbox span.mdl-checkbox__label i.iconfont {
+    font-size: 16px;
+}
 #ds-wrapper #ds-reset .ds-actions button {
     display: block;
     position: absolute;
