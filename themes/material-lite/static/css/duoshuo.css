@@ -685,10 +685,16 @@
     clear: both;
     visibility: hidden
 }
-#ds-thread #ds-reset .ds-post-self:hover .ds-post-delete, #ds-thread #ds-reset .ds-post-self:hover .ds-post-report {
+#ds-thread #ds-reset .ds-post-self:hover .ds-post-delete,
+#ds-thread #ds-reset .ds-post-self:hover .ds-post-delete + span,
+#ds-thread #ds-reset .ds-post-self:hover .ds-post-report,
+#ds-thread #ds-reset .ds-post-self:hover .ds-post-report + span{
     display: inline-block
 }
-#ds-thread #ds-reset.ds-touch .ds-post-self .ds-post-delete, #ds-thread #ds-reset.ds-touch .ds-post-self .ds-post-report {
+#ds-thread #ds-reset.ds-touch .ds-post-self .ds-post-delete,
+#ds-thread #ds-reset.ds-touch .ds-post-self .ds-post-delete + span,
+#ds-thread #ds-reset.ds-touch .ds-post-self .ds-post-report,
+#ds-thread #ds-reset.ds-touch .ds-post-self .ds-post-report + span {
     display: inline-block
 }
 #ds-thread #ds-reset .ds-comment-body {
@@ -835,7 +841,10 @@
 #ds-thread #ds-reset .ds-reply-active .ds-post-reply .ds-icon {
     opacity: 1
 }
-#ds-thread #ds-reset .ds-post-delete, #ds-thread #ds-reset .ds-post-report {
+#ds-thread #ds-reset .ds-post-delete,
+#ds-thread #ds-reset .ds-post-report,
+#ds-thread #ds-reset .ds-post-delete + span,
+#ds-thread #ds-reset .ds-post-report + span{
     display: none
 }
 #ds-thread #ds-reset .ds-icon-heart {
@@ -951,7 +960,8 @@
 #ds-thread #ds-reset.ds-no-opacity .ds-tab a.ds-current {
     background: #f8f8f8
 }
-#ds-thread #ds-reset.ds-ie6 .ds-post-report, #ds-thread #ds-reset.ds-ie6 .ds-post-delete {
+#ds-thread #ds-reset.ds-ie6 .ds-post-report, 
+#ds-thread #ds-reset.ds-ie6 .ds-post-delete {
     display: inline !important
 }
 #ds-thread #ds-reset.ds-ie6 .ds-textarea-wrapper {
