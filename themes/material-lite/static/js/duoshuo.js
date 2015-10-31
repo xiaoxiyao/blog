@@ -1014,7 +1014,6 @@ var duoshuoQuery = {
                         var i = s.closest(".ds-ctx-entry, .ds-post-self");
                         h ? h.actionsBar.removeClass("ds-reply-active") : (h = new st.Replybox(e), h.render(!0).el.addClass("ds-inline-replybox").detach()), h.el.find("[name=parent_id]").val(i.attr("data-post-id")), h.el.show().appendTo(s.closest(".ds-ctx-body, .ds-comment-body")).find("textarea").focus(), h.actionsBar = a.addClass("ds-reply-active"), t.max_depth <= 1 ? h.postList = e.postList.el : (h.postList = i.siblings(".ds-children"), h.postList[0] || (h.postList = B('<ul class="ds-children"></ul>').insertAfter(i)))
                     }
-                    //upgradeMdl(h.el[0]);
                     return !1
                 }
 
@@ -1281,7 +1280,6 @@ var duoshuoQuery = {
                             } catch (e) {}
                         }), m[j] && k.val(m[j])
                     }
-                    console.dir(g[0]);
                     upgradeMdl(g[0]);
                     return this
                 }
@@ -1300,8 +1298,6 @@ var duoshuoQuery = {
                         return a.close(), !1
                     }
                     var a = this;
-                    //console.dir(a.el[0]);
-                    //console.dir(a.el);
                     upgradeMdl(a.el[0]);
                     return a.el.hide().appendTo(t.body).fadeIn(200), P.ie6 && a.el.css("top", V.scrollTop() + 100), a.el.show().find(".ds-dialog").delegate("a.ds-dialog-close", "click", function() {
                         return a.close(), !1
@@ -1472,7 +1468,7 @@ var duoshuoQuery = {
             }, et.postPlaceholder = function() {
                 return ['<li class="ds-post ds-post-placeholder">', z.no_comments_yet, "</li>"].join("")
             };
-            var X = B('<div id="ds-bubble"><div class="ds-bubble-content"></div><div class="ds-arrow ds-arrow-down ds-arrow-border"></div><div class="ds-arrow ds-arrow-down"></div></div>'),
+            var X = B('<div id="ds-bubble" class="mdl-card mdl-shadow--2dp"><div class="ds-bubble-content"></div><div class="ds-arrow ds-arrow-down ds-arrow-border"></div><div class="ds-arrow ds-arrow-down"></div></div>'),
                 K = X.find(".ds-bubble-content").delegate("a.ds-ctx-open", "click", function() {
                     function e(e) {
                         function t(e, t) {
