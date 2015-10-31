@@ -1014,7 +1014,7 @@ var duoshuoQuery = {
                         var i = s.closest(".ds-ctx-entry, .ds-post-self");
                         h ? h.actionsBar.removeClass("ds-reply-active") : (h = new st.Replybox(e), h.render(!0).el.addClass("ds-inline-replybox").detach()), h.el.find("[name=parent_id]").val(i.attr("data-post-id")), h.el.show().appendTo(s.closest(".ds-ctx-body, .ds-comment-body")).find("textarea").focus(), h.actionsBar = a.addClass("ds-reply-active"), t.max_depth <= 1 ? h.postList = e.postList.el : (h.postList = i.siblings(".ds-children"), h.postList[0] || (h.postList = B('<ul class="ds-children"></ul>').insertAfter(i)))
                     }
-                    console.dir(h.el);
+                    upgradeMdl(h.el[0]);
                     return !1
                 }
 
