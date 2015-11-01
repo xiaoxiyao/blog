@@ -3,6 +3,7 @@ date = "2015-09-25T23:48:05+08:00"
 draft = false
 title = "测试博客"
 description = "这是复制github中一个项目的readme文件里的"
+categories = [ "学无止境" ]
 +++
 ### 博客测试
 

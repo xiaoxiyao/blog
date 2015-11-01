@@ -52,6 +52,9 @@
             </span>
             <nav class="mdl-navigation">
                 <a href="/" class="mdl-navigation__link"><i class="material-icons">home</i> 首页</a>
+                {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+                    <a href="/categories/{{$name | urlize}}" class="mdl-navigation__link"><i class="material-icons">home</i> {{ $name }}</a>
+                {{ end }}
                 {{range $i, $current := (where .Site.Pages "Section" "page")}}
                     <a href="{{$current.Permalink}}" class="mdl-navigation__link"><i class="material-icons">{{$current.Params.icon}}</i> {{ $current.Title | title }}</a>
                 {{end}}

@@ -3,6 +3,10 @@ languageCode = "zh-cn"
 title = "Blog 测试中"
 theme = "material-lite"
 
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
 [params]
 #  TwitterUser = "SamuelDebruyn"
 #  FacebookUser = "facebook"

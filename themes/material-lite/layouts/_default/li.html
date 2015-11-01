@@ -13,5 +13,7 @@
 		{{with .Site.Params.author}}<strong>{{.}}</strong>{{end}}
 	</div>
 	<div class="section-spacer"></div>
-	<div class="label mdl-color--teal">{{.Type}}</div>
+	{{ range .Params.categories }}
+		<div class="label mdl-color--teal">{{.}}</div>
+	{{ end }}
 </div>
