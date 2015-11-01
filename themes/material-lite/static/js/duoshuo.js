@@ -667,7 +667,11 @@ var duoshuoQuery = {
             }) + '<div class="ds-textarea-wrapper mdl-textfield mdl-js-textfield mdl-textfield--floating-label"><textarea class="mdl-textfield__input" name="message" title="Ctrl+Enter快捷提交" placeholder="">' + u(e.repostMessage) + '</textarea><label class="mdl-textfield__label">' + u(z.repost_reason) + '</label><!--pre class="ds-hidden-text"></pre-->';
             return t += '</div><div class="ds-actions">', e.service ? t += tt({
                 "service[]": e.service
+<<<<<<< HEAD
             }) : (t += '<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"><input type="checkbox" class="mdl-checkbox__input" name="service[]" value="weibo"', nt.data.social_uid.weibo && (t += ' checked="checked"'), t += ' /><span class="mdl-checkbox__label"><i class="iconfont icon-weibo-sina"></i>新浪微博</span></label><label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"><input type="checkbox" class="mdl-checkbox__input" name="service[]" value="qqt"', nt.data.social_uid.qq && (t += ' checked="checked"'), t += ' /><span class="mdl-checkbox__label"><i class="iconfont icon-weibo-tencent"></i>腾讯微博</span></label>'), t += '<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="submit">' + z.repost + "</button></div></form>"
+=======
+            }) : (t += '<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"><input type="checkbox" class="mdl-checkbox__input" name="service[]" value="weibo"', nt.data.social_uid.weibo && (t += ' checked="checked"'), t += ' /><span class="mdl-checkbox__label"><i class="iconfont icon-weibo-sina mdl-color-text--red-700"></i>新浪微博</span></label><label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"><input type="checkbox" class="mdl-checkbox__input" name="service[]" value="qqt"', nt.data.social_uid.qq && (t += ' checked="checked"'), t += ' /><span class="mdl-checkbox__label"><i class="iconfont icon-weibo-tencent mdl-color-text--blue-700"></i>腾讯微博</span></label>'), t += '<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="submit">' + z.repost + "</button></div></form>"
+>>>>>>> d76acc4509aa3b2de19c35a631228aa851b6d6af
         }, et.dialog = function(e) {
             var t = '<div class="ds-dialog"><div class="mdl-card mdl-shadow--2dp"><div class="mdl-card__title"></div><div class="mdl-card__supporting-text">' + e + '</div><div class="mdl-card__menu"><a class="ds-dialog-close mdl-button mdl-js-button mdl-button--icon mdl-button--colored" href="javascript:void(0)" title="关闭"><i class="material-icons">close</i></a></div></div></div>';
             return t
@@ -1280,6 +1284,7 @@ var duoshuoQuery = {
                             } catch (e) {}
                         }), m[j] && k.val(m[j])
                     }
+                    upgradeMdl(g[0]);
                     return this
                 }
             }, st.Dialog = J.extend({
@@ -1297,8 +1302,6 @@ var duoshuoQuery = {
                         return a.close(), !1
                     }
                     var a = this;
-                    //console.dir(a.el[0]);
-                    //console.dir(a.el);
                     upgradeMdl(a.el[0]);
                     return a.el.hide().appendTo(t.body).fadeIn(200), P.ie6 && a.el.css("top", V.scrollTop() + 100), a.el.show().find(".ds-dialog").delegate("a.ds-dialog-close", "click", function() {
                         return a.close(), !1
@@ -1469,7 +1472,7 @@ var duoshuoQuery = {
             }, et.postPlaceholder = function() {
                 return ['<li class="ds-post ds-post-placeholder">', z.no_comments_yet, "</li>"].join("")
             };
-            var X = B('<div id="ds-bubble"><div class="ds-bubble-content"></div><div class="ds-arrow ds-arrow-down ds-arrow-border"></div><div class="ds-arrow ds-arrow-down"></div></div>'),
+            var X = B('<div id="ds-bubble" class="mdl-card mdl-shadow--2dp"><div class="ds-bubble-content"></div><div class="ds-arrow ds-arrow-down ds-arrow-border"></div><div class="ds-arrow ds-arrow-down"></div></div>'),
                 K = X.find(".ds-bubble-content").delegate("a.ds-ctx-open", "click", function() {
                     function e(e) {
                         function t(e, t) {

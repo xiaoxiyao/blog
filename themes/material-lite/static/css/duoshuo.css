@@ -737,15 +737,12 @@
 }
 #ds-thread #ds-reset #ds-bubble {
     position: absolute;
-    background-color: #fff;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
     padding: 10px;
     color: #333;
-    border: 1px solid #aaa;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
     z-index: 9999;
-    font-size: 13px
+    font-size: 13px;
+    min-height: auto;
+    width: auto;
 }
 #ds-thread #ds-reset #ds-bubble a {
     color: #e77064
@@ -1170,6 +1167,16 @@
 #ds-wrapper #ds-reset .ds-actions {
     position: relative;
     height: 30px
+}
+#ds-wrapper #ds-reset .ds-actions label.mdl-checkbox {
+    width: auto;
+    padding-right: 1rem;
+}
+#ds-wrapper #ds-reset .ds-actions label.mdl-checkbox span.mdl-checkbox__label {
+    font-size: 0.8rem;
+}
+#ds-wrapper #ds-reset .ds-actions label.mdl-checkbox span.mdl-checkbox__label i.iconfont {
+    font-size: 16px;
 }
 #ds-wrapper #ds-reset .ds-actions button {
     display: block;
