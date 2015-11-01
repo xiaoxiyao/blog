@@ -743,6 +743,7 @@
     font-size: 13px;
     min-height: 0;
     width: auto;
+    margin: 0;
 }
 #ds-thread #ds-reset #ds-bubble a {
     color: #e77064
