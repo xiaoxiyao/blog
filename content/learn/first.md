@@ -4,6 +4,7 @@ draft = false
 title = "测试博客"
 description = "这是复制github中一个项目的readme文件里的"
 categories = [ "学无止境" ]
+tags = ["test","github"]
 +++
 ### 博客测试
 

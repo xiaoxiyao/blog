@@ -4,4 +4,5 @@ draft = false
 title = "测试"
 description = "测试博客分类"
 categories = [ "资源分享" ]
+tags = ["test","chrome"]
 +++

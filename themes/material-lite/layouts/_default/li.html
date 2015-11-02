@@ -1,5 +1,11 @@
 <div class="mdl-card__media mdl-color-text--grey-50" {{if .Params.image}}style="background-image: url('{{.Params.image}}');min-height:210px;"{{end}}>
 	<h3><a href="{{ .Permalink }}">{{.Title}}</a></h3>
+	<div>
+		<i class="material-icons">label</i>
+		{{ range .Params.tags }}
+			<a href="/tags/{{ . | urlize }}"><div class="label mdl-color--teal">{{.}}</div></a>
+		{{ end }}
+	</div>
 </div>
 <div class="mdl-card__supporting-text mdl-color-text--grey-600">
 	{{ if .Description }}{{ .Description }}{{else}}{{.Summary}}{{end}}
@@ -14,6 +20,6 @@
 	</div>
 	<div class="section-spacer"></div>
 	{{ range .Params.categories }}
-		<div class="label mdl-color--teal">{{.}}</div>
+		<a href="/categories/{{ . | urlize }}"><div class="label mdl-color--teal">{{.}}</div></a>
 	{{ end }}
 </div>
