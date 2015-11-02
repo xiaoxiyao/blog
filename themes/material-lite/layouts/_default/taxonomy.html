@@ -1,0 +1,12 @@
+{{ partial "header.html" . }}
+
+        <div class="blog__posts mdl-grid">
+          {{ range .Data.Pages }}
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+                {{ .Render "li" }}
+            </div>
+          {{ end }}
+          {{ partial "pagination.html" }}
+        </div>
+
+{{ partial "footer.html" . }}
