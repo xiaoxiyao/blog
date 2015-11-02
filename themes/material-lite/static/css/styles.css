@@ -227,6 +227,11 @@ h1,h2,h3,h4,h5,.mdl-button{
   position: relative;
   -webkit-overflow-scrolling: touch;
 }
+@media (max-width: 900px){
+  .main-container.mdl-layout .mdl-layout__content {
+    padding-top: 5rem;
+  }
+}
 .main-container .mdl-card {
   display: -webkit-box;
   display: -webkit-flex;
