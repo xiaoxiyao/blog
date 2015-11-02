@@ -3,7 +3,7 @@
 	<div>
 		<i class="material-icons">label</i>
 		{{ range .Params.tags }}
-			<a href="/tags/{{ . | urlize }}"><div class="label mdl-color--teal">{{.}}</div></a>
+			<a href="/tags/{{ . | urlize }}" class="tag">{{.}}</a>
 		{{ end }}
 	</div>
 </div>
@@ -20,6 +20,6 @@
 	</div>
 	<div class="section-spacer"></div>
 	{{ range .Params.categories }}
-		<a href="/categories/{{ . | urlize }}"><div class="label mdl-color--teal">{{.}}</div></a>
+		<a href="/categories/{{ . | urlize }}" class="label mdl-color--teal">{{.}}</a>
 	{{ end }}
 </div>

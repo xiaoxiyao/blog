@@ -10,12 +10,22 @@ body {
 h1,h2,h3,h4,h5,.mdl-button{
     font-family: inherit;
 }
+.tag{
+  display: inline-block;
+  padding:0.2rem 0.4rem;
+  font-size: 0.8rem;
+  border-radius: 2px;
+  background-color: #fff;
+}
 .label{
     display: inline-block;
     padding:0.2rem 0.4rem;
     font-size: 0.8rem;
     color: #fff;
     border-radius: 2px;
+}
+a.label{
+  text-decoration: none;
 }
 .mdl-button {
     vertical-align: middle;
@@ -283,6 +293,9 @@ h1,h2,h3,h4,h5,.mdl-button{
 .main-container .mdl-card__media a,
 .main-container .mdl-card__title a {
   color: inherit;
+}
+.main-container .mdl-card__media h3{
+  display: block;
 }
 .main-container .mdl-card__supporting-text {
   width: 100%;

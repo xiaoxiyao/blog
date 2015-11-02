@@ -39,7 +39,7 @@
                     {{range $name, $taxonomy := .Site.Taxonomies.categories}}
                       <a href="/categories/{{ $name | urlize }}" class="mdl-navigation__link">{{ $name }}</a>
                     {{end}}
-                    <a class="mdl-navigation__link" href="/page/about">关于</a>
+                    <a class="mdl-navigation__link" href="/about">关于</a>
                 </nav>
             </div>
         </header>
@@ -55,9 +55,7 @@
                 {{range $name, $taxonomy := .Site.Taxonomies.categories}}
                   <a href="/categories/{{ $name | urlize }}" class="mdl-navigation__link">{{ $name }}</a>
                 {{end}}
-                {{range $i, $current := (where .Site.Pages "Section" "page")}}
-                    <a href="{{$current.Permalink}}" class="mdl-navigation__link"><i class="material-icons">{{$current.Params.icon}}</i> {{ $current.Title | title }}</a>
-                {{end}}
+                <a href="/about" class="mdl-navigation__link"><i class="material-icons">info</i> 关于</a>
             </nav>
         </div>
         <main class="mdl-layout__content">
