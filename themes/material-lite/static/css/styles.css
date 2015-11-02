@@ -12,11 +12,10 @@ h1,h2,h3,h4,h5,.mdl-button{
 }
 .tag{
   display: inline-block;
-  padding:0.2rem 0.4rem;
+  padding:0 0.6rem;
   font-size: 0.8rem;
   border-radius: 2px;
   background-color: #fff;
-  line-height: normal;
 }
 .label{
     display: inline-block;
@@ -272,14 +271,17 @@ a.label{
   box-sizing: border-box;
   background-size: cover;
   padding: 24px;
-  cursor: pointer;
 }
 .main-container .mdl-card__media h3 a,
 .main-container .mdl-card__title a {
   color: inherit;
+  display: block;
 }
 .main-container .mdl-card__media h3{
   display: block;
+}
+.main-container .mdl-card__media .tags{
+  margin-top: 1rem;
 }
 .main-container .mdl-card__media .tags .material-icons{
   vertical-align: middle;
