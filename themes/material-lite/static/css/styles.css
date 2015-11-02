@@ -388,20 +388,18 @@ h1,h2,h3,h4,h5,.mdl-button{
 .main-container .mdl-layout__header{
     overflow:visible;
 }
-.main-container .mdl-layout__header-row .mdl-textfield {
-    text-shadow: 2px 2px 4px #000;
-    font-size: 1.2rem;
-    margin: auto 1rem;
-}
-.main-container .mdl-layout__header-row .mdl-textfield .mdl-textfield__input{
-    border-bottom: 2px solid rgba(0,150,136,.5);
+.main-container .mdl-layout__header .mdl-layout__header-row .mdl-layout-title{
+  width: 16rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .main-container .mdl-layout__header-row .mdl-navigation{
     margin-right:1rem;
 }
 .main-container .mdl-layout__header-row .mdl-navigation .mdl-navigation__link{
     border-bottom: 4px solid transparent;
-    text-shadow: 2px 2px 4px #000;
+    text-shadow: 0 0 4px #000,0 0 8px #000;
     font-size: 1.2rem;
 }
 @media (max-width: 900px){
