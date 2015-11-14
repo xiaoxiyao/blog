@@ -1,6 +1,6 @@
 baseurl = "http://xiaoxiyao.ml"
 languageCode = "zh-cn"
-title = "Blog 测试中"
+title = "xiaoxiyao's blog"
 theme = "material-lite"
 Paginate = 5
 
