@@ -30,7 +30,7 @@ code {
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 pre code {
-    font-size: initial;
+    font-size: 100%;
 }
 .tag{
   display: inline-block;
