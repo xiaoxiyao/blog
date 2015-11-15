@@ -53,7 +53,7 @@
             <nav class="mdl-navigation">
                 <a href="/" class="mdl-navigation__link"><i class="material-icons">home</i> 首页</a>
                 {{ range .Site.Menus.main }}
-                  <a href="{{ .URL }}" class="mdl-navigation__link"><i class="material-icons"></i> {{ .Name }}</a>
+                  <a href="{{ .URL }}" class="mdl-navigation__link">{{ .Pre }} {{ .Name }}</a>
                 {{end}}
                 <a href="/tags" class="mdl-navigation__link"><i class="material-icons">loyalty</i> 标签云</a>
                 <a href="/about" class="mdl-navigation__link"><i class="material-icons">info</i> 关于</a>

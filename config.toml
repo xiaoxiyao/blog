@@ -4,7 +4,18 @@ title = "xiaoxiyao's blog"
 theme = "material-lite"
 Paginate = 5
 
-SectionPagesMenu = "main"
+[[menu.main]]
+    name = "学无止境"
+    pre = "<i class='material-icons'>border_color</i>"
+    url = "/categories/学无止境"
+[[menu.main]]
+    name = "杂七杂八"
+    pre = "<i class='material-icons'>view_quilt</i>"
+    url = "/categories/杂七杂八"
+[[menu.main]]
+    name = "资源分享"
+    pre = "<i class='material-icons'>card_giftcard</i>"
+    url = "/categories/资源分享"
 
 [taxonomies]
   tag = "tags"
