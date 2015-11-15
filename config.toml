@@ -6,7 +6,7 @@ Paginate = 5
 
 [[menu.main]]
     name = "学无止境"
-    pre = "<i class='material-icons'>border_color</i>"
+    pre = "<i class='material-icons'>edit</i>"
     url = "/categories/学无止境"
 [[menu.main]]
     name = "杂七杂八"
