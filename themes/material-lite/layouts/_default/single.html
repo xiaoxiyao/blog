@@ -5,7 +5,7 @@
             <div class="mdl-card__media mdl-color-text--grey-50" {{if .Params.image}}style="background-image: url('{{.Params.image}}');min-height:280px;" {{end}}>
                 <h3>{{ .Title }}</h3>
                 <div class="tags">
-              		<i class="material-icons">label</i>
+              		<i class="material-icons">local_offer</i>
               		{{ range .Params.tags }}
               			<a class="tag" href="/tags/{{ . | urlize }}">{{.}}</a>
               		{{ end }}

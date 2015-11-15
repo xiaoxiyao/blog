@@ -1,7 +1,7 @@
 <div class="mdl-card__media mdl-color-text--grey-50" {{if .Params.image}}style="background-image: url('{{.Params.image}}');min-height:210px;"{{end}}>
 	<h3><a href="{{ .Permalink }}">{{.Title}}</a></h3>
 	<div class="tags">
-		<i class="material-icons">label</i>
+		<i class="material-icons">local_offer</i>
 		{{ range .Params.tags }}
 			<a href="/tags/{{ . | urlize }}" class="tag">{{.}}</a>
 		{{ end }}
