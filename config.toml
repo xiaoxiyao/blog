@@ -4,6 +4,8 @@ title = "xiaoxiyao's blog"
 theme = "material-lite"
 Paginate = 5
 
+SectionPagesMenu = "main"
+
 [taxonomies]
   tag = "tags"
   category = "categories"
