@@ -12,7 +12,7 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="renderer" content="webkit">
-    
+
     <link href="{{.Site.BaseURL}}/favicon.ico" rel="icon" type="image/x-icon" />
     <link href="{{.Site.BaseURL}}/post/index.xml" rel="alternate" type="application/rss+xml" title="RSS - {{ .Site.Title }}" />
     {{ partial "meta.html" . }}
@@ -23,9 +23,7 @@
 
 <body>
     <div id="loader-wrapper">
-        <div id="loader"></div>
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
+        <div id="loader" class="mdl-spinner mdl-js-spinner is-active"></div>
     </div>
     <div class="main-container mdl-layout mdl-js-layout mdl-layout--fixed-header has-drawer is-upgraded">
         <header class="mdl-layout__header mdl-layout__header--transparent mdl-layout__header--waterfall">
