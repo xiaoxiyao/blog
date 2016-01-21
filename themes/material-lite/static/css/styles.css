@@ -79,16 +79,17 @@ a.label{
     position: absolute;
     top: 0;
     left: 0;
-    margin: 0;
+    margin: auto;
     right: 0;
     bottom: 0;
 }
 
 .loaded #loader-wrapper {
   display: none;
+}
 
-  -webkit-transition: all 0.3s 1s ease-out;
-  transition: all 0.3s 1s ease-out;
+.loaded #loader-wrapper #loader{
+    display: none;
 }
 
 .main-container .blog__posts {
