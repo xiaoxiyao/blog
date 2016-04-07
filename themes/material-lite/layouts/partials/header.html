@@ -12,20 +12,60 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="renderer" content="webkit">
-    
+
     <link href="{{.Site.BaseURL}}/favicon.ico" rel="icon" type="image/x-icon" />
-    <link href="{{.Site.BaseURL}}/post/index.xml" rel="alternate" type="application/rss+xml" title="RSS - {{ .Site.Title }}" />
-    {{ partial "meta.html" . }}
-    {{ partial "header-extra.html" . }}
-    {{ partial "design.html" . }}
+    <link href="{{.Site.BaseURL}}/post/index.xml" rel="alternate" type="application/rss+xml" title="RSS - {{ .Site.Title }}" /> {{ partial "meta.html" . }} {{ partial "header-extra.html" . }} {{ partial "design.html" . }}
 
 </head>
 
 <body>
     <div id="loader-wrapper">
-        <div id="loader"></div>
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
+        <div id="loader" class="preloader-wrapper active">
+            <div class="spinner-layer spinner-blue">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <div class="spinner-layer spinner-red">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <div class="spinner-layer spinner-yellow">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <div class="spinner-layer spinner-green">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="main-container mdl-layout mdl-js-layout mdl-layout--fixed-header has-drawer is-upgraded">
         <header class="mdl-layout__header mdl-layout__header--transparent mdl-layout__header--waterfall">
@@ -36,10 +76,8 @@
                 <div class="mdl-layout-spacer"></div>
                 <!-- Navigation -->
                 <nav class="mdl-navigation">
-                    <a class="mdl-navigation__link" href="/">首页</a>
-                    {{range $name, $taxonomy := .Site.Taxonomies.categories}}
-                      <a href="/categories/{{ $name | urlize }}" class="mdl-navigation__link">{{ $name }}</a>
-                    {{end}}
+                    <a class="mdl-navigation__link" href="/">首页</a> {{range $name, $taxonomy := .Site.Taxonomies.categories}}
+                    <a href="/categories/{{ $name | urlize }}" class="mdl-navigation__link">{{ $name }}</a> {{end}}
                     <a class="mdl-navigation__link" href="/about">关于</a>
                 </nav>
             </div>
@@ -52,10 +90,8 @@
                  XiaoXiyao
             </span>
             <nav class="mdl-navigation">
-                <a href="/" class="mdl-navigation__link"><i class="material-icons">home</i> 首页</a>
-                {{ range .Site.Menus.main }}
-                  <a href="{{ .URL }}" class="mdl-navigation__link">{{ .Pre }} {{ .Name }}</a>
-                {{end}}
+                <a href="/" class="mdl-navigation__link"><i class="material-icons">home</i> 首页</a> {{ range .Site.Menus.main }}
+                <a href="{{ .URL }}" class="mdl-navigation__link">{{ .Pre }} {{ .Name }}</a> {{end}}
                 <a href="/tags" class="mdl-navigation__link"><i class="material-icons">loyalty</i> 标签云</a>
                 <a href="/about" class="mdl-navigation__link"><i class="material-icons">info</i> 关于</a>
             </nav>
