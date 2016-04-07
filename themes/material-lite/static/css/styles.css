@@ -473,7 +473,7 @@ a.label {
 ------------------------------------------*/
 
 .main-container .blog__posts {
-    max-width: 900px;
+    max-width: 1000px;
     padding: 0;
     display: -webkit-box;
     display: -webkit-flex;
