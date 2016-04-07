@@ -556,6 +556,7 @@ a.label {
 }
 .main-container .mdl-card__supporting-text.content ul {
   font-size: 16px;
+  line-height: inherit;
 }
 .main-container .mdl-card__supporting-text.comments {
     padding: 2rem;
