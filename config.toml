@@ -1,4 +1,4 @@
-baseurl = "http://xiaoxiyao.ml"
+baseurl = "//xiaoxiyao.ml"
 languageCode = "zh-cn"
 title = "xiaoxiyao's blog"
 theme = "material-lite"
