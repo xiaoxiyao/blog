@@ -21,6 +21,9 @@ Paginate = 5
   tag = "tags"
   category = "categories"
 
+[blackfriday]
+  hrefTargetBlank = true
+
 [params]
   copyright = "&copy; xiaoxiyao 2015"
   author = "xiaoxiyao"

@@ -492,6 +492,10 @@ a.label {
 	font-size: inherit;
 	line-height: inherit;
 }
+/*内容图片自适应*/
+.main-container .blog--blogpost .blog__posts .mdl-card__supporting-text.content img{
+	width: 100%;
+}
 .main-container.mdl-layout .mdl-layout__content {
     padding-top: 2rem;
     position: relative;
