@@ -22,10 +22,6 @@ Paginate = 5
   category = "categories"
 
 [params]
-#  TwitterUser = "SamuelDebruyn"
-#  FacebookUser = "facebook"
-  GooglePlusUser = "103579200356573263980"
-  GitHubUser = "xiaoxiyao"
   copyright = "&copy; xiaoxiyao 2015"
   author = "xiaoxiyao"
   description = "a blog build by hugo and material-design-lite on github pages(技术交流,分享一些个人经验与感悟)"

@@ -1,7 +1,7 @@
 <nav class="nav mdl-cell mdl-cell--12-col">
 	{{if .Paginator.HasPrev}}
 	<a href="{{ .Paginator.Prev.URL }}" class="nav__button">
-		<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+		<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect mdl-button--colored">
 			<i class="material-icons" role="presentation">arrow_back</i>
 		</button>
 		上一页
@@ -11,7 +11,7 @@
 	{{if .Paginator.HasNext}}
 	<a href="{{ .Paginator.Next.URL }}" class="nav__button">
 		下一页
-		<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+		<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect mdl-button--colored">
 			<i class="material-icons" role="presentation">arrow_forward</i>
 		</button>
 	</a>

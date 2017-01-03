@@ -1,0 +1,20 @@
+[[icons]]
+	name = "GitHub"
+	class = "icon-github"
+	color = "black"
+	link = "https://github.com/xiaoxiyao"
+[[icons]]
+	name = "CodePen"
+	class = "icon-codepen"
+	color = "black"
+	link = "http://codepen.io/xiaoxiyao"
+[[icons]]
+	name = "Google+"
+	class = "icon-googleplus"
+	color = "red"
+	link = "https://plus.google.com/103579200356573263980"
+[[icons]]
+	name = "知乎"
+	class = "icon-zhihu"
+	color = "blue"
+	link = "https://www.zhihu.com/people/xiaoxiyao"

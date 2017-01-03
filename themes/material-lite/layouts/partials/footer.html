@@ -1,45 +1,25 @@
         <footer class="mdl-mini-footer">
-          <div class="mdl-mini-footer--left-section">
-            {{with .Site.Params.TwitterUser}}
-              <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon social-btn social-btn__twitter" href="https://twitter.com/{{.}}" target="_blank" rel="me">
-                  <i class='iconfont icon-twitter'></i>
-              </a>
-            {{end}}
-            {{with .Site.Params.FacebookUser}}
-              <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon social-btn social-btn__fb"  href="https://facebook.com/{{.}}" target="_blank" rel="me">
-                  <i class='iconfont icon-facebook'></i>
-              </a>
-            {{end}}
-            {{with .Site.Params.GooglePlusUser}}
-              <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color-text--red social-btn social-btn__gplus" href="https://plus.google.com/{{.}}" target="_blank" rel="me">
-                  <i class='iconfont icon-googleplus'></i>
-              </a>
-            {{end}}
-            {{with .Site.Params.GitHubUser}}
-              <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color-text--black social-btn social-btn__github" href="https://github.com/{{.}}" target="_blank" rel="me">
-                  <i class='iconfont icon-github'></i>
-              </a>
-            {{end}}
+          <!-- <div class="mdl-mini-footer--left-section">
+
           </div>
           <div class="mdl-mini-footer--right-section">
             {{with .Site.Params.copyright}}
               {{ . | safeHTML }}
             {{end}}
-          </div>
+          </div> -->
         </footer>
       </main>
       <div class="mdl-layout__obfuscator"></div>
     </div>
-    <script src="//cdn.bootcss.com/highlight.js/8.8.0/highlight.min.js"></script>
-    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/highlight.js/9.9.0/highlight.min.js"></script>
+    <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
   </body>
   <script>
-  $(window).load(function() {
-    setTimeout(function() {
-      $('body').addClass('loaded');
-    }, 200);
+  $(window).on('load',function() {
+	setTimeout(function() {
+	  $('body').addClass('loaded');
+	}, 200);
   });
-
     $(function() {
       hljs.initHighlightingOnLoad();
     });
