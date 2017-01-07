@@ -15,6 +15,7 @@ blockquote {
     border-left: 4px solid #ddd;
     font-family: inherit;
     position: initial;
+	margin: 0.6rem 1rem;
 }
 blockquote::before, blockquote::after {
     display: none;
@@ -494,7 +495,7 @@ a.label {
 }
 /*内容图片自适应*/
 .main-container .blog--blogpost .blog__posts .mdl-card__supporting-text.content img{
-	width: 100%;
+	max-width: 100%;
 }
 .main-container.mdl-layout .mdl-layout__content {
     padding-top: 2rem;
