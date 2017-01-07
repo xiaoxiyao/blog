@@ -1,7 +1,7 @@
 box: wercker/default
 build:
   steps:
-    - arjen/hugo-build:
+    - arjen/hugo-build@1.14.1：
         version: "0.17"
         theme: material-lite
         flags: --disableSitemap=true
