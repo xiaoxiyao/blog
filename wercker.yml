@@ -4,7 +4,7 @@ build:
     - arjen/hugo-build:
         version: "0.17"
         theme: material-lite
-        force_install: true
+        disable_pygments: true
         flags: --disableSitemap=true
 deploy:
   steps:
