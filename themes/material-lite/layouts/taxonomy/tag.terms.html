@@ -1,4 +1,17 @@
 {{ partial "header.html" . }}
+<div class="mdl-grid">
+    {{ $plural := .Data.Plural }}
+    {{ range .Data.Terms.ByCount }}
+	<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone"> <!-- 4,2,1 -->
+		<a href="{{ $plural }}/{{ .Name | urlize }}">
+			<span class="mdl-chip mdl-chip--contact">
+	    		<span class="mdl-chip__contact mdl-color--teal mdl-color-text--white">{{ .Count }}</span>
+	    		<span class="mdl-chip__text">{{ title .Name }}</span> <!-- or upper function -->
+			</span>
+		</a>
+	</div>
+    {{ end }}
+</div>
 <script>
 document.getElementById('title').innerHTML = '标签云';
 </script>
