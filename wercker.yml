@@ -8,9 +8,7 @@ build:
         flags: --disableSitemap=true
 deploy:
   steps:
-    - leipert/git-push:
-        gh_oauth: $GITHUB_TOKEN
+    - osteele/gh-pages:
+        token: $GITHUB_TOKEN
         basedir: public
-        clean_removed_files: true
         branch: gh-pages
-        gh_pages: true
