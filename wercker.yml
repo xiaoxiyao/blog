@@ -9,6 +9,6 @@ build:
 deploy:
   steps:
     - osteele/gh-pages:
-        token: $GITHUB_TOKEN
+        token: $GIT_TOKEN
         basedir: public
         branch: gh-pages
