@@ -498,6 +498,7 @@ a.label {
 	max-width: 100%;
 }
 .main-container.mdl-layout .mdl-layout__content {
+	background-color: #f6f6f6;
     padding-top: 2rem;
     position: relative;
     -webkit-overflow-scrolling: touch;
@@ -677,7 +678,7 @@ a.label {
 }
 
 .main-container .mdl-layout__drawer .mdl-layout-title {
-    background-color: rgb(0, 150, 136);
+    background-color: #009688;
     color: #FFFFFF;
     text-align: center;
     padding: 2rem 2rem 0 2rem;
@@ -689,6 +690,11 @@ a.label {
 	line-height: 24px;
 	text-align: center;
 	color: inherit;
+}
+.main-container .mdl-layout__drawer .mdl-navigation__link:hover,
+.main-container .mdl-layout__drawer .mdl-navigation__link.active {
+	color: #009688;
+	background-color: #e0e0e0;
 }
 .main-container .mdl-layout__drawer .mdl-navigation__link i.material-icons {
     float: left;

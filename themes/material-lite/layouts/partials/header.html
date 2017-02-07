@@ -105,10 +105,12 @@
 				{{end}}
 			</div>
 			<nav class="mdl-navigation">
-				<a href="/" class="mdl-navigation__link">首页 <i class="material-icons">home</i></a> {{ range .Site.Menus.main }}
-				<a href="{{ .URL }}" class="mdl-navigation__link">{{ .Name }} {{ .Pre }}</a> {{end}}
-				<a href="/tags" class="mdl-navigation__link">标签云 <i class="material-icons">loyalty</i></a>
-				<a href="/about" class="mdl-navigation__link">关于 <i class="material-icons">info</i></a>
+				<a href="/" class="mdl-navigation__link">首页 <i class="material-icons">home</i></a>
+				{{ range .Site.Menus.main }}
+				<a href="{{ .URL }}/" class="mdl-navigation__link">{{ .Name }} {{ .Pre }}</a>
+				{{end}}
+				<a href="/tags/" class="mdl-navigation__link">标签云 <i class="material-icons">loyalty</i></a>
+				<a href="/about/" class="mdl-navigation__link">关于 <i class="material-icons">info</i></a>
 			</nav>
 
 		</div>

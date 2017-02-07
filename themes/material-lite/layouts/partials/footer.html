@@ -21,7 +21,21 @@
 	}, 200);
   });
     $(function() {
+	  //初始化代码高亮
       hljs.initHighlightingOnLoad();
+
+	  //抽屉导航菜单激活项
+	  $('.mdl-layout__drawer').find('.mdl-navigation').find('.mdl-navigation__link').each(function(){
+		  var $this = $(this);
+		  console.dir($this.attr('href'));
+		  if($this.attr('href') == location.pathname) {
+			  $this.addClass('active');
+		  }
+		  else {
+		      $this.removeClass('active');
+		  }
+	  });
+	  console.dir(location.pathname);
     });
   </script>
 </html>
