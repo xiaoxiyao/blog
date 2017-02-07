@@ -27,7 +27,6 @@
 	  //抽屉导航菜单激活项
 	  $('.mdl-layout__drawer').find('.mdl-navigation').find('.mdl-navigation__link').each(function(){
 		  var $this = $(this);
-		  console.dir($this.attr('href'));
 		  if($this.attr('href') == location.pathname) {
 			  $this.addClass('active');
 		  }
@@ -35,7 +34,6 @@
 		      $this.removeClass('active');
 		  }
 	  });
-	  console.dir(location.pathname);
     });
   </script>
 </html>
