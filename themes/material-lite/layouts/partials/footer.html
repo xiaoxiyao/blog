@@ -13,27 +13,6 @@
     </div>
     <script src="//cdn.bootcss.com/highlight.js/9.9.0/highlight.min.js"></script>
     <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+	<script src="{{.Site.BaseURL}}/js/custom.js"></script>
   </body>
-  <script>
-  $(window).on('load',function() {
-	setTimeout(function() {
-	  $('body').addClass('loaded');
-	}, 200);
-  });
-    $(function() {
-	  //初始化代码高亮
-      hljs.initHighlightingOnLoad();
-
-	  //抽屉导航菜单激活项
-	  $('.mdl-layout__drawer').find('.mdl-navigation').find('.mdl-navigation__link').each(function(){
-		  var $this = $(this);
-		  if($this.attr('href') == location.pathname) {
-			  $this.addClass('active');
-		  }
-		  else {
-		      $this.removeClass('active');
-		  }
-	  });
-    });
-  </script>
 </html>
