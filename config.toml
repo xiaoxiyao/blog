@@ -30,5 +30,5 @@ Paginate = 5
   description = "a blog build by hugo and material-design-lite on github pages(技术交流,分享一些个人经验与感悟)"
   keywords = "个人博客,技术交流,github pages,blog,material design,xiaoxiyao,分享,收藏,hugo"
 #  background = "http://i3.piimg.com/da829ff5ad525994.jpg"
-  logo = "http://i3.piimg.com/6a9b7cbe4962c6a5.png"
+  logo = "https://i3.piimg.com/6a9b7cbe4962c6a5.png"
   DuoShuoName = "xiaoxiyao"
