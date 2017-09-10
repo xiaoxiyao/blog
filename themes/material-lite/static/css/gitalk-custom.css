@@ -5,3 +5,19 @@
     _zoom: 1;
     width: 100%;
 }
+
+#gitalk-container>.gt-container a {
+    color: #e040fb;
+}
+
+#gitalk-container>.gt-container>.gt-meta {
+    color: #616161;
+}
+
+#gitalk-container>.gt-container>.gt-comments>.gt-comments-null {
+    color: #616161;
+}
+
+#gitalk-container>.gt-container>.gt-no-init {
+    color: #616161;
+}
