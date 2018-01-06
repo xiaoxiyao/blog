@@ -851,7 +851,9 @@ a.label {
 	background: rgba(255,255,255,.15);
 }
 .main-container .mdl-layout__drawer .mdl-layout-title > .logo {
-    padding: 0 2rem;
+    margin: 0 2rem;
+    border-radius: 50%;
+    overflow: hidden;
 }
 .main-container .mdl-layout__drawer .mdl-navigation__link {
 	line-height: 24px;
@@ -973,15 +975,6 @@ a.label {
     -webkit-flex-grow: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
-}
-.main-container .minilogo {
-    width: 44px;
-    height: 44px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 50%;
-    border-radius: 22px;
-    background-color: #F5F5F5;
 }
 
 /* Fixes for IE 10 */
