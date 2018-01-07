@@ -21,3 +21,30 @@
 #gitalk-container>.gt-container>.gt-no-init {
     color: #616161;
 }
+
+#gitalk-container>.gt-container .gt-btn {
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+    background-color: rgb(0,150,136);
+    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+}
+
+#gitalk-container>.gt-container .gt-btn:active {
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+    background-color: rgba(0, 150, 136, 0.8);
+}
+
+#gitalk-container>.gt-container .gt-header-textarea {
+    resize: vertical;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,.12);
+    padding: 4px 0;
+    color: #757575;
+    font-family: "Helvetica","Arial",sans-serif;
+    background-color: inherit;
+    border-radius: 0;
+}
+
+#gitalk-container>.gt-container .gt-svg {
+    vertical-align: unset;
+}

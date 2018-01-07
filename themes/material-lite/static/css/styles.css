@@ -715,7 +715,7 @@ a.label {
 .main-container .mdl-layout__header.is-compact .mdl-layout__header-row #hitokoto.ready {
 	padding: 0;
 	height: 0;
-	z-index: -1;
+	overflow: hidden;
 	opacity: 0;
 }
 .main-container .mdl-layout__header .mdl-layout__header-row #hitokoto.ready .hito-text {
