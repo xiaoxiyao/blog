@@ -1,3 +1,5 @@
+//初始化代码高亮
+hljs.initHighlightingOnLoad();
 //加载效果完成
 $(window).on('load', function() {
 	setTimeout(function() {
@@ -6,8 +8,6 @@ $(window).on('load', function() {
 });
 
 $(function() {
-	//初始化代码高亮
-	hljs.initHighlightingOnLoad();
 
 	//抽屉导航菜单激活项
 	$('.mdl-layout__drawer').find('.mdl-navigation').find('.mdl-navigation__link').each(function() {
