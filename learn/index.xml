@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Learns on xiaoxiyao&#39;s blog</title>
+    <link>//luoxiao.ml/learn/</link>
+    <description>Recent content in Learns on xiaoxiyao&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>&amp;copy; xiaoxiyao 2015</copyright>
+    <lastBuildDate>Tue, 27 Dec 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="//luoxiao.ml/learn/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>git相关配置</title>
+      <link>//luoxiao.ml/learn/161227/</link>
+      <pubDate>Tue, 27 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>//luoxiao.ml/learn/161227/</guid>
+      <description>1 配置用户名和邮箱 $ git config --global user.name &amp;quot;yourname” $ git config --global user.email youremail   去掉--global则只会配置当前项目的用户名和邮箱 用户名和邮箱可以不与github账号相同。如果使用github账号，commit记录会链接到你的github账号  2 生成SSH key $ ssh-keygen -t rsa -C &amp;quot;youremail&amp;quot;   -t type 指定密钥类型 -C comment 注释文字，一般用邮箱  Generating public/private rsa key pair. Enter file in which to save the key (/c/Users/xiao/.ssh/id_rsa):  之后会让你设置用来保存ssh key的文件名，你也可以按enter使用默认文件名
+Enter passphrase (empty for no passphrase): Enter same passphrase again:  接下来又会让你输入两次密码（不是github的密码），设置密码后每次pull都要输入密码，建议直接enter不使用密码
+Your identification has been saved in /c/Users/xiao/.</description>
+    </item>
+    
+    <item>
+      <title>移动web前端常用的meta标签</title>
+      <link>//luoxiao.ml/learn/160407/</link>
+      <pubDate>Thu, 07 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>//luoxiao.ml/learn/160407/</guid>
+      <description>优先使用最新ie和chrome
+&amp;lt;meta http-equiv=&amp;quot;X-UA-Compatible&amp;quot; content=&amp;quot;IE=edge,chrome=1&amp;quot; /&amp;gt;  360使用webkit内核(极速模式)
+&amp;lt;meta name=&amp;quot;renderer&amp;quot; content=&amp;quot;webkit&amp;quot;&amp;gt;  禁止百度转码
+&amp;lt;meta http-equiv=&amp;quot;Cache-Control&amp;quot; content=&amp;quot;no-siteapp&amp;quot; /&amp;gt;  viewport
+&amp;lt;meta name =&amp;quot;viewport&amp;quot; content =&amp;quot;width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no&amp;quot; /&amp;gt;  content属性的详细介绍:   属性名 取值 描述     width 正整数 或 device-width 定义视口的宽度，单位为像素   height 正整数 或 device-height 定义视口的高度，单位为像素，一般不用   initial-scale [0.0-10.0] 定义初始缩放值   minimum-scale [0.0-10.0] 定义缩小最小比例，它必须小于或等于maximum-scale设置   maximum-scale [0.0-10.0] 定义放大最大比例，它必须大于或等于minimum-scale设置   user-scalable yes/no 定义是否允许用户手动缩放页面，默认值yes</description>
+    </item>
+    
+    <item>
+      <title>绝对定位垂直居中（转）</title>
+      <link>//luoxiao.ml/learn/151231/</link>
+      <pubDate>Thu, 31 Dec 2015 19:26:54 +0800</pubDate>
+      
+      <guid>//luoxiao.ml/learn/151231/</guid>
+      <description>我们经常使用margin: 0 auto来使元素水平居中，垂直居中往往是比较麻烦的地方，然而margin: auto也能方便的让元素垂直居中，在申明元素高度的情况下，只需使用下面的css：
+margin: auto; position: absolute; top: 0; left: 0; bottom: 0; right: 0;  注意必须申明元素高度，可以使用%属性和min-/max-属性。
+看下面的示例： See the Pen Absolute Centering by xiaoxiyao (@xiaoxiyao) on CodePen.
+
+原文中还提到了其他几种实现垂直居中的方法以及优缺点的对比：
+ 原文（中文）：http://blog.csdn.net/freshlover/article/details/11579669
+原文（英文）：http://www.smashingmagazine.com/2013/08/absolute-horizontal-vertical-centering-css/
+ </description>
+    </item>
+    
+    <item>
+      <title>多行文本溢出显示省略号(转)</title>
+      <link>//luoxiao.ml/learn/151114/</link>
+      <pubDate>Sat, 14 Nov 2015 20:59:54 +0800</pubDate>
+      
+      <guid>//luoxiao.ml/learn/151114/</guid>
+      <description>最近工作中遇到需要控制显示的文本长度的问题，css中的text-overflow:ellipsis可以在溢出容器的文本后面自动加上省略号，但是文本必须不能换行：
+overflow: hidden; text-overflow: ellipsis; white-space: nowrap;  于是在网络上搜寻了一些多行文本的解决方案，找到了一种适合webkit内核浏览器的方案，有一个可以直接使用的WebKit私有属性-webkit-line-clamp。-webkit-line-clamp用来限制在一个块元素显示的文本的行数。 为了实现该效果，它需要组合其他的WebKit属性：
+ display: -webkit-box; 必须结合的属性 ，将对象作为弹性伸缩盒子模型显示 。 -webkit-box-orient 必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式 。  overflow : hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;  See the Pen 多行文本溢出显示省略号 by xiaoxiyao (@xiaoxiyao) on CodePen.
+
+原文中还提到了其他几种跨浏览器兼容的方案（图片和js）：
+ 原文：http://www.css88.com/archives/5206
+ </description>
+    </item>
+    
+    <item>
+      <title>测试分页1</title>
+      <link>//luoxiao.ml/learn/first00/</link>
+      <pubDate>Mon, 26 Oct 2015 23:48:05 +0800</pubDate>
+      
+      <guid>//luoxiao.ml/learn/first00/</guid>
+      <description>&lt;p&gt;1233536547qwrew中问&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>测试分页</title>
+      <link>//luoxiao.ml/learn/first0/</link>
+      <pubDate>Sun, 25 Oct 2015 23:48:05 +0800</pubDate>
+      
+      <guid>//luoxiao.ml/learn/first0/</guid>
+      <description>&lt;p&gt;1233536547qwrew中问&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>测试博客</title>
+      <link>//luoxiao.ml/learn/first/</link>
+      <pubDate>Fri, 25 Sep 2015 23:48:05 +0800</pubDate>
+      
+      <guid>//luoxiao.ml/learn/first/</guid>
+      <description> 博客测试 Materialize-for-Yii Materialize是一个Material Design风格的web前端框架，将其做成Yii Framework的一个主题扩展，想必是极好的^_^
+该项目还在完善中，可能有较多问题
+使用方法  将下载的materialize文件夹放在你项目的extensions目录里 配置文件如下： php Yii::setPathOfAlias(&#39;md&#39;, realpath(dirname(__FILE__) . &#39;/../extensions/materialize&#39;)); return array( //...... &#39;preload&#39; =&amp;gt; array(&#39;log&#39;,&#39;md&#39;), &#39;import&#39; =&amp;gt; array( //...... &#39;md.components.*&#39;, ), &#39;components&#39; =&amp;gt; array( &#39;md&#39;=&amp;gt;array( &#39;class&#39;=&amp;gt;&#39;md.components.Materialize&#39;, &#39;minify&#39; =&amp;gt; true, //是否使用压缩的css js 文件 &#39;forceCopyAssets&#39; =&amp;gt; false, //是否强制复制Assets ), ), //...... )  目前可用的widgets有MdButon、MdSwitch、MdToast、MdActiveForm  </description>
+    </item>
+    
+  </channel>
+</rss>

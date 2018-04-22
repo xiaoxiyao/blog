@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Webapp on xiaoxiyao&#39;s blog</title>
+    <link>//luoxiao.ml/tags/webapp/</link>
+    <description>Recent content in Webapp on xiaoxiyao&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>&amp;copy; xiaoxiyao 2015</copyright>
+    <lastBuildDate>Thu, 07 Apr 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="//luoxiao.ml/tags/webapp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>移动web前端常用的meta标签</title>
+      <link>//luoxiao.ml/learn/160407/</link>
+      <pubDate>Thu, 07 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>//luoxiao.ml/learn/160407/</guid>
+      <description>优先使用最新ie和chrome
+&amp;lt;meta http-equiv=&amp;quot;X-UA-Compatible&amp;quot; content=&amp;quot;IE=edge,chrome=1&amp;quot; /&amp;gt;  360使用webkit内核(极速模式)
+&amp;lt;meta name=&amp;quot;renderer&amp;quot; content=&amp;quot;webkit&amp;quot;&amp;gt;  禁止百度转码
+&amp;lt;meta http-equiv=&amp;quot;Cache-Control&amp;quot; content=&amp;quot;no-siteapp&amp;quot; /&amp;gt;  viewport
+&amp;lt;meta name =&amp;quot;viewport&amp;quot; content =&amp;quot;width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no&amp;quot; /&amp;gt;  content属性的详细介绍:   属性名 取值 描述     width 正整数 或 device-width 定义视口的宽度，单位为像素   height 正整数 或 device-height 定义视口的高度，单位为像素，一般不用   initial-scale [0.0-10.0] 定义初始缩放值   minimum-scale [0.0-10.0] 定义缩小最小比例，它必须小于或等于maximum-scale设置   maximum-scale [0.0-10.0] 定义放大最大比例，它必须大于或等于minimum-scale设置   user-scalable yes/no 定义是否允许用户手动缩放页面，默认值yes</description>
+    </item>
+    
+  </channel>
+</rss>

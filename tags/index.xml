@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on xiaoxiyao&#39;s blog</title>
+    <link>//luoxiao.ml/tags/</link>
+    <description>Recent content in Tags on xiaoxiyao&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>&amp;copy; xiaoxiyao 2015</copyright>
+    <lastBuildDate>Mon, 02 Nov 2015 23:48:05 +0800</lastBuildDate>
+    
+	<atom:link href="//luoxiao.ml/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Chrome</title>
+      <link>//luoxiao.ml/tags/chrome/</link>
+      <pubDate>Mon, 02 Nov 2015 23:48:05 +0800</pubDate>
+      
+      <guid>//luoxiao.ml/tags/chrome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Css</title>
+      <link>//luoxiao.ml/tags/css/</link>
+      <pubDate>Thu, 31 Dec 2015 19:26:54 +0800</pubDate>
+      
+      <guid>//luoxiao.ml/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Game</title>
+      <link>//luoxiao.ml/tags/game/</link>
+      <pubDate>Fri, 24 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>//luoxiao.ml/tags/game/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>//luoxiao.ml/tags/git/</link>
+      <pubDate>Tue, 27 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>//luoxiao.ml/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Github</title>
+      <link>//luoxiao.ml/tags/github/</link>
+      <pubDate>Fri, 25 Sep 2015 23:48:05 +0800</pubDate>
+      
+      <guid>//luoxiao.ml/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Haha</title>
+      <link>//luoxiao.ml/tags/haha/</link>
+      <pubDate>Fri, 02 Oct 2015 23:48:05 +0800</pubDate>
+      
+      <guid>//luoxiao.ml/tags/haha/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Html</title>
+      <link>//luoxiao.ml/tags/html/</link>
+      <pubDate>Thu, 07 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>//luoxiao.ml/tags/html/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Html5</title>
+      <link>//luoxiao.ml/tags/html5/</link>
+      <pubDate>Fri, 24 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>//luoxiao.ml/tags/html5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>//luoxiao.ml/tags/linux/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>//luoxiao.ml/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Test</title>
+      <link>//luoxiao.ml/tags/test/</link>
+      <pubDate>Mon, 02 Nov 2015 23:48:05 +0800</pubDate>
+      
+      <guid>//luoxiao.ml/tags/test/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ubuntu</title>
+      <link>//luoxiao.ml/tags/ubuntu/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>//luoxiao.ml/tags/ubuntu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Webapp</title>
+      <link>//luoxiao.ml/tags/webapp/</link>
+      <pubDate>Thu, 07 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>//luoxiao.ml/tags/webapp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>分页</title>
+      <link>//luoxiao.ml/tags/%E5%88%86%E9%A1%B5/</link>
+      <pubDate>Mon, 26 Oct 2015 23:48:05 +0800</pubDate>
+      
+      <guid>//luoxiao.ml/tags/%E5%88%86%E9%A1%B5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>摘要</title>
+      <link>//luoxiao.ml/tags/%E6%91%98%E8%A6%81/</link>
+      <pubDate>Mon, 26 Oct 2015 23:48:05 +0800</pubDate>
+      
+      <guid>//luoxiao.ml/tags/%E6%91%98%E8%A6%81/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>测试</title>
+      <link>//luoxiao.ml/tags/%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Mon, 26 Oct 2015 23:48:05 +0800</pubDate>
+      
+      <guid>//luoxiao.ml/tags/%E6%B5%8B%E8%AF%95/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
