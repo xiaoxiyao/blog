@@ -42,3 +42,8 @@ $(function() {
 	});
 
 });
+if ('serviceWorker' in navigator) {
+	navigator.serviceWorker.register('/sw.js').catch(function(error) {
+		alert('注册serviceWorker失败：' + error);
+	});
+}

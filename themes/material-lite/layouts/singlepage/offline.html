@@ -1,0 +1,14 @@
+{{ partial "header.html" . }}
+<div class="blog--blogpost">
+	<div class="blog__posts mdl-grid">
+		<div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+			<div class="mdl-color-text--grey-700 mdl-card__supporting-text content">
+				{{ .Content }}
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	document.getElementById('title').innerHTML = '{{.Title}}';
+</script>
+{{ partial "footer.html" . }}

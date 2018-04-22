@@ -992,16 +992,6 @@ a.label {
 .social-btn i.mdi {
     font-size: 24px;
 }
-.main-container .mdl-mini-footer {
-    margin-top: 3rem;
-    padding: 1rem 2rem;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background-color: white;
-    box-sizing: border-box;
-}
 div.content strong {
     font-weight: 900 !important;
 }
