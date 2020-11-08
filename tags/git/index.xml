@@ -1,27 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Git on xiaoxiyao&#39;s blog</title>
-    <link>//luoxiao.ml/tags/git/</link>
-    <description>Recent content in Git on xiaoxiyao&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <copyright>&amp;copy; xiaoxiyao 2015</copyright>
-    <lastBuildDate>Tue, 27 Dec 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="//luoxiao.ml/tags/git/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>git相关配置</title>
-      <link>//luoxiao.ml/learn/161227/</link>
-      <pubDate>Tue, 27 Dec 2016 00:00:00 +0000</pubDate>
-      
-      <guid>//luoxiao.ml/learn/161227/</guid>
-      <description>1 配置用户名和邮箱 $ git config --global user.name &amp;quot;yourname” $ git config --global user.email youremail   去掉--global则只会配置当前项目的用户名和邮箱 用户名和邮箱可以不与github账号相同。如果使用github账号，commit记录会链接到你的github账号  2 生成SSH key $ ssh-keygen -t rsa -C &amp;quot;youremail&amp;quot;   -t type 指定密钥类型 -C comment 注释文字，一般用邮箱  Generating public/private rsa key pair. Enter file in which to save the key (/c/Users/xiao/.ssh/id_rsa):  之后会让你设置用来保存ssh key的文件名，你也可以按enter使用默认文件名
-Enter passphrase (empty for no passphrase): Enter same passphrase again:  接下来又会让你输入两次密码（不是github的密码），设置密码后每次pull都要输入密码，建议直接enter不使用密码
-Your identification has been saved in /c/Users/xiao/.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Git on xiaoxiyao's blog</title><link>//luoxiao.ml/tags/git/</link><description>Recent content in Git on xiaoxiyao's blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 27 Dec 2016 00:00:00 +0000</lastBuildDate><atom:link href="//luoxiao.ml/tags/git/index.xml" rel="self" type="application/rss+xml"/><item><title>git相关配置</title><link>//luoxiao.ml/learn/161227/</link><pubDate>Tue, 27 Dec 2016 00:00:00 +0000</pubDate><guid>//luoxiao.ml/learn/161227/</guid><description>1 配置用户名和邮箱 $ git config --global user.name &amp;quot;yourname” $ git config --global user.email youremail 去掉--global则只会配置当前项目的用户名和邮箱 用户名和邮箱可以不与github账号相同。如果使用github账号，commit记录会链接到你的github账号 2 生成SSH key $ ssh-keygen -t rsa -C &amp;quot;youremail&amp;quot; -t type 指定密钥类型 -C comment 注释文字，一般用邮箱 Generating public/private rsa key pair. Enter file in which to save the key (/c/Users/xiao/.ssh/id_rsa): 之后会让你设置用来保存ssh key的文件名，你也可以按enter使用默认文件名
+Enter passphrase (empty for no passphrase): Enter same passphrase again: 接下来又会让你输入两次密码（不是github的密码），设置密码后每次pull都要输入密码，建议直接enter不使用密码
+Your identification has been saved in /c/Users/xiao/.</description></item></channel></rss>

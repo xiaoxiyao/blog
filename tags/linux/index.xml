@@ -1,37 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Linux on xiaoxiyao&#39;s blog</title>
-    <link>//luoxiao.ml/tags/linux/</link>
-    <description>Recent content in Linux on xiaoxiyao&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <copyright>&amp;copy; xiaoxiyao 2015</copyright>
-    <lastBuildDate>Thu, 05 Jan 2017 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="//luoxiao.ml/tags/linux/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>ubuntu 折腾笔记</title>
-      <link>//luoxiao.ml/others/170104/</link>
-      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>//luoxiao.ml/others/170104/</guid>
-      <description>由于升级win10破坏了grub启动引导，之前安装的ubuntu14.04进不去了，正好ubuntu升级了新的版本16.04lts，那就彻底重装好了。 安装过程就不细说了，这篇文章主要记录安装完一个全新的ubuntn系统后需要做的一些事情，让系统使用更得心应手。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>linux on xiaoxiyao's blog</title><link>//luoxiao.ml/tags/linux/</link><description>Recent content in linux on xiaoxiyao's blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 05 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="//luoxiao.ml/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>ubuntu 折腾笔记</title><link>//luoxiao.ml/others/170104/</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><guid>//luoxiao.ml/others/170104/</guid><description>由于升级win10破坏了grub启动引导，之前安装的ubuntu14.04进不去了，正好ubuntu升级了新的版本16.04lts，那就彻底重装好了。 安装过程就不细说了，这篇文章主要记录安装完一个全新的ubuntn系统后需要做的一些事情，让系统使用更得心应手。
 1 更新一下grub引导 ubuntu安装完成后第一次重启系统会发现grub启动引导列表里并没有windows的启动项，先直接进入ubuntu系统，在终端里运行一下sudo update-grub，下次重启就能进入windows了
 2 安装chrome浏览器 chrome虽然内存占用爆炸，但我已经用习惯了离不开了，数据多端同步也很方便。ubuntu自带firefox浏览器，firefox用户可以直接忽略。
 由于某些原因chrome官方源使用不了，推荐使用这个源： Fedora 中文社区软件源
 安装方法:
-sudo wget https://repo.fdzh.org/chrome/google-chrome.list -P /etc/apt/sources.list.d/ wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add - sudo apt-get update sudo apt-get install google-chrome-stable  3 科学上网 安装完chrome之后就需要登录google帐号进行同步了，这个是ubuntu能用的shadowsocks客户端 shadowsocks-qt5，我就不多说了。也可以使用修改hosts的方式，参考 老D博客
+sudo wget https://repo.fdzh.org/chrome/google-chrome.list -P /etc/apt/sources.list.d/ wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add - sudo apt-get update sudo apt-get install google-chrome-stable 3 科学上网 安装完chrome之后就需要登录google帐号进行同步了，这个是ubuntu能用的shadowsocks客户端 shadowsocks-qt5，我就不多说了。也可以使用修改hosts的方式，参考 老D博客
 4 输入法 ubuntu16.04自带的拼音输入法可以一用，当然词库远不如搜狗：搜狗输入法 for linux（Ubuntu Kylin自带）。下载的deb包直接安装的话可能有依赖问题，根据提示安装依赖即可。
 5 双系统时间差问题 Windows 默认使用 CMOS 时间（硬件时间）作为系统时间，而 ubuntu 将硬件时间作为“全球统一时间”（UTC），经过时区换算之后才作为系统时间，导致时间相差8小时。解决方法有两种
- 调整windows
+调整windows
 编辑注册表，在
-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation\  目录下新建一个 REG_DWORD 项，命名为 RealTimeIsUniversal 并赋值为 1。
- 调整ubuntu（注意这里和旧版ubuntu有点不一样）
-执行</description>
-    </item>
-    
-  </channel>
-</rss>
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation\ 目录下新建一个 REG_DWORD 项，命名为 RealTimeIsUniversal 并赋值为 1。
+调整ubuntu（注意这里和旧版ubuntu有点不一样）
+执行
+sudo timedatectl set-local-rtc 1 6 ubuntu 美化 6.</description></item></channel></rss>

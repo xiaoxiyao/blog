@@ -1,167 +1,35 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>xiaoxiyao&#39;s blog</title>
-    <link>//luoxiao.ml/</link>
-    <description>Recent content on xiaoxiyao&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <copyright>&amp;copy; xiaoxiyao 2015</copyright>
-    <lastBuildDate>Mon, 25 Sep 2017 22:21:51 +0800</lastBuildDate>
-    
-	<atom:link href="//luoxiao.ml/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>离线页面</title>
-      <link>//luoxiao.ml/offline/</link>
-      <pubDate>Mon, 25 Sep 2017 22:21:51 +0800</pubDate>
-      
-      <guid>//luoxiao.ml/offline/</guid>
-      <description> 当前处于离线状态，部分页面无法访问，请确认网络正常后重试 </description>
-    </item>
-    
-    <item>
-      <title>ubuntu 折腾笔记</title>
-      <link>//luoxiao.ml/others/170104/</link>
-      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>//luoxiao.ml/others/170104/</guid>
-      <description>由于升级win10破坏了grub启动引导，之前安装的ubuntu14.04进不去了，正好ubuntu升级了新的版本16.04lts，那就彻底重装好了。 安装过程就不细说了，这篇文章主要记录安装完一个全新的ubuntn系统后需要做的一些事情，让系统使用更得心应手。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>xiaoxiyao's blog</title><link>//luoxiao.ml/</link><description>Recent content on xiaoxiyao's blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 05 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="//luoxiao.ml/index.xml" rel="self" type="application/rss+xml"/><item><title>离线页面</title><link>//luoxiao.ml/offline/</link><pubDate>Mon, 25 Sep 2017 22:21:51 +0800</pubDate><guid>//luoxiao.ml/offline/</guid><description>当前处于离线状态，部分页面无法访问，请确认网络正常后重试</description></item><item><title>ubuntu 折腾笔记</title><link>//luoxiao.ml/others/170104/</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><guid>//luoxiao.ml/others/170104/</guid><description>由于升级win10破坏了grub启动引导，之前安装的ubuntu14.04进不去了，正好ubuntu升级了新的版本16.04lts，那就彻底重装好了。 安装过程就不细说了，这篇文章主要记录安装完一个全新的ubuntn系统后需要做的一些事情，让系统使用更得心应手。
 1 更新一下grub引导 ubuntu安装完成后第一次重启系统会发现grub启动引导列表里并没有windows的启动项，先直接进入ubuntu系统，在终端里运行一下sudo update-grub，下次重启就能进入windows了
 2 安装chrome浏览器 chrome虽然内存占用爆炸，但我已经用习惯了离不开了，数据多端同步也很方便。ubuntu自带firefox浏览器，firefox用户可以直接忽略。
 由于某些原因chrome官方源使用不了，推荐使用这个源： Fedora 中文社区软件源
 安装方法:
-sudo wget https://repo.fdzh.org/chrome/google-chrome.list -P /etc/apt/sources.list.d/ wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add - sudo apt-get update sudo apt-get install google-chrome-stable  3 科学上网 安装完chrome之后就需要登录google帐号进行同步了，这个是ubuntu能用的shadowsocks客户端 shadowsocks-qt5，我就不多说了。也可以使用修改hosts的方式，参考 老D博客
+sudo wget https://repo.fdzh.org/chrome/google-chrome.list -P /etc/apt/sources.list.d/ wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add - sudo apt-get update sudo apt-get install google-chrome-stable 3 科学上网 安装完chrome之后就需要登录google帐号进行同步了，这个是ubuntu能用的shadowsocks客户端 shadowsocks-qt5，我就不多说了。也可以使用修改hosts的方式，参考 老D博客
 4 输入法 ubuntu16.04自带的拼音输入法可以一用，当然词库远不如搜狗：搜狗输入法 for linux（Ubuntu Kylin自带）。下载的deb包直接安装的话可能有依赖问题，根据提示安装依赖即可。
 5 双系统时间差问题 Windows 默认使用 CMOS 时间（硬件时间）作为系统时间，而 ubuntu 将硬件时间作为“全球统一时间”（UTC），经过时区换算之后才作为系统时间，导致时间相差8小时。解决方法有两种
- 调整windows
+调整windows
 编辑注册表，在
-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation\  目录下新建一个 REG_DWORD 项，命名为 RealTimeIsUniversal 并赋值为 1。
- 调整ubuntu（注意这里和旧版ubuntu有点不一样）
-执行</description>
-    </item>
-    
-    <item>
-      <title>git相关配置</title>
-      <link>//luoxiao.ml/learn/161227/</link>
-      <pubDate>Tue, 27 Dec 2016 00:00:00 +0000</pubDate>
-      
-      <guid>//luoxiao.ml/learn/161227/</guid>
-      <description>1 配置用户名和邮箱 $ git config --global user.name &amp;quot;yourname” $ git config --global user.email youremail   去掉--global则只会配置当前项目的用户名和邮箱 用户名和邮箱可以不与github账号相同。如果使用github账号，commit记录会链接到你的github账号  2 生成SSH key $ ssh-keygen -t rsa -C &amp;quot;youremail&amp;quot;   -t type 指定密钥类型 -C comment 注释文字，一般用邮箱  Generating public/private rsa key pair. Enter file in which to save the key (/c/Users/xiao/.ssh/id_rsa):  之后会让你设置用来保存ssh key的文件名，你也可以按enter使用默认文件名
-Enter passphrase (empty for no passphrase): Enter same passphrase again:  接下来又会让你输入两次密码（不是github的密码），设置密码后每次pull都要输入密码，建议直接enter不使用密码
-Your identification has been saved in /c/Users/xiao/.</description>
-    </item>
-    
-    <item>
-      <title>HTML5游戏引擎</title>
-      <link>//luoxiao.ml/share/160624/</link>
-      <pubDate>Fri, 24 Jun 2016 00:00:00 +0000</pubDate>
-      
-      <guid>//luoxiao.ml/share/160624/</guid>
-      <description> Cocos2d-x http://www.cocos.com/ Egret(白鹭) http://www.egret.com/ LayaAir http://www.layabox.com/ Soya2D http://soya2d.com/ lufylegend http://lufylegend.com/lufylegend  </description>
-    </item>
-    
-    <item>
-      <title>移动web前端常用的meta标签</title>
-      <link>//luoxiao.ml/learn/160407/</link>
-      <pubDate>Thu, 07 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>//luoxiao.ml/learn/160407/</guid>
-      <description>优先使用最新ie和chrome
-&amp;lt;meta http-equiv=&amp;quot;X-UA-Compatible&amp;quot; content=&amp;quot;IE=edge,chrome=1&amp;quot; /&amp;gt;  360使用webkit内核(极速模式)
-&amp;lt;meta name=&amp;quot;renderer&amp;quot; content=&amp;quot;webkit&amp;quot;&amp;gt;  禁止百度转码
-&amp;lt;meta http-equiv=&amp;quot;Cache-Control&amp;quot; content=&amp;quot;no-siteapp&amp;quot; /&amp;gt;  viewport
-&amp;lt;meta name =&amp;quot;viewport&amp;quot; content =&amp;quot;width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no&amp;quot; /&amp;gt;  content属性的详细介绍:   属性名 取值 描述     width 正整数 或 device-width 定义视口的宽度，单位为像素   height 正整数 或 device-height 定义视口的高度，单位为像素，一般不用   initial-scale [0.0-10.0] 定义初始缩放值   minimum-scale [0.0-10.0] 定义缩小最小比例，它必须小于或等于maximum-scale设置   maximum-scale [0.0-10.0] 定义放大最大比例，它必须大于或等于minimum-scale设置   user-scalable yes/no 定义是否允许用户手动缩放页面，默认值yes</description>
-    </item>
-    
-    <item>
-      <title>绝对定位垂直居中（转）</title>
-      <link>//luoxiao.ml/learn/151231/</link>
-      <pubDate>Thu, 31 Dec 2015 19:26:54 +0800</pubDate>
-      
-      <guid>//luoxiao.ml/learn/151231/</guid>
-      <description>我们经常使用margin: 0 auto来使元素水平居中，垂直居中往往是比较麻烦的地方，然而margin: auto也能方便的让元素垂直居中，在申明元素高度的情况下，只需使用下面的css：
-margin: auto; position: absolute; top: 0; left: 0; bottom: 0; right: 0;  注意必须申明元素高度，可以使用%属性和min-/max-属性。
-看下面的示例： See the Pen Absolute Centering by xiaoxiyao (@xiaoxiyao) on CodePen.
-
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation\ 目录下新建一个 REG_DWORD 项，命名为 RealTimeIsUniversal 并赋值为 1。
+调整ubuntu（注意这里和旧版ubuntu有点不一样）
+执行
+sudo timedatectl set-local-rtc 1 6 ubuntu 美化 6.</description></item><item><title>git相关配置</title><link>//luoxiao.ml/learn/161227/</link><pubDate>Tue, 27 Dec 2016 00:00:00 +0000</pubDate><guid>//luoxiao.ml/learn/161227/</guid><description>1 配置用户名和邮箱 $ git config --global user.name &amp;quot;yourname” $ git config --global user.email youremail 去掉--global则只会配置当前项目的用户名和邮箱 用户名和邮箱可以不与github账号相同。如果使用github账号，commit记录会链接到你的github账号 2 生成SSH key $ ssh-keygen -t rsa -C &amp;quot;youremail&amp;quot; -t type 指定密钥类型 -C comment 注释文字，一般用邮箱 Generating public/private rsa key pair. Enter file in which to save the key (/c/Users/xiao/.ssh/id_rsa): 之后会让你设置用来保存ssh key的文件名，你也可以按enter使用默认文件名
+Enter passphrase (empty for no passphrase): Enter same passphrase again: 接下来又会让你输入两次密码（不是github的密码），设置密码后每次pull都要输入密码，建议直接enter不使用密码
+Your identification has been saved in /c/Users/xiao/.</description></item><item><title>HTML5游戏引擎</title><link>//luoxiao.ml/share/160624/</link><pubDate>Fri, 24 Jun 2016 00:00:00 +0000</pubDate><guid>//luoxiao.ml/share/160624/</guid><description> Cocos2d-x http://www.cocos.com/ Egret(白鹭) http://www.egret.com/ LayaAir http://www.layabox.com/ Soya2D http://soya2d.com/ lufylegend http://lufylegend.com/lufylegend</description></item><item><title>移动web前端常用的meta标签</title><link>//luoxiao.ml/learn/160407/</link><pubDate>Thu, 07 Apr 2016 00:00:00 +0000</pubDate><guid>//luoxiao.ml/learn/160407/</guid><description>优先使用最新ie和chrome &amp;lt;meta http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;IE=edge,chrome=1&amp;#34; /&amp;gt; 360使用webkit内核(极速模式) &amp;lt;meta name=&amp;#34;renderer&amp;#34; content=&amp;#34;webkit&amp;#34;&amp;gt; 禁止百度转码 &amp;lt;meta http-equiv=&amp;#34;Cache-Control&amp;#34; content=&amp;#34;no-siteapp&amp;#34; /&amp;gt; viewport
+&amp;lt;meta name =&amp;#34;viewport&amp;#34; content =&amp;#34;width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no&amp;#34; /&amp;gt; content属性的详细介绍:
+禁止自动识别(电话号码,日期,地址,email)
+&amp;lt;meta name=&amp;#34;format-detection&amp;#34; content=&amp;#34;telephone=no,address=no,date=no,email=no&amp;#34;&amp;gt; ios相关 添加到主屏后的标题
+&amp;lt;meta name=&amp;#34;apple-mobile-web-app-title&amp;#34; content=&amp;#34;标题&amp;#34;&amp;gt; 添加到主屏后的图标
+&amp;lt;link rel=&amp;#34;apple-touch-icon-precomposed&amp;#34; sizes=&amp;#34;72x72&amp;#34; href=&amp;#34;/apple-touch-icon.png&amp;#34; /&amp;gt; rel取值:
+apple-touch-icon 图片自动处理成圆角和高光等效果 apple-touch-icon-precomposed 禁止系统自动添加效果，直接显示原图 sizes 默认57x57
+从主屏启动时启动画面
+&amp;lt;link rel=&amp;#34;apple-touch-startup-image&amp;#34; sizes=&amp;#34;768x1004&amp;#34; href=&amp;#34;/splash-screen.png&amp;#34; /&amp;gt; sizes 默认320x480 iPad 的启动画面是不包括状态栏区域的, iphone包含状态栏区域 启用webapp模式</description></item><item><title>绝对定位垂直居中（转）</title><link>//luoxiao.ml/learn/151231/</link><pubDate>Thu, 31 Dec 2015 19:26:54 +0800</pubDate><guid>//luoxiao.ml/learn/151231/</guid><description>我们经常使用margin: 0 auto来使元素水平居中，垂直居中往往是比较麻烦的地方，然而margin: auto也能方便的让元素垂直居中，在申明元素高度的情况下，只需使用下面的css：
+margin: auto; position: absolute; top: 0; left: 0; bottom: 0; right: 0; 注意必须申明元素高度，可以使用%属性和min-/max-属性。
+看下面的示例：
 原文中还提到了其他几种实现垂直居中的方法以及优缺点的对比：
- 原文（中文）：http://blog.csdn.net/freshlover/article/details/11579669
-原文（英文）：http://www.smashingmagazine.com/2013/08/absolute-horizontal-vertical-centering-css/
- </description>
-    </item>
-    
-    <item>
-      <title>多行文本溢出显示省略号(转)</title>
-      <link>//luoxiao.ml/learn/151114/</link>
-      <pubDate>Sat, 14 Nov 2015 20:59:54 +0800</pubDate>
-      
-      <guid>//luoxiao.ml/learn/151114/</guid>
-      <description>最近工作中遇到需要控制显示的文本长度的问题，css中的text-overflow:ellipsis可以在溢出容器的文本后面自动加上省略号，但是文本必须不能换行：
-overflow: hidden; text-overflow: ellipsis; white-space: nowrap;  于是在网络上搜寻了一些多行文本的解决方案，找到了一种适合webkit内核浏览器的方案，有一个可以直接使用的WebKit私有属性-webkit-line-clamp。-webkit-line-clamp用来限制在一个块元素显示的文本的行数。 为了实现该效果，它需要组合其他的WebKit属性：
- display: -webkit-box; 必须结合的属性 ，将对象作为弹性伸缩盒子模型显示 。 -webkit-box-orient 必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式 。  overflow : hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;  See the Pen 多行文本溢出显示省略号 by xiaoxiyao (@xiaoxiyao) on CodePen.
-
-原文中还提到了其他几种跨浏览器兼容的方案（图片和js）：
- 原文：http://www.css88.com/archives/5206
- </description>
-    </item>
-    
-    <item>
-      <title>测试</title>
-      <link>//luoxiao.ml/share/test/</link>
-      <pubDate>Mon, 02 Nov 2015 23:48:05 +0800</pubDate>
-      
-      <guid>//luoxiao.ml/share/test/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>测试分页1</title>
-      <link>//luoxiao.ml/learn/first00/</link>
-      <pubDate>Mon, 26 Oct 2015 23:48:05 +0800</pubDate>
-      
-      <guid>//luoxiao.ml/learn/first00/</guid>
-      <description>&lt;p&gt;1233536547qwrew中问&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>测试分页</title>
-      <link>//luoxiao.ml/learn/first0/</link>
-      <pubDate>Sun, 25 Oct 2015 23:48:05 +0800</pubDate>
-      
-      <guid>//luoxiao.ml/learn/first0/</guid>
-      <description>&lt;p&gt;1233536547qwrew中问&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>测试</title>
-      <link>//luoxiao.ml/others/test/</link>
-      <pubDate>Fri, 02 Oct 2015 23:48:05 +0800</pubDate>
-      
-      <guid>//luoxiao.ml/others/test/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>测试博客</title>
-      <link>//luoxiao.ml/learn/first/</link>
-      <pubDate>Fri, 25 Sep 2015 23:48:05 +0800</pubDate>
-      
-      <guid>//luoxiao.ml/learn/first/</guid>
-      <description> 博客测试 Materialize-for-Yii Materialize是一个Material Design风格的web前端框架，将其做成Yii Framework的一个主题扩展，想必是极好的^_^
+原文（中文）：http://blog.csdn.net/freshlover/article/details/11579669
+原文（英文）：http://www.smashingmagazine.com/2013/08/absolute-horizontal-vertical-centering-css/</description></item><item><title>多行文本溢出显示省略号(转)</title><link>//luoxiao.ml/learn/151114/</link><pubDate>Sat, 14 Nov 2015 20:59:54 +0800</pubDate><guid>//luoxiao.ml/learn/151114/</guid><description>最近工作中遇到需要控制显示的文本长度的问题，css中的text-overflow:ellipsis可以在溢出容器的文本后面自动加上省略号，但是文本必须不能换行：
+overflow: hidden; text-overflow: ellipsis; white-space: nowrap; 于是在网络上搜寻了一些多行文本的解决方案，找到了一种适合webkit内核浏览器的方案，有一个可以直接使用的WebKit私有属性-webkit-line-clamp。-webkit-line-clamp用来限制在一个块元素显示的文本的行数。 为了实现该效果，它需要组合其他的WebKit属性：
+display: -webkit-box; 必须结合的属性 ，将对象作为弹性伸缩盒子模型显示 。 -webkit-box-orient 必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式 。 overflow : hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; 原文中还提到了其他几种跨浏览器兼容的方案（图片和js）：
+原文：http://www.css88.com/archives/5206</description></item><item><title>测试</title><link>//luoxiao.ml/share/test/</link><pubDate>Mon, 02 Nov 2015 23:48:05 +0800</pubDate><guid>//luoxiao.ml/share/test/</guid><description/></item><item><title>测试分页1</title><link>//luoxiao.ml/learn/first00/</link><pubDate>Mon, 26 Oct 2015 23:48:05 +0800</pubDate><guid>//luoxiao.ml/learn/first00/</guid><description>&lt;p>1233536547qwrew&lt;/p></description></item><item><title>测试分页</title><link>//luoxiao.ml/learn/first0/</link><pubDate>Sun, 25 Oct 2015 23:48:05 +0800</pubDate><guid>//luoxiao.ml/learn/first0/</guid><description>&lt;p>1233536547qwrew&lt;/p></description></item><item><title>测试</title><link>//luoxiao.ml/others/test/</link><pubDate>Fri, 02 Oct 2015 23:48:05 +0800</pubDate><guid>//luoxiao.ml/others/test/</guid><description/></item><item><title>测试博客</title><link>//luoxiao.ml/learn/first/</link><pubDate>Fri, 25 Sep 2015 23:48:05 +0800</pubDate><guid>//luoxiao.ml/learn/first/</guid><description>博客测试 Materialize-for-Yii Materialize是一个Material Design风格的web前端框架，将其做成Yii Framework的一个主题扩展，想必是极好的^_^
 该项目还在完善中，可能有较多问题
-使用方法  将下载的materialize文件夹放在你项目的extensions目录里 配置文件如下： php Yii::setPathOfAlias(&#39;md&#39;, realpath(dirname(__FILE__) . &#39;/../extensions/materialize&#39;)); return array( //...... &#39;preload&#39; =&amp;gt; array(&#39;log&#39;,&#39;md&#39;), &#39;import&#39; =&amp;gt; array( //...... &#39;md.components.*&#39;, ), &#39;components&#39; =&amp;gt; array( &#39;md&#39;=&amp;gt;array( &#39;class&#39;=&amp;gt;&#39;md.components.Materialize&#39;, &#39;minify&#39; =&amp;gt; true, //是否使用压缩的css js 文件 &#39;forceCopyAssets&#39; =&amp;gt; false, //是否强制复制Assets ), ), //...... )  目前可用的widgets有MdButon、MdSwitch、MdToast、MdActiveForm  </description>
-    </item>
-    
-    <item>
-      <title>关于</title>
-      <link>//luoxiao.ml/about/</link>
-      <pubDate>Fri, 25 Sep 2015 22:21:51 +0800</pubDate>
-      
-      <guid>//luoxiao.ml/about/</guid>
-      <description> 这是一个发布在github pages上的博客程序，在wercker上使用hugo 动态编译并自动部署到github pages，使用的主题是material-design-lite（做了大量修改）
-更新记录 20170910  将多说评论系统改为gitalk  </description>
-    </item>
-    
-  </channel>
-</rss>
+使用方法 将下载的materialize文件夹放在你项目的extensions目录里 配置文件如下： Yii::setPathOfAlias(&amp;#39;md&amp;#39;, realpath(dirname(__FILE__) . &amp;#39;/../extensions/materialize&amp;#39;)); return array( //...... &amp;#39;preload&amp;#39; =&amp;gt; array(&amp;#39;log&amp;#39;,&amp;#39;md&amp;#39;), &amp;#39;import&amp;#39; =&amp;gt; array( //...... &amp;#39;md.components.*&amp;#39;, ), &amp;#39;components&amp;#39; =&amp;gt; array( &amp;#39;md&amp;#39;=&amp;gt;array( &amp;#39;class&amp;#39;=&amp;gt;&amp;#39;md.components.Materialize&amp;#39;, &amp;#39;minify&amp;#39; =&amp;gt; true, //是否使用压缩的css js 文件 &amp;#39;forceCopyAssets&amp;#39; =&amp;gt; false, //是否强制复制Assets ), ), //...... ) 目前可用的widgets有MdButon、MdSwitch、MdToast、MdActiveForm</description></item><item><title>关于</title><link>//luoxiao.ml/about/</link><pubDate>Fri, 25 Sep 2015 22:21:51 +0800</pubDate><guid>//luoxiao.ml/about/</guid><description>这是一个基于Hugo的博客程序，使用GitHub Actions自动编译并部署到 github pages。
+更新记录 20170910 将多说评论系统改为gitalk 20201108 改为使用github actions自动发布。 使用新的技术栈进行重构。</description></item></channel></rss>
