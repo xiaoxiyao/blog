@@ -32,12 +32,12 @@ const WHITE_LIST = [
 function isInWhite(url) {
 	return WHITE_LIST.some(value => url.indexOf(value) !== -1);
 }
-this.addEventListener('install', event => {
+this.addEventListener('install', (event: any) => {
 	event.waitUntil(
 		caches.open('v1').then(cache => cache.addAll(CACHE_LIST))
 	);
 });
-this.addEventListener('fetch', event => {
+this.addEventListener('fetch', (event: any) => {
 	let request = event.request;
 	event.respondWith(
 		caches.match(request).then(response => {
@@ -56,10 +56,10 @@ this.addEventListener('fetch', event => {
 					if (isInWhite(request.url)) {
 						return caches.match(request);
 					} else {
-						return caches.match('/offline/').catch((error) => console.log("跳转离线页面失败", error));
+						return caches.match('/offline/');
 					}
 				});
 			}
-		}).catch((error) => console.log(error))
+		})
 	);
 });

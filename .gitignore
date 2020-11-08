@@ -1,1 +1,7 @@
 /public
+/static/**/*.js
+**/*.js.map
+**/*.css.map
+**/*.css
+node_modules
+resources

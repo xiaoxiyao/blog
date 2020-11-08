@@ -1,8 +1,8 @@
 baseurl = "//luoxiao.ml"
 languageCode = "zh-cn"
 title = "xiaoxiyao's blog"
-theme = "material-lite"
 Paginate = 5
+enableGitInfo = true
 
 [[menu.main]]
     name = "学无止境"
@@ -24,10 +24,14 @@ Paginate = 5
 [blackfriday]
   hrefTargetBlank = true
 
+[frontmatter]
+  date = ["date", "publishDate", "lastmod"]
+  lastmod = [":git", "lastmod", "date", "publishDate"]
+
 [params]
-  copyright = "&copy; xiaoxiyao 2015"
+  copyright = "&copy; xiaoxiyao 2020"
   author = "xiaoxiyao"
   description = "a blog build by hugo and material-design-lite on github pages(技术交流,分享一些个人经验与感悟)"
   keywords = "个人博客,技术交流,github pages,blog,material design,xiaoxiyao,luoxiao,分享,收藏,hugo"
 #  background = "http://i3.piimg.com/da829ff5ad525994.jpg"
-  logo = "logo.jpg"
+  logo = "images/logo.jpg"

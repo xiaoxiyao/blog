@@ -71,17 +71,12 @@
 	</div>
 	<div class="main-container mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
 		<header class="mdl-layout__header mdl-layout__header--waterfall">
-			<div aria-expanded="false" role="button" tabindex="0" class="open-drawer-button">
+			<div aria-expanded="false" role="button" tabindex="0" id="open-drawer-button">
 				<i class="material-icons"></i>
 			</div>
 			<div class="mdl-layout__header-row title-row">
 				<span class="mdl-layout-title" id="title">首页</span>
-				<div id="hitokoto">
-					<span class="hito-text"></span><br/>
-					<span class="hito-source">
-						<span class="hito-author"></span>（<a href="" target="_blank">源自一言</a>）
-					</span>
-				</div>
+				<hitokoto-widget></hitokoto-widget>
 			</div>
 		</header>
 		<div class="mdl-layout__drawer">

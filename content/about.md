@@ -4,9 +4,13 @@ draft = false
 title = "关于"
 
 +++
-这是一个发布在github pages上的博客程序，在[wercker](https://app.wercker.com)上使用[hugo](https://github.com/spf13/hugo) 动态编译并自动部署到github pages，使用的主题是[material-design-lite](https://github.com/SamuelDebruyn/hugo-material-lite)（做了大量修改）
+这是一个基于[Hugo](https://gohugo.io/)的博客程序，使用GitHub Actions自动编译并部署到 github pages。
 
 
 #### 更新记录
 ##### 20170910
 * 将多说评论系统改为[gitalk](https://gitalk.github.io/)
+
+##### 20201108
+* 改为使用github actions自动发布。
+* 使用新的技术栈进行重构。
