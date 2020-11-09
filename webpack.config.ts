@@ -1,13 +1,15 @@
 import path from "path";
-import WorkboxPlugin from "workbox-webpack-plugin";
 import webpack from "webpack";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 
 const config: webpack.Configuration = {
 	mode: "development",
-	entry: ["./src/index.ts", "./src/hitokoto.ts"],
+	entry: {
+		index: ["./src/index.ts", "./src/hitokoto.ts"],
+		sw: './src/sw.ts',
+	},
 	output: {
-		filename: "index.js",
+		filename: "[name].js",
 		path: path.resolve(__dirname, "static"),
 	},
 	module: {
@@ -44,7 +46,7 @@ const config: webpack.Configuration = {
 			},
 		],
 	},
-	plugins: [new WorkboxPlugin.GenerateSW(), new MiniCssExtractPlugin(),],
+	plugins: [new MiniCssExtractPlugin()],
 	devtool: "source-map",
 };
 

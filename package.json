@@ -7,7 +7,7 @@
 		"webpack-watch": "webpack -w",
 		"hugo-watch": "hugo server -D",
 		"watch": "webpack -w & hugo server -D",
-		"build": "webpack && hogo",
+		"build": "webpack && hugo",
 		"webpack-build": "webpack",
 		"hugo-build": "hugo"
 	},
@@ -37,7 +37,6 @@
 		"ts-node": "^8.10.2",
 		"typescript": "^3.9.7",
 		"webpack": "^4.44.2",
-		"webpack-cli": "^3.3.12",
-		"workbox-webpack-plugin": "^5.1.4"
+		"webpack-cli": "^3.3.12"
 	}
 }
