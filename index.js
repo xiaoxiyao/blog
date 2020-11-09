@@ -329,9 +329,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 __webpack_require__(/*! ./style.less */ "./src/style.less");
 __webpack_require__(/*! ./gitalk.less */ "./src/gitalk.less");
 document.addEventListener('DOMContentLoaded', () => {
+    var _a;
     document.body.classList.add('loaded');
     //抽屉导航菜单激活项
-    Array.from(document.getElementsByClassName('mdl-navigation__link')).find(e => e.getAttribute('href') === location.pathname).classList.add('active');
+    (_a = Array.from(document.getElementsByClassName('mdl-navigation__link')).find(e => e.getAttribute('href') === location.pathname)) === null || _a === void 0 ? void 0 : _a.classList.add('active');
     //打开关闭抽屉
     let container = document.getElementsByClassName('main-container')[0];
     document.getElementById('close-drawer').addEventListener('click', () => {
@@ -342,7 +343,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/service-worker.js');
+    navigator.serviceWorker.register('/sw.js');
 }
 
 
