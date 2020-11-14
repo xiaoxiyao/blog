@@ -10,7 +10,7 @@ const CACHE_LIST = [
 	'//unpkg.com/gitalk@1.2.0/dist/gitalk.css',
 	'//cdn.bootcss.com/material-design-icons/3.0.1/iconfont/material-icons.min.css',
 	'//cdn.bootcss.com/material-design-lite/1.3.0/material.teal-purple.min.css',
-	'/main.css',
+	'/index.css',
 	'/images/logo.jpg',
 	'/images/bg.png',
 	'/index.js',
