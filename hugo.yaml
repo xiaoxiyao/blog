@@ -1,0 +1,115 @@
+languageCode: zh-CN
+title: xiaoxiyao's blog
+pagination:
+  pagerSize: 5
+enableGitInfo: true
+copyright: xiaoxiyao
+theme: hugo-theme-stack
+
+defaultContentLanguage: zh-CN
+languages:
+  zh-CN:
+    disabled: false
+    languageCode: zh-CN
+
+taxonomies:
+  tag: tags
+  category: categories
+
+blackfriday:
+  hrefTargetBlank: true
+
+markup:
+  tableOfContents:
+    endLevel: 5
+    ordered: false
+    startLevel: 2
+
+  highlight:
+    noClasses: false
+    codeFences: true
+    guessSyntax: true
+    lineNoStart: 1
+    lineNos: true
+    lineNumbersInTable: true
+    tabWidth: 4
+
+menu:
+  social:
+    - identifier: github
+      name: GitHub
+      url: https://github.com/xiaoxiyao
+      weight: 1
+      params:
+        icon: brand-github
+
+    - identifier: codePen
+      name: CodePen
+      url: https://codepen.io/xiaoxiyao
+      weight: 2
+      params:
+        icon: brand-codepen
+
+build:
+  noJSConfigInAssets: true
+
+params:
+  description: a blog build by hugo and deploy on github pages(技术交流,分享一些个人经验与感悟)
+  author:
+    email: xiyao.luoxiao@gmail.com
+
+  mainSections:
+    - learn
+    - others
+    - share
+
+  comments:
+    enabled: true
+    provider: giscus
+
+    giscus:
+      repo: xiaoxiyao/blog
+      repoID: MDEwOlJlcG9zaXRvcnk0MzAwNjg2MA==
+      category: Announcements
+      categoryID: DIC_kwDOApA7jM4CicWM
+      mapping: pathname
+      lightTheme: noborder_light
+      darkTheme: noborder_dark
+      reactionsEnabled: 1
+      emitMetadata: 0
+      inputposition: top
+      loading: lazy
+
+  widgets:
+    homepage:
+      - type: search
+      - type: archives
+        params:
+          limit: 5
+      - type: categories
+        params:
+          limit: 10
+      - type: tag-cloud
+        params:
+          limit: 10
+    page:
+      - type: toc
+
+  sidebar:
+    subtitle: Free, open-source, shared, this is communism.
+    emoji: 🤔
+    avatar:
+      enabled: true
+      local: true
+      src: images/avatar.jpg
+
+  footer:
+    since: 2015
+
+  article:
+    math: false
+    toc: true
+
+  dateFormat:
+    published: 2006-01-02
+    lastUpdated: 2006-01-02

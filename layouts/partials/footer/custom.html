@@ -1,0 +1,6 @@
+{{- $opts := dict "minify" hugo.IsProduction -}}
+{{- $script := resources.Get "sw.ts" | js.Build $opts -}}
+
+<script>
+  navigator.serviceWorker?.register("{{ $script.RelPermalink }}");
+</script>

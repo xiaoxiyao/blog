@@ -1,8 +1,1 @@
-这是一个基于[Hugo](https://gohugo.io/)的博客程序，使用GitHub Actions自动编译并部署到 github pages。
-
-相关技术栈：
-1. Typescript
-2. Less
-3. Webpack
-4. Wervice Workers
-5. Web Components
+这是一个使用 [Hugo](https://gohugo.io/) 构建的个人博客，使用 [Stack](https://github.com/xiaoxiyao/hugo-theme-stack) 主题，部署在 [GitHub Pages](https://docs.github.com/zh/pages)。
