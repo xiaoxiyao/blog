@@ -1,14 +1,437 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ubuntu on xiaoxiyao's blog</title><link>//luoxiao.ml/tags/ubuntu/</link><description>Recent content in ubuntu on xiaoxiyao's blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 05 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="//luoxiao.ml/tags/ubuntu/index.xml" rel="self" type="application/rss+xml"/><item><title>ubuntu 折腾笔记</title><link>//luoxiao.ml/others/170104/</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><guid>//luoxiao.ml/others/170104/</guid><description>由于升级win10破坏了grub启动引导，之前安装的ubuntu14.04进不去了，正好ubuntu升级了新的版本16.04lts，那就彻底重装好了。 安装过程就不细说了，这篇文章主要记录安装完一个全新的ubuntn系统后需要做的一些事情，让系统使用更得心应手。
-1 更新一下grub引导 ubuntu安装完成后第一次重启系统会发现grub启动引导列表里并没有windows的启动项，先直接进入ubuntu系统，在终端里运行一下sudo update-grub，下次重启就能进入windows了
-2 安装chrome浏览器 chrome虽然内存占用爆炸，但我已经用习惯了离不开了，数据多端同步也很方便。ubuntu自带firefox浏览器，firefox用户可以直接忽略。
-由于某些原因chrome官方源使用不了，推荐使用这个源： Fedora 中文社区软件源
-安装方法:
-sudo wget https://repo.fdzh.org/chrome/google-chrome.list -P /etc/apt/sources.list.d/ wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add - sudo apt-get update sudo apt-get install google-chrome-stable 3 科学上网 安装完chrome之后就需要登录google帐号进行同步了，这个是ubuntu能用的shadowsocks客户端 shadowsocks-qt5，我就不多说了。也可以使用修改hosts的方式，参考 老D博客
-4 输入法 ubuntu16.04自带的拼音输入法可以一用，当然词库远不如搜狗：搜狗输入法 for linux（Ubuntu Kylin自带）。下载的deb包直接安装的话可能有依赖问题，根据提示安装依赖即可。
-5 双系统时间差问题 Windows 默认使用 CMOS 时间（硬件时间）作为系统时间，而 ubuntu 将硬件时间作为“全球统一时间”（UTC），经过时区换算之后才作为系统时间，导致时间相差8小时。解决方法有两种
-调整windows
-编辑注册表，在
-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation\ 目录下新建一个 REG_DWORD 项，命名为 RealTimeIsUniversal 并赋值为 1。
-调整ubuntu（注意这里和旧版ubuntu有点不一样）
-执行
-sudo timedatectl set-local-rtc 1 6 ubuntu 美化 6.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ubuntu on xiaoxiyao's blog</title><link>/tags/ubuntu/</link><description>Recent content in Ubuntu on xiaoxiyao's blog</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>xiyao.luoxiao@gmail.com</managingEditor><webMaster>xiyao.luoxiao@gmail.com</webMaster><copyright>xiaoxiyao</copyright><lastBuildDate>Sat, 21 Sep 2024 00:15:37 +0800</lastBuildDate><atom:link href="/tags/ubuntu/index.xml" rel="self" type="application/rss+xml"/><item><title>ubuntu 折腾笔记</title><link>/others/ubuntu-tinkering-notes/</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><author>xiyao.luoxiao@gmail.com</author><guid>/others/ubuntu-tinkering-notes/</guid><description>&lt;p>由于升级win10破坏了grub启动引导，之前安装的ubuntu14.04进不去了，正好ubuntu升级了新的版本16.04lts，那就彻底重装好了。
+安装过程就不细说了，这篇文章主要记录安装完一个全新的ubuntn系统后需要做的一些事情，让系统使用更得心应手。&lt;/p>
+&lt;h4 id="1-更新一下grub引导">1 更新一下grub引导
+&lt;/h4>&lt;p>ubuntu安装完成后第一次重启系统会发现grub启动引导列表里并没有windows的启动项，先直接进入ubuntu系统，在终端里运行一下&lt;code>sudo update-grub&lt;/code>，下次重启就能进入windows了&lt;/p>
+&lt;h4 id="2-安装chrome浏览器">2 安装chrome浏览器
+&lt;/h4>&lt;p>chrome虽然内存占用爆炸，但我已经用习惯了离不开了，数据多端同步也很方便。ubuntu自带firefox浏览器，firefox用户可以直接忽略。&lt;br>
+由于某些原因chrome官方源使用不了，推荐使用这个源：
+&lt;a class="link" href="https://github.com/FZUG/repo/wiki/%E5%AE%89%E8%A3%85-Chrome" target="_blank" rel="noopener"
+>Fedora 中文社区软件源&lt;/a>&lt;br>
+安装方法:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo wget https://repo.fdzh.org/chrome/google-chrome.list -P /etc/apt/sources.list.d/
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">wget -q -O - https://dl.google.com/linux/linux_signing_key.pub &lt;span class="p">|&lt;/span> sudo apt-key add -
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt-get update
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt-get install google-chrome-stable
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="3-科学上网">3 科学上网
+&lt;/h4>&lt;p>安装完chrome之后就需要登录google帐号进行同步了，这个是ubuntu能用的shadowsocks客户端 &lt;a class="link" href="https://github.com/shadowsocks/shadowsocks-qt5/wiki/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97" target="_blank" rel="noopener"
+>shadowsocks-qt5&lt;/a>，我就不多说了。也可以使用修改hosts的方式，参考 &lt;a class="link" href="https://laod.cn/hosts/2017-google-hosts.html" target="_blank" rel="noopener"
+>老D博客&lt;/a>&lt;/p>
+&lt;h4 id="4-输入法">4 输入法
+&lt;/h4>&lt;p>ubuntu16.04自带的拼音输入法可以一用，当然词库远不如搜狗：&lt;a class="link" href="http://pinyin.sogou.com/linux/" target="_blank" rel="noopener"
+>搜狗输入法 for linux&lt;/a>（Ubuntu Kylin自带）。下载的deb包直接安装的话可能有依赖问题，根据提示安装依赖即可。&lt;/p>
+&lt;h4 id="5-双系统时间差问题">5 双系统时间差问题
+&lt;/h4>&lt;p>Windows 默认使用 CMOS 时间（硬件时间）作为系统时间，而 ubuntu 将硬件时间作为“全球统一时间”（UTC），经过时区换算之后才作为系统时间，导致时间相差8小时。解决方法有两种&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>调整windows&lt;/p>
+&lt;p>编辑注册表，在&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation\
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>目录下新建一个 REG_DWORD 项，命名为 RealTimeIsUniversal 并赋值为 1。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>调整ubuntu（注意这里和旧版ubuntu有点不一样）&lt;/p>
+&lt;p>执行&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo timedatectl set-local-rtc &lt;span class="m">1&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;/ol>
+&lt;h4 id="6-ubuntu-美化">6 ubuntu 美化
+&lt;/h4>&lt;h5 id="61-主题和图标">6.1 主题和图标
+&lt;/h5>&lt;p>ubuntu默认主题丑哭，好在有很多主题可以选择。首先安装一个主题管理工具unity-tweak-tool，这个软件可以对桌面进行详细的设置：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt-get install unity-tweak-tool
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>推荐一个很成熟完整的主题套装 &lt;a class="link" href="https://numixproject.org/" target="_blank" rel="noopener"
+>Numix&lt;/a>，包括图标包，安装方法：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt-add-repository ppa:numix/ppa
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt-get update
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt-get install numix-gtk-theme numix-icon-theme numix-icon-theme-circle
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>再推荐一个扁平主题 &lt;a class="link" href="https://github.com/anmoljagetia/Flatabulous" target="_blank" rel="noopener"
+>Flatabulous&lt;/a>，安装方法：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo add-apt-repository ppa:noobslab/themes
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt-get update
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt-get install flatabulous-theme
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>没有截图 ¯\_(ツ)_/¯ ，安装完后可以在unity-tweak-tool中选择主题和图标随意搭配观察效果&lt;/li>
+&lt;/ul>
+&lt;h5 id="62-鼠标指针">6.2 鼠标指针
+&lt;/h5>&lt;p>鼠标指针样式也是可以随意换的，这里也推荐两个:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a class="link" href="https://store.kde.org/p/1099867/" target="_blank" rel="noopener"
+>Brezze All In One&lt;/a>&lt;br>
+&lt;img src="/others/ubuntu-tinkering-notes/brezze-aio.gif"
+width="640"
+height="400"
+srcset="/others/ubuntu-tinkering-notes/brezze-aio_hu8806641306429319176.gif 480w, /others/ubuntu-tinkering-notes/brezze-aio_hu8925877595109970185.gif 1024w"
+loading="lazy"
+alt="Brezze All In One"
+class="gallery-image"
+data-flex-grow="160"
+data-flex-basis="384px"
+>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a class="link" href="https://store.kde.org/p/999933/" target="_blank" rel="noopener"
+>Alkano All In One&lt;/a>
+&lt;img src="/others/ubuntu-tinkering-notes/alkano-aio.gif"
+width="640"
+height="400"
+srcset="/others/ubuntu-tinkering-notes/alkano-aio_hu1806025885005750734.gif 480w, /others/ubuntu-tinkering-notes/alkano-aio_hu13819177041307031716.gif 1024w"
+loading="lazy"
+alt="Alkano All In One"
+class="gallery-image"
+data-flex-grow="160"
+data-flex-basis="384px"
+>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>这些个all in one整合包安装稍微有些复杂：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>先下载好选中的鼠标包，并解压&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>然后移动到目录/usr/share/icons，&lt;code>sudo mv Breeze-aio /usr/share/icons&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>在unity-tweak-tool中选择你的鼠标指针主题&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;del>安装dconf-editor &lt;code>sudo apt-get install dconf-editor&lt;/code>&lt;/del>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;del>安装完成后可以使用下面的命令来设置鼠标主题和尺寸:&lt;/del>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">gsettings &lt;span class="nb">set&lt;/span> org.gnome.desktop.interface cursor-theme Breeze-aio
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">gsettings &lt;span class="nb">set&lt;/span> org.gnome.desktop.interface cursor-size &lt;span class="m">27&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;del>或者打开刚才安装的dconf-editor，依次定位到org &amp;gt; gnome &amp;gt; desktop &amp;gt; interface，修改cursor-theme和cursor-size的值就行了。&lt;/del>&lt;/p>
+&lt;ul>
+&lt;li>注意这里 cursor-size 的值很关键，请对照上面图片中的表格选择自己喜欢的颜色和大小来填写，比如选择主题 Brezze-aio，cursor-size设置的27，那么就对应 Brezze All In One 中 Amber 颜色 M 尺寸的指针&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>依次执行&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo update-alternatives --install &lt;span class="s2">&amp;#34;/usr/share/icons/default/index.theme&amp;#34;&lt;/span> x-cursor-theme &lt;span class="s2">&amp;#34;/usr/share/icons/Breeze-aio/cursor.theme&amp;#34;&lt;/span> &lt;span class="m">20&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo update-alternatives --config x-cursor-theme
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>然后根据提示输入你添加的主题路径前面的数字序号确认即可&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>由于ubuntu的设定，每次登陆系统都会还原成默认的鼠标尺寸24，所以4、5步中的设置并没有什么卵用 (╯°Д°)╯︵ ┻━┻，我们需要更改这个系统默认的鼠标尺寸。&lt;br>
+首先创建一个文件&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo gedit /usr/share/glib-2.0/schemas/my-defaults.gschema.override
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>其中my-defaults可以随便，后面是.gschema.override就行。&lt;br>
+然后在文件中写&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">[org.gnome.desktop.interface]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">cursor-size=27
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这里cursor-size的值根据自己实际情况来填。&lt;br>
+保存并关闭，运行&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>然后重启&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>鼠标指针解决方案参考链接：&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://www.gnome-look.org/content/show.php?content=164300" target="_blank" rel="noopener"
+>https://www.gnome-look.org/content/show.php?content=164300&lt;/a> 包括评论区&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://store.kde.org/p/999933/" target="_blank" rel="noopener"
+>https://store.kde.org/p/999933/&lt;/a> 包括评论区&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="http://askubuntu.com/questions/65900/how-can-i-change-default-settings-for-new-users" target="_blank" rel="noopener"
+>http://askubuntu.com/questions/65900/how-can-i-change-default-settings-for-new-users&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="http://askubuntu.com/questions/126491/how-do-i-change-the-cursor-and-its-size" target="_blank" rel="noopener"
+>http://askubuntu.com/questions/126491/how-do-i-change-the-cursor-and-its-size&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>关于主题和指针这一块还有一点小瑕疵，就是在登录界面依然使用的是默认主题和默认指针大小，暂时还没有找到解决方案&lt;/strong>&lt;/p>
+&lt;h5 id="63-grub-美化">6.3 grub 美化
+&lt;/h5>&lt;p>grub启动引导菜单虽然很简洁，不过太单调原始了点。burg是一个图形化的启动引导菜单，可以用来代替grub，并且支持多种主题。关于burg的安装，可以参考这篇文章：&lt;a class="link" href="http://sfork.lofter.com/post/2d18ab_d84311" target="_blank" rel="noopener"
+>burg漂亮的启动引导工具&lt;/a>，文章里已经说的很详细了，我就简单的做一点笔记：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>安装burg&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo add-apt-repository ppa:n-muench/burg
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt-get update
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt-get install burg burg-themes
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>安装过程中会出现一些配置界面，直接enter默认就行，注意最后一步要选择安装burg的硬盘，按空格选择&lt;code>/dev/sda&lt;/code>,然后enter确认。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>安装主题&lt;/p>
+&lt;p>可以从&lt;a class="link" href="http://www.deviantart.com/browse/all/customization/skins/?order=9&amp;amp;q=burg&amp;amp;offset=0" target="_blank" rel="noopener"
+>这个网站&lt;/a>选择一个主题下载，以 &lt;a class="link" href="http://luxieblack.deviantart.com/art/Metro-burg-theme-336505408" target="_blank" rel="noopener"
+>Metro burg theme&lt;/a> 为例，将下载的主题解压并移动到&lt;code>/boot/burg/themes/&lt;/code>：&lt;code>sudo mv Metro /boot/burg/themes/&lt;/code>，并执行&lt;code>sudo update-burg&lt;/code>。&lt;br>
+运行&lt;code>sudo burg-emu&lt;/code>可以开始模拟启动菜单，按F2选择 Metro 主题即可预览效果。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>安装 Grub Customizer&lt;/p>
+&lt;p>&lt;a class="link" href="https://launchpad.net/~danielrichter2007/&amp;#43;archive/ubuntu/grub-customizer" target="_blank" rel="noopener"
+>Grub Customizer&lt;/a> 是一个图形化的grub配置软件，还同时支持burg的配置。上一步中预览启动菜单的时候可能会一脸懵逼的发现有多个Ubuntu启动项，其实其中有许多是旧的linux内核，或者同一个内核的不同启动引导方式（recovery mode）。这些不需要的启动菜单，就可以用 Grub Customizer 来隐藏。首先安装：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt-get update
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt-get install grub-customizer
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>启动时会检测到已经安装burg，询问是否用burg替代grub，确认即可。打开后在列表配置里删除不需要的启动项，还可以配置默认启动项以及等待时间等等，点击保存会自动更新配置。目前存在的一些问题：&lt;/p>
+&lt;ul>
+&lt;li>用grub customizer来配置burg的主题的话会出错&lt;/li>
+&lt;li>burg的关机菜单不起作用&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h4 id="7-其它常用小工具">7 其它常用小工具
+&lt;/h4>&lt;ol>
+&lt;li>
+&lt;p>双显卡切换&lt;/p>
+&lt;p>linux对双显卡的支持一直不太友好（或者说硬件厂商对linux不友好），安装 &lt;a class="link" href="http://www.webupd8.org/2016/10/prime-indicator-plus-makes-it-easy-to.html" target="_blank" rel="noopener"
+>Prime Indicator Plus&lt;/a> 可以方便的手动切换显卡&lt;/p>
+&lt;p>首先添加一个显卡驱动ppa更新一下驱动（可选）&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo add-apt-repository ppa:graphics-drivers/ppa
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt-get update
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt-get upgrade
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>安装 Prime Indicator Plus&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo add-apt-repository ppa:nilarimogard/webupd8
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt update
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt install prime-indicator-plus
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>完成后重启或者注销重新登陆即可&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>经典菜单指示器&lt;/p>
+&lt;p>如果不习惯在dash里搜索应用，可以试试安装这个 &lt;a class="link" href="http://www.florian-diesch.de/software/classicmenu-indicator/" target="_blank" rel="noopener"
+>classicmenu-indicator&lt;/a>，有点类似于windows的开始菜单，对软件进行了分类：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt-get install classicmenu-indicator
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;li>
+&lt;p>新立得软件包管理器&lt;/p>
+&lt;p>功能强大的图形化包管理器：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt-get install synaptic
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;li>
+&lt;p>下载器&lt;/p>
+&lt;p>推荐安装 &lt;a class="link" href="http://ugetdm.com/" target="_blank" rel="noopener"
+>uGet&lt;/a>，直接从ubuntu软件源安装的uget不是最新版本，需要添加uget官方ppa：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo add-apt-repository ppa:plushuang-tw/uget-stable
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt update
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt install uget
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>然后安装aria2插件（可选）：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt install aria2
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>让chrome下载调用uget的话需要安装 &lt;a class="link" href="https://slgobinath.github.io/uget-chrome-wrapper" target="_blank" rel="noopener"
+>uget-chrome-wrapper&lt;/a>:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo add-apt-repository ppa:slgobinath/uget-chrome-wrapper
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt-get update
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt install uget-chrome-wrapper
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>然后需要安装一个chrome插件 &lt;a class="link" href="https://chrome.google.com/webstore/detail/uget-integration/efjgjleilhflffpbnkaofpmdnajdpepi" target="_blank" rel="noopener"
+>uGet Integration&lt;/a>，装完后重启浏览器即可。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>离线文档Zeal&lt;/p>
+&lt;p>&lt;a class="link" href="https://zealdocs.org/" target="_blank" rel="noopener"
+>Zeal&lt;/a> 是一个跨平台的离线文档查询软件，类似于mac上的dash，码农必备：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo add-apt-repository ppa:zeal-developers/ppa
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt-get update
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt-get install zeal
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;li>
+&lt;p>保持唤醒&lt;/p>
+&lt;p>ubuntu 还有一个蛋疼的地方，屏幕保护机制不够智能，一段时间不操作的话就会自动熄屏，哪怕你是在看视频&amp;hellip;可以安装一个 &lt;a class="link" href="https://launchpad.net/caffeine/" target="_blank" rel="noopener"
+>Caffeine&lt;/a> 来手动切换是否让屏幕保持唤醒状态&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo add-apt-repository ppa:caffeine-developers/ppa
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt-get update
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt-get install caffeine
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;li>
+&lt;p>Atom 编辑器&lt;/p>
+&lt;p>安装 &lt;a class="link" href="https://atom.io" target="_blank" rel="noopener"
+>Atom&lt;/a> 编辑器，可以直接从官网下载，不过升级是个问题。可以通过这个ppa安装&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo add-apt-repository ppa:webupd8team/atom
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt-get update
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt-get install atom
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>如果更新速度太慢，可能需要翻墙。或者还是直接下载deb包吧&amp;hellip;&lt;/p>
+&lt;/li>
+&lt;/ol></description></item></channel></rss>

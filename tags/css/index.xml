@@ -1,9 +1,60 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CSS on xiaoxiyao's blog</title><link>//luoxiao.ml/tags/css/</link><description>Recent content in CSS on xiaoxiyao's blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 31 Dec 2015 19:26:54 +0800</lastBuildDate><atom:link href="//luoxiao.ml/tags/css/index.xml" rel="self" type="application/rss+xml"/><item><title>绝对定位垂直居中（转）</title><link>//luoxiao.ml/learn/151231/</link><pubDate>Thu, 31 Dec 2015 19:26:54 +0800</pubDate><guid>//luoxiao.ml/learn/151231/</guid><description>我们经常使用margin: 0 auto来使元素水平居中，垂直居中往往是比较麻烦的地方，然而margin: auto也能方便的让元素垂直居中，在申明元素高度的情况下，只需使用下面的css：
-margin: auto; position: absolute; top: 0; left: 0; bottom: 0; right: 0; 注意必须申明元素高度，可以使用%属性和min-/max-属性。
-看下面的示例：
-原文中还提到了其他几种实现垂直居中的方法以及优缺点的对比：
-原文（中文）：http://blog.csdn.net/freshlover/article/details/11579669
-原文（英文）：http://www.smashingmagazine.com/2013/08/absolute-horizontal-vertical-centering-css/</description></item><item><title>多行文本溢出显示省略号(转)</title><link>//luoxiao.ml/learn/151114/</link><pubDate>Sat, 14 Nov 2015 20:59:54 +0800</pubDate><guid>//luoxiao.ml/learn/151114/</guid><description>最近工作中遇到需要控制显示的文本长度的问题，css中的text-overflow:ellipsis可以在溢出容器的文本后面自动加上省略号，但是文本必须不能换行：
-overflow: hidden; text-overflow: ellipsis; white-space: nowrap; 于是在网络上搜寻了一些多行文本的解决方案，找到了一种适合webkit内核浏览器的方案，有一个可以直接使用的WebKit私有属性-webkit-line-clamp。-webkit-line-clamp用来限制在一个块元素显示的文本的行数。 为了实现该效果，它需要组合其他的WebKit属性：
-display: -webkit-box; 必须结合的属性 ，将对象作为弹性伸缩盒子模型显示 。 -webkit-box-orient 必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式 。 overflow : hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; 原文中还提到了其他几种跨浏览器兼容的方案（图片和js）：
-原文：http://www.css88.com/archives/5206</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CSS on xiaoxiyao's blog</title><link>/tags/css/</link><description>Recent content in CSS on xiaoxiyao's blog</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>xiyao.luoxiao@gmail.com</managingEditor><webMaster>xiyao.luoxiao@gmail.com</webMaster><copyright>xiaoxiyao</copyright><lastBuildDate>Sat, 21 Sep 2024 00:15:37 +0800</lastBuildDate><atom:link href="/tags/css/index.xml" rel="self" type="application/rss+xml"/><item><title>绝对定位垂直居中</title><link>/learn/absolute-center/</link><pubDate>Thu, 31 Dec 2015 19:26:54 +0800</pubDate><author>xiyao.luoxiao@gmail.com</author><guid>/learn/absolute-center/</guid><description>&lt;p>我们经常使用&lt;code>margin: 0 auto&lt;/code>来使元素水平居中，垂直居中往往是比较麻烦的地方，然而&lt;code>margin: auto&lt;/code>也能方便的让元素垂直居中，在申明元素高度的情况下，只需使用下面的 css：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-css" data-lang="css">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">margin&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nt">auto&lt;/span>&lt;span class="o">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nt">position&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nt">absolute&lt;/span>&lt;span class="o">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nt">top&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nt">0&lt;/span>&lt;span class="o">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nt">left&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nt">0&lt;/span>&lt;span class="o">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nt">bottom&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nt">0&lt;/span>&lt;span class="o">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nt">right&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nt">0&lt;/span>&lt;span class="o">;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>注意必须申明元素高度，可以使用%属性和 min-/max-属性。&lt;/p>
+&lt;p>看下面的示例：&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;blockquote>
+&lt;p>参考：&lt;a class="link" href="http://www.smashingmagazine.com/2013/08/absolute-horizontal-vertical-centering-css/" target="_blank" rel="noopener"
+>http://www.smashingmagazine.com/2013/08/absolute-horizontal-vertical-centering-css/&lt;/a>&lt;/p>
+&lt;/blockquote></description></item><item><title>多行文本溢出显示省略号</title><link>/learn/multiline-ellipsis/</link><pubDate>Sat, 14 Nov 2015 20:59:54 +0800</pubDate><author>xiyao.luoxiao@gmail.com</author><guid>/learn/multiline-ellipsis/</guid><description>&lt;p>最近工作中遇到需要控制显示的文本长度的问题，css 中的&lt;code>text-overflow:ellipsis&lt;/code>可以在溢出容器的文本后面自动加上省略号，但是文本必须不能换行：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-css" data-lang="css">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">overflow&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nt">hidden&lt;/span>&lt;span class="o">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nt">text-overflow&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nt">ellipsis&lt;/span>&lt;span class="o">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nt">white-space&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nt">nowrap&lt;/span>&lt;span class="o">;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>于是在网络上搜寻了一些多行文本的解决方案，找到了一种适合 webkit 内核浏览器的方案，有一个可以直接使用的 WebKit 私有属性&lt;code>-webkit-line-clamp&lt;/code>。&lt;code>-webkit-line-clamp&lt;/code>用来限制在一个块元素显示的文本的行数。 为了实现该效果，它需要组合其他的 WebKit 属性：&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>display: -webkit-box;&lt;/code> 必须结合的属性 ，将对象作为弹性伸缩盒子模型显示 。&lt;/li>
+&lt;li>&lt;code>-webkit-box-orient&lt;/code> 必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式 。&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-css" data-lang="css">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">overflow&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nt">hidden&lt;/span>&lt;span class="o">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nt">text-overflow&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nt">ellipsis&lt;/span>&lt;span class="o">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nt">display&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nt">-webkit-box&lt;/span>&lt;span class="o">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nt">-webkit-line-clamp&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nt">2&lt;/span>&lt;span class="o">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nt">-webkit-box-orient&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nt">vertical&lt;/span>&lt;span class="o">;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;!-- raw HTML omitted --></description></item></channel></rss>
