@@ -1,5 +1,5 @@
 +++
-categories = ["学无止境"]
+categories = ["learn"]
 date = "2015-11-14T20:59:54+08:00"
 description = "纯css实现多行文本溢出显示省略号"
 draft = false

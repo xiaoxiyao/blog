@@ -1,5 +1,5 @@
 +++
-categories = ["学无止境"]
+categories = ["learn"]
 date = "2016-12-27"
 description = "总结了一下安装完git到正常使用需要做的一些配置工作"
 draft = false

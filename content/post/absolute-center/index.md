@@ -1,5 +1,5 @@
 +++
-categories = ["学无止境"]
+categories = ["learn"]
 date = "2015-12-31T19:26:54+08:00"
 description = "一种纯css实现的垂直定位技术，简单方便"
 draft = false

@@ -3,7 +3,7 @@ date = "2017-01-05"
 draft = false
 title = "ubuntu 折腾笔记"
 description = "由于升级win10破坏了grub启动引导，之前安装的ubuntu14.04进不去了，正好ubuntu升级了新的版本16.04lts，那就彻底重装好了"
-categories = [ "杂七杂八" ]
+categories = [ "others" ]
 tags = ["linux","ubuntu"]
 +++
 

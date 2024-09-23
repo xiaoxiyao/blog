@@ -1,5 +1,5 @@
 +++
-categories = ["学无止境"]
+categories = ["learn"]
 date = "2016-04-07"
 description = "移动端的工作已经越来越成为前端工作的重要内容，除了平常的项目开发，HTML 头部标签功能，特别是meta标签显得非常重要。"
 draft = false

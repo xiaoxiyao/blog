@@ -1,5 +1,5 @@
 +++
-categories = ["资源分享"]
+categories = ["share"]
 date = "2016-06-24"
 description = "收集了一些常用的HTML5游戏引擎"
 draft = false

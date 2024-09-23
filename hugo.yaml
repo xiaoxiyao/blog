@@ -1,3 +1,4 @@
+baseURL: https://xiaoxiyao.us.kg/
 languageCode: zh-CN
 title: xiaoxiyao's blog
 pagination:
@@ -5,19 +6,13 @@ pagination:
 enableGitInfo: true
 copyright: xiaoxiyao
 theme: hugo-theme-stack
+enableRobotsTXT: true
 
 defaultContentLanguage: zh-CN
 languages:
   zh-CN:
     disabled: false
     languageCode: zh-CN
-
-taxonomies:
-  tag: tags
-  category: categories
-
-blackfriday:
-  hrefTargetBlank: true
 
 markup:
   tableOfContents:
@@ -59,9 +54,7 @@ params:
     email: xiyao.luoxiao@gmail.com
 
   mainSections:
-    - learn
-    - others
-    - share
+    - post
 
   comments:
     enabled: true

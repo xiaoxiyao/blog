@@ -3,7 +3,6 @@
  */
 const CACHE_LIST = [
 	'https://fastly.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js',
-	'https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap',
 	'https://fastly.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js',
 	'https://fastly.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js',
 	'https://fastly.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css',
@@ -26,17 +25,29 @@ self.addEventListener('fetch', (event: FetchEvent) => {
 	event.respondWith(getResponse(event.request));
 });
 async function getResponse(request: Request): Promise<Response> {
-	let response = await caches.match(request);
+	const cache = await caches.open(cacheName);
+	let response = await cache.match(request);
 	if (response) {
+		/**
+		 * html 文件不应该强缓存，这里先使用缓存，再请求最新的结果更新缓存，确保下次是最新的。
+		 * 参考：https://developer.chrome.com/docs/workbox/caching-strategies-overview?hl=zh-cn#stale-while-revalidate
+		 */
+		if (request.destination === 'document') {
+			fetch(request).then(response => cache.put(request, response)).catch(e => {
+				console.warn('更新文档缓存时异常');
+				console.log(e)
+			});
+		}
 		return response;
 	}
 	try {
 		response = await fetch(request);
 	} catch (e) {
-		if (request.mode === 'navigate' && request.method === 'GET') {
-			console.error(e);
+		if (request.destination === 'document') {
+			console.warn('请求文档时异常，显示离线页面');
+			console.log(e);
 			// 没有缓存时显示离线页面，已预缓存
-			return caches.match('/offline/');
+			return cache.match('/offline/');
 		}
 		throw e;
 	}
@@ -44,12 +55,13 @@ async function getResponse(request: Request): Promise<Response> {
 	if (request.url.startsWith('chrome-extension://')) {
 		return response;
 	}
-	const cache = await caches.open(cacheName);
+
 	try {
 		await cache.put(request, response.clone());
 	}
-	catch (error) {
-		console.error(error)
+	catch (e) {
+		console.warn('缓存请求时异常');
+		console.log(e)
 	}
 	return response;
 };
