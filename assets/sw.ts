@@ -1,3 +1,7 @@
+// https://github.com/microsoft/TypeScript/issues/14877
+export default null
+declare var self: ServiceWorkerGlobalScope;
+
 /**
  * 预缓存列表，不在列表中的会在访问时才缓存。
  */
@@ -15,15 +19,27 @@ const CACHE_LIST = [
 const cacheName = 'v1';
 
 self.addEventListener('install', (event: ExtendableEvent) => {
-	const preCache = async () => {
-		const cache = await caches.open(cacheName);
-		return cache.addAll(CACHE_LIST);
-	};
+	self.skipWaiting();
 	event.waitUntil(preCache());
 });
 self.addEventListener('fetch', (event: FetchEvent) => {
 	event.respondWith(getResponse(event.request));
 });
+self.addEventListener("activate", (event: ExtendableEvent) => {
+	event.waitUntil(Promise.all([
+		self.clients.claim(),
+		deleteOldCaches()
+	]));
+});
+
+async function preCache() {
+	const cache = await caches.open(cacheName);
+	return cache.addAll(CACHE_LIST).catch(e => {
+		console.warn('预缓存时异常');
+		console.log(e);
+	});
+}
+
 async function getResponse(request: Request): Promise<Response> {
 	const cache = await caches.open(cacheName);
 	let response = await cache.match(request);
@@ -35,7 +51,7 @@ async function getResponse(request: Request): Promise<Response> {
 		if (request.destination === 'document') {
 			fetch(request).then(response => cache.put(request, response)).catch(e => {
 				console.warn('更新文档缓存时异常');
-				console.log(e)
+				console.log(e);
 			});
 		}
 		return response;
@@ -56,12 +72,18 @@ async function getResponse(request: Request): Promise<Response> {
 		return response;
 	}
 
-	try {
-		await cache.put(request, response.clone());
-	}
-	catch (e) {
+	cache.put(request, response.clone()).catch(e => {
 		console.warn('缓存请求时异常');
-		console.log(e)
-	}
+		console.log(e);
+	});
 	return response;
-};
+}
+
+async function deleteOldCaches() {
+	const keys = await caches.keys();
+	await Promise.all(keys.map(key => {
+		if (key !== cacheName) {
+			return caches.delete(key);
+		}
+	}));
+}
