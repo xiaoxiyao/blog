@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>杂七杂八 on xiaoxiyao's blog</title><link>https://xiaoxiyao.us.kg/categories/others/</link><description>Recent content in 杂七杂八 on xiaoxiyao's blog</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>xiyao.luoxiao@gmail.com</managingEditor><webMaster>xiyao.luoxiao@gmail.com</webMaster><copyright>xiaoxiyao</copyright><atom:link href="https://xiaoxiyao.us.kg/categories/others/index.xml" rel="self" type="application/rss+xml"/><item><title>ubuntu 折腾笔记</title><link>https://xiaoxiyao.us.kg/post/ubuntu-tinkering-notes/</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><author>xiyao.luoxiao@gmail.com</author><guid>https://xiaoxiyao.us.kg/post/ubuntu-tinkering-notes/</guid><description>&lt;p>由于升级win10破坏了grub启动引导，之前安装的ubuntu14.04进不去了，正好ubuntu升级了新的版本16.04lts，那就彻底重装好了。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>杂七杂八 on xiaoxiyao's blog</title><link>https://xiaoxiyao.dpdns.org/categories/others/</link><description>Recent content in 杂七杂八 on xiaoxiyao's blog</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>xiyao.luoxiao@gmail.com</managingEditor><webMaster>xiyao.luoxiao@gmail.com</webMaster><copyright>xiaoxiyao</copyright><atom:link href="https://xiaoxiyao.dpdns.org/categories/others/index.xml" rel="self" type="application/rss+xml"/><item><title>ubuntu 折腾笔记</title><link>https://xiaoxiyao.dpdns.org/post/ubuntu-tinkering-notes/</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><author>xiyao.luoxiao@gmail.com</author><guid>https://xiaoxiyao.dpdns.org/post/ubuntu-tinkering-notes/</guid><description>&lt;p>由于升级win10破坏了grub启动引导，之前安装的ubuntu14.04进不去了，正好ubuntu升级了新的版本16.04lts，那就彻底重装好了。
 安装过程就不细说了，这篇文章主要记录安装完一个全新的ubuntn系统后需要做的一些事情，让系统使用更得心应手。&lt;/p>
 &lt;h4 id="1-更新一下grub引导">1 更新一下grub引导
 &lt;/h4>&lt;p>ubuntu安装完成后第一次重启系统会发现grub启动引导列表里并没有windows的启动项，先直接进入ubuntu系统，在终端里运行一下&lt;code>sudo update-grub&lt;/code>，下次重启就能进入windows了&lt;/p>
@@ -106,10 +106,10 @@
 &lt;li>
 &lt;p>&lt;a class="link" href="https://store.kde.org/p/1099867/" target="_blank" rel="noopener"
 >Brezze All In One&lt;/a>&lt;br>
-&lt;img src="https://xiaoxiyao.us.kg/post/ubuntu-tinkering-notes/brezze-aio.gif"
+&lt;img src="https://xiaoxiyao.dpdns.org/post/ubuntu-tinkering-notes/brezze-aio.gif"
 width="640"
 height="400"
-srcset="https://xiaoxiyao.us.kg/post/ubuntu-tinkering-notes/brezze-aio_hu8806641306429319176.gif 480w, https://xiaoxiyao.us.kg/post/ubuntu-tinkering-notes/brezze-aio_hu8925877595109970185.gif 1024w"
+srcset="https://xiaoxiyao.dpdns.org/post/ubuntu-tinkering-notes/brezze-aio_hu8806641306429319176.gif 480w, https://xiaoxiyao.dpdns.org/post/ubuntu-tinkering-notes/brezze-aio_hu8925877595109970185.gif 1024w"
 loading="lazy"
 alt="Brezze All In One"
 class="gallery-image"
@@ -120,10 +120,10 @@ data-flex-basis="384px"
 &lt;li>
 &lt;p>&lt;a class="link" href="https://store.kde.org/p/999933/" target="_blank" rel="noopener"
 >Alkano All In One&lt;/a>
-&lt;img src="https://xiaoxiyao.us.kg/post/ubuntu-tinkering-notes/alkano-aio.gif"
+&lt;img src="https://xiaoxiyao.dpdns.org/post/ubuntu-tinkering-notes/alkano-aio.gif"
 width="640"
 height="400"
-srcset="https://xiaoxiyao.us.kg/post/ubuntu-tinkering-notes/alkano-aio_hu1806025885005750734.gif 480w, https://xiaoxiyao.us.kg/post/ubuntu-tinkering-notes/alkano-aio_hu13819177041307031716.gif 1024w"
+srcset="https://xiaoxiyao.dpdns.org/post/ubuntu-tinkering-notes/alkano-aio_hu1806025885005750734.gif 480w, https://xiaoxiyao.dpdns.org/post/ubuntu-tinkering-notes/alkano-aio_hu13819177041307031716.gif 1024w"
 loading="lazy"
 alt="Alkano All In One"
 class="gallery-image"
