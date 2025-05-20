@@ -15,6 +15,10 @@ languages:
     languageCode: zh-CN
 
 markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
   tableOfContents:
     endLevel: 5
     ordered: false
@@ -72,6 +76,7 @@ params:
       emitMetadata: 0
       inputposition: top
       loading: lazy
+      lang: zh-CN
 
   widgets:
     homepage:
