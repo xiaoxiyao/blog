@@ -43,7 +43,47 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>content属性的详细介绍:&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;table class="mdl-data-table mdl-shadow--2dp">
+&lt;thead>
+&lt;tr>
+&lt;th>属性名&lt;/th>
+&lt;th>取值&lt;/th>
+&lt;th>描述&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>width&lt;/td>
+&lt;td>正整数 或 device-width&lt;/td>
+&lt;td>定义视口的宽度，单位为像素&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>height&lt;/td>
+&lt;td>正整数 或 device-height&lt;/td>
+&lt;td>定义视口的高度，单位为像素，一般不用&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>initial-scale&lt;/td>
+&lt;td>[0.0-10.0]&lt;/td>
+&lt;td>定义初始缩放值&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>minimum-scale&lt;/td>
+&lt;td>[0.0-10.0]&lt;/td>
+&lt;td>定义缩小最小比例，它必须小于或等于maximum-scale设置&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>maximum-scale&lt;/td>
+&lt;td>[0.0-10.0]&lt;/td>
+&lt;td>定义放大最大比例，它必须大于或等于minimum-scale设置&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>user-scalable&lt;/td>
+&lt;td>yes/no&lt;/td>
+&lt;td>定义是否允许用户手动缩放页面，默认值yes&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
 &lt;/li>
 &lt;li>
 &lt;p>禁止自动识别(电话号码,日期,地址,email)&lt;/p>

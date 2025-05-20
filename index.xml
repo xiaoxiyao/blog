@@ -1,4 +1,136 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>xiaoxiyao's blog</title><link>https://xiaoxiyao.dpdns.org/</link><description>Recent content on xiaoxiyao's blog</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>xiyao.luoxiao@gmail.com</managingEditor><webMaster>xiyao.luoxiao@gmail.com</webMaster><copyright>xiaoxiyao</copyright><atom:link href="https://xiaoxiyao.dpdns.org/index.xml" rel="self" type="application/rss+xml"/><item><title>离线页面</title><link>https://xiaoxiyao.dpdns.org/offline/</link><pubDate>Fri, 20 Sep 2024 23:54:14 +0800</pubDate><author>xiyao.luoxiao@gmail.com</author><guid>https://xiaoxiyao.dpdns.org/offline/</guid><description/></item><item><title>归档</title><link>https://xiaoxiyao.dpdns.org/archives/</link><pubDate>Wed, 18 Sep 2024 00:00:00 +0000</pubDate><author>xiyao.luoxiao@gmail.com</author><guid>https://xiaoxiyao.dpdns.org/archives/</guid><description/></item><item><title>ubuntu 折腾笔记</title><link>https://xiaoxiyao.dpdns.org/post/ubuntu-tinkering-notes/</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><author>xiyao.luoxiao@gmail.com</author><guid>https://xiaoxiyao.dpdns.org/post/ubuntu-tinkering-notes/</guid><description>&lt;p>由于升级win10破坏了grub启动引导，之前安装的ubuntu14.04进不去了，正好ubuntu升级了新的版本16.04lts，那就彻底重装好了。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>xiaoxiyao's blog</title><link>https://xiaoxiyao.dpdns.org/</link><description>Recent content on xiaoxiyao's blog</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>xiyao.luoxiao@gmail.com</managingEditor><webMaster>xiyao.luoxiao@gmail.com</webMaster><copyright>xiaoxiyao</copyright><atom:link href="https://xiaoxiyao.dpdns.org/index.xml" rel="self" type="application/rss+xml"/><item><title>Stardew Valley 1.6.15 移动端 Mod</title><link>https://xiaoxiyao.dpdns.org/post/sdv-mod/</link><pubDate>Tue, 20 May 2025 10:27:48 +0800</pubDate><author>xiyao.luoxiao@gmail.com</author><guid>https://xiaoxiyao.dpdns.org/post/sdv-mod/</guid><description>&lt;img src="https://xiaoxiyao.dpdns.org/post/sdv-mod/Main_Logo.png" alt="Featured image of post Stardew Valley 1.6.15 移动端 Mod" />&lt;h3 id="1-smapi-启动器">1. SMAPI 启动器
+&lt;/h3>&lt;p>&lt;a class="link" href="https://github.com/NRTnarathip/SMAPILoader" target="_blank" rel="noopener"
+>github&lt;/a>&lt;/p>
+&lt;h3 id="2-游戏本体">2. 游戏本体
+&lt;/h3>&lt;p>启动器仅支持从 Play Store 下载的游戏本体，但在 issues 中可以找到一个可用的版本：&lt;/p>
+&lt;p>&lt;a class="link" href="https://github.com/NRTnarathip/SMAPILoader/issues/29#issuecomment-2641837237" target="_blank" rel="noopener"
+>https://github.com/NRTnarathip/SMAPILoader/issues/29#issuecomment-2641837237&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.mediafire.com/file/c8ol49ec427sex7/Stardew_Smapi_v1.6.15.apks/file?dkey=ulvv7zx2jld&amp;amp;r=382" target="_blank" rel="noopener"
+>下载地址&lt;/a>&lt;/p>
+&lt;h3 id="3-mods">3. Mods
+&lt;/h3>&lt;style>
+.table-wrapper>table td:nth-child(2),
+.table-wrapper>table td:nth-child(3) {
+white-space: nowrap;
+}
+&lt;/style>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">名称&lt;/th>
+&lt;th style="text-align: left">地址&lt;/th>
+&lt;th style="text-align: left">汉化&lt;/th>
+&lt;th style="text-align: left">说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">Generic Mod Config Menu&lt;/td>
+&lt;td style="text-align: left">&lt;a class="link" href="https://www.nexusmods.com/stardewvalley/mods/5098" target="_blank" rel="noopener"
+>nexus&lt;/a>&lt;br />&lt;a class="link" href="https://github.com/spacechase0/StardewValleyMods/tree/develop/GenericModConfigMenu" target="_blank" rel="noopener"
+>github&lt;/a>&lt;/td>
+&lt;td style="text-align: left">内置&lt;/td>
+&lt;td style="text-align: left">所有 Mod 通用的配置菜单，基本必装&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Skip Fishing Minigame&lt;/td>
+&lt;td style="text-align: left">&lt;a class="link" href="https://www.nexusmods.com/stardewvalley/mods/2697" target="_blank" rel="noopener"
+>nexus&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;td style="text-align: left">跳过钓鱼小游戏&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">NPC Map Locations for Android&lt;/td>
+&lt;td style="text-align: left">&lt;a class="link" href="https://www.nexusmods.com/stardewvalley/mods/30587" target="_blank" rel="noopener"
+>nexus&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;td style="text-align: left">地图上显示 npc 位置，修复了原版 mod 地图太大的问题&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">UI Info Suite 2 for Android&lt;/td>
+&lt;td style="text-align: left">&lt;a class="link" href="https://www.nexusmods.com/stardewvalley/mods/30551" target="_blank" rel="noopener"
+>nexus&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;td style="text-align: left">修复了原版 mod 在移动端的一些问题&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">VirtualKeyboard&lt;/td>
+&lt;td style="text-align: left">&lt;a class="link" href="https://github.com/NRTnarathip/VirtualKeyboard" target="_blank" rel="noopener"
+>github&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;td style="text-align: left">虚拟键盘，可以配置一些其他的 mod 需要用到的快捷键&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Seasonal Outfits - Slightly Cuter Aesthetic&lt;/td>
+&lt;td style="text-align: left">&lt;a class="link" href="https://www.nexusmods.com/stardewvalley/mods/5450" target="_blank" rel="noopener"
+>nexus&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;a class="link" href="https://www.nexusmods.com/stardewvalley/mods/26341" target="_blank" rel="noopener"
+>nexus&lt;/a>&lt;/td>
+&lt;td style="text-align: left">季节性服饰，人物和肖像美化&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Anime Seasonal Outfits&lt;/td>
+&lt;td style="text-align: left">&lt;a class="link" href="https://www.nexusmods.com/stardewvalley/mods/22876" target="_blank" rel="noopener"
+>nexus&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;td style="text-align: left">将人物肖像替换成 &lt;a class="link" href="https://www.nexusmods.com/stardewvalley/mods/1839" target="_blank" rel="noopener"
+>Ohodavi 的动漫风格&lt;/a>，兼容季节性服饰&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">A Little More Cutscenes&lt;/td>
+&lt;td style="text-align: left">&lt;a class="link" href="https://www.nexusmods.com/stardewvalley/mods/30369" target="_blank" rel="noopener"
+>nexus&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;a class="link" href="https://www.nexusmods.com/stardewvalley/mods/30585" target="_blank" rel="noopener"
+>nexus&lt;/a>&lt;/td>
+&lt;td style="text-align: left">添加更多的剧情过渡动画&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Lookup Anything&lt;/td>
+&lt;td style="text-align: left">&lt;a class="link" href="https://www.nexusmods.com/stardewvalley/mods/541" target="_blank" rel="noopener"
+>nexus&lt;/a>&lt;br />&lt;a class="link" href="https://github.com/Pathoschild/StardewMods/tree/stable/LookupAnything" target="_blank" rel="noopener"
+>github&lt;/a>&lt;/td>
+&lt;td style="text-align: left">内置&lt;/td>
+&lt;td style="text-align: left">查看游戏中的一些实时信息&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Automate&lt;/td>
+&lt;td style="text-align: left">&lt;a class="link" href="https://www.nexusmods.com/stardewvalley/mods/1063" target="_blank" rel="noopener"
+>nexus&lt;/a>&lt;br />&lt;a class="link" href="https://github.com/Pathoschild/StardewMods/tree/stable/Automate" target="_blank" rel="noopener"
+>github&lt;/a>&lt;/td>
+&lt;td style="text-align: left">内置&lt;/td>
+&lt;td style="text-align: left">箱子和机器之间的自动化，目前移动端有 bug，连接变化后不会立即生效，需要重启、执行 reset 命令、或者等到第二天才会生效&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Event Lookup&lt;/td>
+&lt;td style="text-align: left">&lt;a class="link" href="https://www.nexusmods.com/stardewvalley/mods/8505" target="_blank" rel="noopener"
+>nexus&lt;/a>&lt;/td>
+&lt;td style="text-align: left">内置&lt;/td>
+&lt;td style="text-align: left">查看事件触发条件、是否看过等信息，可忘记并再次触发。目前移动端有 bug，事件列表无法滚动&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Xtardew Valley - Sexperimental Edition&lt;/td>
+&lt;td style="text-align: left">&lt;a class="link" href="" >nexus&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;a class="link" href="https://www.nexusmods.com/stardewvalley/mods/28095" target="_blank" rel="noopener"
+>nexus&lt;/a>&lt;/td>
+&lt;td style="text-align: left">原版依赖太多，在移动端基本无法成功安装，这个实验性版本基本可用，目前只遇到了农民衣服变透明的 bug&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Ohodavi&amp;rsquo;s Portraits for Xtardew Valley - Sexperimental Edition&lt;/td>
+&lt;td style="text-align: left">&lt;a class="link" href="" >nexus&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;td style="text-align: left">将 Xtardew Valley - Sexperimental Edition 中添加的肖像替换成 &lt;a class="link" href="https://www.nexusmods.com/stardewvalley/mods/1839" target="_blank" rel="noopener"
+>Ohodavi 的动漫风格&lt;/a>，注意内部有多个版本，需要自行按需替换&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>注意：有些 mod 有前置依赖，这里没有列出，需要参考 nexus 的依赖说明自行安装&lt;/p>
+&lt;h3 id="4-增量-mod-安装的方法">4. 增量 Mod 安装的方法
+&lt;/h3>&lt;p>一些汉化 mod 或者修改其他 mod 的 mod 并不是完整的独立 mod，可能只包含国际化文件等，需要和源 mod 合并，或者替换源 mod 中的同名文件，有两种方法：&lt;/p>
+&lt;ol>
+&lt;li>先将源 mod 解压后替换文件再打包，使用启动器安装。&lt;/li>
+&lt;li>先安装源 mod，mod 安装位置在 &lt;code>/Android/data/abc.smapi.gameloader/files/Mods&lt;/code>，安卓上一般的文件管理器没有写入 &lt;code>/Andriod/data&lt;/code> 的权限，可以连接电脑，在电脑上替换文件（可能需要启用 usb 调试）。或者使用支持 &lt;a class="link" href="https://shizuku.rikka.app/" target="_blank" rel="noopener"
+>shizuku&lt;/a> 的文件管理器，可以直接管理&lt;code>/Android/data&lt;/code> 目录&lt;/li>
+&lt;/ol></description></item><item><title>离线页面</title><link>https://xiaoxiyao.dpdns.org/offline/</link><pubDate>Fri, 20 Sep 2024 23:54:14 +0800</pubDate><author>xiyao.luoxiao@gmail.com</author><guid>https://xiaoxiyao.dpdns.org/offline/</guid><description/></item><item><title>归档</title><link>https://xiaoxiyao.dpdns.org/archives/</link><pubDate>Wed, 18 Sep 2024 00:00:00 +0000</pubDate><author>xiyao.luoxiao@gmail.com</author><guid>https://xiaoxiyao.dpdns.org/archives/</guid><description/></item><item><title>ubuntu 折腾笔记</title><link>https://xiaoxiyao.dpdns.org/post/ubuntu-tinkering-notes/</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><author>xiyao.luoxiao@gmail.com</author><guid>https://xiaoxiyao.dpdns.org/post/ubuntu-tinkering-notes/</guid><description>&lt;p>由于升级win10破坏了grub启动引导，之前安装的ubuntu14.04进不去了，正好ubuntu升级了新的版本16.04lts，那就彻底重装好了。
 安装过程就不细说了，这篇文章主要记录安装完一个全新的ubuntn系统后需要做的一些事情，让系统使用更得心应手。&lt;/p>
 &lt;h4 id="1-更新一下grub引导">1 更新一下grub引导
 &lt;/h4>&lt;p>ubuntu安装完成后第一次重启系统会发现grub启动引导列表里并没有windows的启动项，先直接进入ubuntu系统，在终端里运行一下&lt;code>sudo update-grub&lt;/code>，下次重启就能进入windows了&lt;/p>
@@ -558,7 +690,47 @@ data-flex-basis="451px"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>content属性的详细介绍:&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;table class="mdl-data-table mdl-shadow--2dp">
+&lt;thead>
+&lt;tr>
+&lt;th>属性名&lt;/th>
+&lt;th>取值&lt;/th>
+&lt;th>描述&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>width&lt;/td>
+&lt;td>正整数 或 device-width&lt;/td>
+&lt;td>定义视口的宽度，单位为像素&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>height&lt;/td>
+&lt;td>正整数 或 device-height&lt;/td>
+&lt;td>定义视口的高度，单位为像素，一般不用&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>initial-scale&lt;/td>
+&lt;td>[0.0-10.0]&lt;/td>
+&lt;td>定义初始缩放值&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>minimum-scale&lt;/td>
+&lt;td>[0.0-10.0]&lt;/td>
+&lt;td>定义缩小最小比例，它必须小于或等于maximum-scale设置&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>maximum-scale&lt;/td>
+&lt;td>[0.0-10.0]&lt;/td>
+&lt;td>定义放大最大比例，它必须大于或等于minimum-scale设置&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>user-scalable&lt;/td>
+&lt;td>yes/no&lt;/td>
+&lt;td>定义是否允许用户手动缩放页面，默认值yes&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
 &lt;/li>
 &lt;li>
 &lt;p>禁止自动识别(电话号码,日期,地址,email)&lt;/p>
@@ -776,7 +948,8 @@ data-flex-basis="451px"
 &lt;/div>
 &lt;/div>&lt;p>注意必须申明元素高度，可以使用%属性和 min-/max-属性。&lt;/p>
 &lt;p>看下面的示例：&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;p data-height="268" data-theme-id="0" data-slug-hash="GoNbmP" data-default-tab="result" data-user="xiaoxiyao" class='codepen'>See the Pen &lt;a href='http://codepen.io/xiaoxiyao/pen/GoNbmP/'>Absolute Centering&lt;/a> by xiaoxiyao (&lt;a href='http://codepen.io/xiaoxiyao'>@xiaoxiyao&lt;/a>) on &lt;a href='http://codepen.io'>CodePen&lt;/a>.&lt;/p>
+&lt;script async src="//assets.codepen.io/assets/embed/ei.js">&lt;/script>
 &lt;blockquote>
 &lt;p>参考：&lt;a class="link" href="http://www.smashingmagazine.com/2013/08/absolute-horizontal-vertical-centering-css/" target="_blank" rel="noopener"
 >http://www.smashingmagazine.com/2013/08/absolute-horizontal-vertical-centering-css/&lt;/a>&lt;/p>
@@ -814,7 +987,8 @@ data-flex-basis="451px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nt">-webkit-box-orient&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nt">vertical&lt;/span>&lt;span class="o">;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;!-- raw HTML omitted --></description></item><item><title>关于</title><link>https://xiaoxiyao.dpdns.org/about/</link><pubDate>Fri, 25 Sep 2015 22:21:51 +0800</pubDate><author>xiyao.luoxiao@gmail.com</author><guid>https://xiaoxiyao.dpdns.org/about/</guid><description>&lt;p>这是一个基于 &lt;a class="link" href="https://gohugo.io/" target="_blank" rel="noopener"
+&lt;/div>&lt;p data-height="268" data-theme-id="0" data-slug-hash="zvyXmW" data-default-tab="html" data-user="xiaoxiyao" class='codepen'>See the Pen &lt;a href='http://codepen.io/xiaoxiyao/pen/zvyXmW/'>多行文本溢出显示省略号&lt;/a> by xiaoxiyao (&lt;a href='http://codepen.io/xiaoxiyao'>@xiaoxiyao&lt;/a>) on &lt;a href='http://codepen.io'>CodePen&lt;/a>.&lt;/p>
+&lt;script async src="//assets.codepen.io/assets/embed/ei.js">&lt;/script></description></item><item><title>关于</title><link>https://xiaoxiyao.dpdns.org/about/</link><pubDate>Fri, 25 Sep 2015 22:21:51 +0800</pubDate><author>xiyao.luoxiao@gmail.com</author><guid>https://xiaoxiyao.dpdns.org/about/</guid><description>&lt;p>这是一个基于 &lt;a class="link" href="https://gohugo.io/" target="_blank" rel="noopener"
 >Hugo&lt;/a> 的博客程序，使用 GitHub Actions 自动编译并部署到 github pages。&lt;/p>
 &lt;h4 id="更新记录">更新记录
 &lt;/h4>&lt;h5 id="20170910">20170910
