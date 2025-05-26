@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Game on xiaoxiyao's blog</title><link>https://xiaoxiyao.dpdns.org/tags/game/</link><description>Recent content in Game on xiaoxiyao's blog</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>xiyao.luoxiao@gmail.com</managingEditor><webMaster>xiyao.luoxiao@gmail.com</webMaster><copyright>xiaoxiyao</copyright><lastBuildDate>Tue, 20 May 2025 16:07:08 +0800</lastBuildDate><atom:link href="https://xiaoxiyao.dpdns.org/tags/game/index.xml" rel="self" type="application/rss+xml"/><item><title>Stardew Valley 1.6.15 移动端 Mod</title><link>https://xiaoxiyao.dpdns.org/post/sdv-mod/</link><pubDate>Tue, 20 May 2025 10:27:48 +0800</pubDate><author>xiyao.luoxiao@gmail.com</author><guid>https://xiaoxiyao.dpdns.org/post/sdv-mod/</guid><description>&lt;img src="https://xiaoxiyao.dpdns.org/post/sdv-mod/Main_Logo.png" alt="Featured image of post Stardew Valley 1.6.15 移动端 Mod" />&lt;h3 id="1-smapi-启动器">1. SMAPI 启动器
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Game on xiaoxiyao's blog</title><link>https://xiaoxiyao.dpdns.org/tags/game/</link><description>Recent content in Game on xiaoxiyao's blog</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>xiyao.luoxiao@gmail.com</managingEditor><webMaster>xiyao.luoxiao@gmail.com</webMaster><copyright>xiaoxiyao</copyright><lastBuildDate>Mon, 26 May 2025 11:13:18 +0800</lastBuildDate><atom:link href="https://xiaoxiyao.dpdns.org/tags/game/index.xml" rel="self" type="application/rss+xml"/><item><title>Stardew Valley 1.6.15 移动端 Mod</title><link>https://xiaoxiyao.dpdns.org/post/sdv-mod/</link><pubDate>Tue, 20 May 2025 10:27:48 +0800</pubDate><author>xiyao.luoxiao@gmail.com</author><guid>https://xiaoxiyao.dpdns.org/post/sdv-mod/</guid><description>&lt;img src="https://xiaoxiyao.dpdns.org/post/sdv-mod/Main_Logo.png" alt="Featured image of post Stardew Valley 1.6.15 移动端 Mod" />&lt;h3 id="1-smapi-启动器">1. SMAPI 启动器
 &lt;/h3>&lt;p>&lt;a class="link" href="https://github.com/NRTnarathip/SMAPILoader" target="_blank" rel="noopener"
 >github&lt;/a>&lt;/p>
 &lt;h3 id="2-游戏本体">2. 游戏本体
@@ -99,6 +99,14 @@ white-space: nowrap;
 >github&lt;/a>&lt;/td>
 &lt;td style="text-align: left">内置&lt;/td>
 &lt;td style="text-align: left">箱子和机器之间的自动化，目前移动端有 bug，连接变化后不会立即生效，需要重启、执行 reset 命令、或者等到第二天才会生效&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Artisan Goods Keep Quality&lt;/td>
+&lt;td style="text-align: left">&lt;a class="link" href="https://www.nexusmods.com/stardewvalley/mods/21278" target="_blank" rel="noopener"
+>nexus&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;a class="link" href="https://www.nexusmods.com/stardewvalley/mods/26200" target="_blank" rel="noopener"
+>nexus&lt;/a>&lt;/td>
+&lt;td style="text-align: left">机器保持质量 - 使工匠品能获得原材料的相同质量！&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td style="text-align: left">Event Lookup&lt;/td>

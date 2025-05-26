@@ -101,6 +101,14 @@ white-space: nowrap;
 &lt;td style="text-align: left">箱子和机器之间的自动化，目前移动端有 bug，连接变化后不会立即生效，需要重启、执行 reset 命令、或者等到第二天才会生效&lt;/td>
 &lt;/tr>
 &lt;tr>
+&lt;td style="text-align: left">Artisan Goods Keep Quality&lt;/td>
+&lt;td style="text-align: left">&lt;a class="link" href="https://www.nexusmods.com/stardewvalley/mods/21278" target="_blank" rel="noopener"
+>nexus&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;a class="link" href="https://www.nexusmods.com/stardewvalley/mods/26200" target="_blank" rel="noopener"
+>nexus&lt;/a>&lt;/td>
+&lt;td style="text-align: left">机器保持质量 - 使工匠品能获得原材料的相同质量！&lt;/td>
+&lt;/tr>
+&lt;tr>
 &lt;td style="text-align: left">Event Lookup&lt;/td>
 &lt;td style="text-align: left">&lt;a class="link" href="https://www.nexusmods.com/stardewvalley/mods/8505" target="_blank" rel="noopener"
 >nexus&lt;/a>&lt;/td>
